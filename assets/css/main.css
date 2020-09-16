@@ -24,6 +24,8 @@ body .header {
   height: 80px;
   background-color: #001847;
   margin-bottom: 20px; }
+  body .header .menu-mobile {
+    display: none; }
   body .header .logo {
     height: 80px; }
     body .header .logo a {
@@ -38,8 +40,12 @@ body .header {
     flex-wrap: wrap;
     justify-content: space-between; }
 
+.account-mobile,
+.logout-mobile,
 .tab-pane {
   display: none; }
+  .account-mobile.show,
+  .logout-mobile.show,
   .tab-pane.show {
     display: flex; }
 

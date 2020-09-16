@@ -233,6 +233,9 @@ $( document ).ready(function() {
           $('.step2 .err-mess').show()
           setTimeout(function(){ $('.step2 .err-mess').hide(); }, 3000);
         }
+      })
+      .on('click', '.menu-mobile', function(event) {
+        $('.right-side-bar').toggleClass('position-mobile');
       });
     var title = $('.step3 .selected-flag').attr('title');
     if (title) {

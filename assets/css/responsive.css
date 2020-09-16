@@ -1,3 +1,198 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px; } }
+@media (max-width: 1199px) {
+  .my-campaigns .campaigns .ctas-buttons .trade-cta .btn,
+  .my-campaigns .campaigns .ctas-buttons > button,
+  #my-account .real-contents .ctas-buttons .trade-cta .btn,
+  #my-account .real-contents .ctas-buttons > button {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px; }
 
+  .funds-management #funds-tabs-content .payment-detail .payment-set > * {
+    width: calc((100% - 40px) / 2);
+    margin-bottom: 20px; }
+  .funds-management #funds-tabs-content .method span {
+    line-height: 111%; } }
+@media (max-width: 991px) {
+  #my-account .real-contents .ctas-buttons {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px; }
+
+  #create-account .standart-account .right-standart-account,
+  #create-account .standart-account .left-standart-account {
+    width: 100%; }
+
+  .funds-management #funds-tabs-content .method {
+    width: calc((100% - 90px) / 2); }
+    .funds-management #funds-tabs-content .method:last-child {
+      margin-right: 0;
+      margin-left: auto; }
+
+  .my-campaigns .campaigns .ctas-buttons {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px; }
+  .my-campaigns .campaigns .bottom-content {
+    flex-direction: column; }
+
+  .strategies-campaign-details .strategies-infomations > div {
+    width: 100%; }
+    .strategies-campaign-details .strategies-infomations > div.fxtrade24 {
+      margin-bottom: 20px; }
+
+  .history-filter-bar,
+  .strategies-campaign-details .strategies-statistics .statistics-filter-bar {
+    grid-row-gap: 20px; }
+
+  #partnership .partnership-rank-box {
+    width: 100%;
+    margin-bottom: 20px; }
+
+  .settings .setting-verify .verify-status > div {
+    width: calc((100% - 50px) / 4); }
+    .settings .setting-verify .verify-status > div:first-child {
+      width: 50px; }
+
+  body #footer .menu-footer ul {
+    justify-content: space-between;
+    padding-right: 10px; }
+
+  body #footer .menu-footer li {
+    margin-right: 0; } }
+@media (max-width: 767px) {
+  body .main-content, body .footer {
+    background-color: white; }
+
+  #header {
+    height: 56px;
+    margin-bottom: 0; }
+    #header .menu-mobile {
+      display: flex;
+      align-items: center; }
+    #header .logo,
+    #header .logo a {
+      height: 56px; }
+      #header .logo img,
+      #header .logo a img {
+        width: auto;
+        height: 100%; }
+    #header .infomations .dropdown-menu {
+      right: -20px;
+      width: 180px;
+      min-height: calc(100vh - 56px); }
+    #header .infomations .money,
+    #header .infomations .account {
+      display: none; }
+    #header .infomations #dropdownMenuLanguageLink {
+      font-size: 0.1px;
+      color: transparent;
+      text-indent: -99px;
+      padding: 0; }
+      #header .infomations #dropdownMenuLanguageLink:hover, #header .infomations #dropdownMenuLanguageLink:focus {
+        background: transparent; }
+
+  .infomations .account #dropdownMenuAccountLink,
+  .infomations .account #dropdownMenuLanguageLink,
+  .infomations .language #dropdownMenuAccountLink,
+  .infomations .language #dropdownMenuLanguageLink {
+    height: 56px; }
+
+  .content {
+    padding: 0; }
+    .content .left-side-bar {
+      width: 100%;
+      border-radius: 0;
+      margin-bottom: 0;
+      padding: 20px; }
+    .content .right-side-bar {
+      display: none; }
+      .content .right-side-bar.position-mobile {
+        position: absolute;
+        left: 0;
+        top: 56px;
+        background-color: #001847;
+        padding: 18px 0;
+        width: 264px;
+        min-height: calc(100vh - 56px);
+        z-index: 99;
+        display: block; }
+        .content .right-side-bar.position-mobile .nav-item a {
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          color: #FFFFFF;
+          padding: 0 20px;
+          height: 60px;
+          border-radius: 0; }
+          .content .right-side-bar.position-mobile .nav-item a.active {
+            background-color: #0e2d69eb; }
+            .content .right-side-bar.position-mobile .nav-item a.active img {
+              filter: none; }
+          .content .right-side-bar.position-mobile .nav-item a img {
+            margin-right: 12px; }
+        .content .right-side-bar.position-mobile .nav.flex-column {
+          position: relative; }
+          .content .right-side-bar.position-mobile .nav.flex-column:before, .content .right-side-bar.position-mobile .nav.flex-column:after {
+            content: '';
+            left: 20px;
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 0; }
+          .content .right-side-bar.position-mobile .nav.flex-column:after {
+            top: auto;
+            bottom: 0; }
+
+  body #footer {
+    background-color: white; }
+    body #footer .col-md-12 {
+      padding: 0; }
+    body #footer .copy-right {
+      margin: 0 auto 36px 0; }
+    body #footer .menu-footer {
+      width: 100%;
+      padding-top: 18px; }
+      body #footer .menu-footer ul {
+        justify-content: unset;
+        width: 100%;
+        flex-direction: column;
+        padding-right: 10px;
+        align-items: flex-start; }
+      body #footer .menu-footer li {
+        margin-right: 0;
+        margin-bottom: 10px; }
+
+  .account-mobile,
+  .logout-mobile {
+    display: flex;
+    flex-direction: column;
+    color: white; }
+    .account-mobile a,
+    .logout-mobile a {
+      color: white; }
+      .account-mobile a.name,
+      .logout-mobile a.name {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px; }
+      .account-mobile a.email,
+      .logout-mobile a.email {
+        font-size: 12px;
+        opacity: 0.6;
+        margin-bottom: 20px; }
+
+  .logout-mobile {
+    height: 60px;
+    align-items: center; }
+    .logout-mobile a {
+      margin: auto; } }
+@media (max-width: 576px) {
+  body #footer .col-md-12 {
+    padding-right: 20px;
+    padding-left: 20px; } }
 
 /*# sourceMappingURL=responsive.css.map */

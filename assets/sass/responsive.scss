@@ -1,6 +1,258 @@
 $breakpoint-pc: 1199px;
 $breakpoint-tablet: 991px;
 $breakpoint-mobile: 767px;
-@media (max-width: $breakpoint-mobile) {
+$breakpoint-mobile-small: 576px;
+
+@media (min-width: $breakpoint-pc + 1) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: $breakpoint-pc) {
+  .my-campaigns .campaigns .ctas-buttons,
+  #my-account .real-contents .ctas-buttons {
+    .trade-cta .btn, 
+    > button {
+      width: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .funds-management #funds-tabs-content {
+    .payment-detail .payment-set > * {
+      width: calc((100% - 40px) / 2);
+      margin-bottom: 20px;
+    }
+    .method span {
+        line-height: 111%;
+    }
+  }
   
+}
+
+@media (max-width: $breakpoint-tablet) {
+  #my-account .real-contents .ctas-buttons {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  #create-account .standart-account {
+    .right-standart-account,
+    .left-standart-account  {
+      width: 100%;
+    }
+  }
+  .funds-management #funds-tabs-content .method {
+    width: calc((100% - 90px) / 2);
+    &:last-child {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+  .my-campaigns .campaigns {
+    .ctas-buttons {
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+    .bottom-content {
+      flex-direction: column;
+    }
+  }
+  .strategies-campaign-details .strategies-infomations > div {
+    width: 100%;
+    &.fxtrade24 {
+      margin-bottom: 20px;
+    }
+  }
+  .history-filter-bar,
+  .strategies-campaign-details .strategies-statistics .statistics-filter-bar {
+    grid-row-gap: 20px;
+  }
+  #partnership .partnership-rank-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .settings .setting-verify .verify-status > div {
+    width: calc((100% - 50px) / 4);
+    &:first-child {
+      width: 50px;
+    }  
+  }
+  body #footer .menu-footer ul {
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+  body #footer .menu-footer li {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  body .main-content, body .footer {
+    background-color: white;
+  }
+  #header {
+    height: 56px;
+    margin-bottom: 0;
+    .menu-mobile {
+      display: flex;
+      align-items: center;
+    }
+    .logo,
+    .logo a {
+      height: 56px;
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+    .infomations {
+      .dropdown-menu {
+        right: -20px;
+        width: 180px;
+        min-height: calc(100vh - 56px);
+      }
+      .money,
+      .account {
+        display: none;
+      }
+      #dropdownMenuLanguageLink {
+        font-size: 0.1px;
+        color: transparent;
+        text-indent: -99px;
+        padding: 0;
+        &:hover,
+        &:focus {
+          background: transparent;
+        }
+      }
+    }
+  }
+  .infomations .account #dropdownMenuAccountLink, 
+  .infomations .account #dropdownMenuLanguageLink, 
+  .infomations .language #dropdownMenuAccountLink, 
+  .infomations .language #dropdownMenuLanguageLink {
+    height: 56px;
+  }
+  .content {
+    padding: 0;
+    .left-side-bar {
+      width: 100%;
+      border-radius: 0;
+      margin-bottom: 0;
+      padding: 20px;
+    }
+    .right-side-bar {
+      display: none;
+      &.position-mobile {
+        position: absolute;
+        left: 0;
+        top: 56px;
+        background-color: #001847;
+        padding: 18px 0;
+        width: 264px;
+        min-height: calc(100vh - 56px);
+        z-index: 99;
+        display: block;
+        .nav-item a {
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          color: #FFFFFF;
+          padding: 0 20px;
+          height: 60px;
+          border-radius: 0;
+          &.active {
+            background-color: #0e2d69eb;
+            img {
+              filter: none;
+            }
+          }
+          img {
+            margin-right: 12px;
+          }
+          // #1A305A
+        }
+        .nav.flex-column {
+          position: relative;
+          &:before,
+          &:after {
+            content: '';
+            left: 20px;
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 0;
+          }
+          &:after {
+            top: auto;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  body #footer {
+    background-color: white;
+    .col-md-12 {
+      padding: 0;
+    }
+    .copy-right {
+      margin: 0 auto 36px 0;
+    }
+    .menu-footer {
+      width: 100%;
+      padding-top: 18px;
+      ul {
+        justify-content: unset;
+        width: 100%;
+        flex-direction: column;
+        padding-right: 10px;
+        align-items: flex-start;
+      }
+      li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  
+  .account-mobile,
+  .logout-mobile {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    a {
+      color: white;
+      &.name {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      &.email {
+        font-size: 12px;
+        opacity: 0.6;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .logout-mobile {
+    height: 60px;
+    align-items: center;
+    a {
+      margin: auto;
+    }
+  }
+}
+@media (max-width: $breakpoint-mobile-small) {
+  body #footer .col-md-12 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }

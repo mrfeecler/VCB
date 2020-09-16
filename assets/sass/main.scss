@@ -22,6 +22,9 @@ body .header {
   height: 80px;
   background-color: #001847;
   margin-bottom: 20px;
+  .menu-mobile {
+    display: none;
+  }
   .logo {
     height: 80px;
     a {
@@ -40,6 +43,8 @@ body .header {
     justify-content: space-between;
   }
 }
+.account-mobile,
+.logout-mobile,
 .tab-pane {
   display: none;
   &.show {

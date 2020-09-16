@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
   <title>VCB</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
@@ -23,6 +24,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+          <div class="menu-mobile">
+            <img src="../assets/imgs/menu-mobile.png" alt="logo">
+          </div>
           <div class="logo">
             <a href="#" title="logo">
               <img src="../assets/imgs/logo.png" alt="logo">
@@ -74,6 +78,10 @@
       <div class="row">
         <div class="content">
           <div class="right-side-bar">
+            <div class="account-mobile">
+              <a class="dropdown-item name" href="#">Pham Hong Phuc</a>
+              <a class="dropdown-item email" href="#">example@gmail.com</a>
+            </div>
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link active" data-toggle="tab" id="label-my-account" href="#my-account" role="tab" aria-controls="my-account" aria-selected="true">
@@ -118,6 +126,9 @@
                 </a>
               </li>
             </ul>
+            <div class="logout-mobile">
+              <a class="dropdown-item logout" href="#">Log out</a>
+            </div>
           </div>  
           <div class="left-side-bar">
             <div class="tab-pane fade show active" role="tabpanel" id="my-account" aria-labelledby="label-my-account" include-html="content/my-account.html"></div>

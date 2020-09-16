@@ -1,0 +1,121 @@
+#transaction-history {
+  .history-account-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+}
+.history-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 15px;
+  h4 {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .dropdown {
+    .dropdown-toggle {
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      background-color: transparent;
+      color: #333333;
+      min-width: 150px;
+      text-align: left;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 150px;
+      height: 40px;
+      border-radius: 4px;
+      &::after {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .dropdown-toggle::after {
+    border-top: 6px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+  }
+  > div {
+    margin-right: 20px;
+  }
+  .input-daterange {
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    input {
+      border: none;
+    }
+    .dropdown-toggle:after {
+      transform: rotate(270deg);
+    }
+  }
+}
+.history-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .history-table {
+    margin-bottom: 20px;
+  }
+  table {
+    width: 100%;
+    color: #333;
+    th {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+      height: 52px;
+    }
+  }
+  tbody {
+    border: solid #9E9E9E;
+    border-width: 1px 0;
+    tr {
+      height: 53px;
+    }
+    td {
+      font-size: 14px;
+      &.pending {
+        color: #EC2028;
+      }  
+    }
+  }
+  nav {
+    margin-left: auto;
+    .next {
+      .dropdown-toggle:after {
+        transform: rotate(270deg);
+      }
+    }
+    .prev {
+      .dropdown-toggle:after {
+        transform: rotate(90deg);
+      }
+    }
+    .page-item {
+      margin-left: 4px;
+      .page-link {
+        background-color: #F5F5F5;
+        color: #333333;
+        border-radius: 4px;
+      }
+      &.active .page-link {
+        border: 1px solid #9E9E9E;
+        background-color: transparent;
+      }
+    }
+  }
+}

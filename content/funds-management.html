@@ -1,0 +1,232 @@
+<div class="funds-management">
+  <h2>Funds Mnagements</h2>
+  <div class="funds-tabs">
+    <ul class="nav nav-tabs" id="funds-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="deposit-tab" data-toggle="tab" href="#deposit" role="tab" aria-controls="deposit" aria-selected="false">Deposit</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="withdrawal-tab" data-toggle="tab" href="#withdrawal" role="tab" aria-controls="withdrawal" aria-selected="true">Withdrawal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="internal-transfer-tab" data-toggle="tab" href="#internal-transfer" role="tab" aria-controls="internal-transfer" aria-selected="true">Internal Transfer</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="funds-tabs-content">
+      <div class="tab-pane tab-pane-child fade show active" id="deposit" role="tabpanel" aria-labelledby="deposit-tab">
+        <div class="deposit-area">
+          <h3 class="label-payment">payment methods</h3>
+          <div class="methods">
+            <div class="method">
+              <img src="../assets/imgs/bitcoin.png" alt="Bitcoin icon">
+              <span>Bitcoin</span>
+            </div>
+            <div class="method">
+              <img src="../assets/imgs/cashu.png" alt="CashU icon">
+              <span>CashU</span>
+            </div>
+            <div class="method">
+              <img src="../assets/imgs/visa.png" alt="Visa / Mastercard icon">
+              <span>Visa / Mastercard</span>
+            </div>
+            <div class="method">
+              <img src="../assets/imgs/paypal.png" alt="Paypal icon">
+              <span>Paypal</span>
+            </div>
+            <div class="method">
+              <img src="../assets/imgs/skrill.png" alt="Skrill icon">
+              <span>Skrill</span>
+            </div>
+            <div class="method">
+              <img src="../assets/imgs/xetra.png" alt="Xetra icon">
+              <span>Xetra</span>
+            </div>
+          </div>  
+        </div>
+        <div class="payment-detail" style="display: none;">
+          <h3 class="label-payment">Payment Details</h3>
+          <div class="payment-set">
+            <div class="dropdown">
+              <h4>Account Number</h4>
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdowndeposit" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                3132095
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdowndeposit">
+                <a class="dropdown-item" href="#">Oldest</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <h4>Currency</h4>
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdowndepositunitedstates" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                USD - United States Dollar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdowndepositunitedstates">
+                <a class="dropdown-item" href="#">Oldest</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <div class="amount">
+              <h4>Amount</h4>
+              <input type="text" name="Amount" placeholder="Amount" value="600.00">
+            </div>
+            <button class="btn btn-primary" handle_modal="set-deposit-modal">Continue</button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane tab-pane-child fade" id="withdrawal" role="tabpanel" aria-labelledby="withdrawal-tab">
+        <div class="withdrawal-area">
+          <h3 class="label-payment">payment methods</h3>
+          <div class="methods">
+            <div class="method">
+              <img src="../assets/imgs/bitcoin.png" alt="Bitcoin icon">
+              <span>Bitcoin</span>
+            </div>
+            <div class="method">
+              <img src="../assets/imgs/cashu.png" alt="CashU icon">
+              <span>CashU</span>
+            </div>
+            <div class="method">
+              <img src="../assets/imgs/visa.png" alt="Visa / Mastercard icon">
+              <span>Visa / Mastercard</span>
+            </div>
+            <div class="method">
+              <img src="../assets/imgs/paypal.png" alt="Paypal icon">
+              <span>Paypal</span>
+            </div>
+            <div class="method">
+              <img src="../assets/imgs/skrill.png" alt="Skrill icon">
+              <span>Skrill</span>
+            </div>
+            <div class="method">
+              <img src="../assets/imgs/xetra.png" alt="Xetra icon">
+              <span>Xetra</span>
+            </div>
+          </div>
+        </div>
+        <div class="payment-detail" style="display: none;">
+          <h3 class="label-payment">Payment Details</h3>
+          <div class="payment-set">
+            <div class="dropdown">
+              <h4>Account Number</h4>
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdowndeposit" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                3132095
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdowndeposit">
+                <a class="dropdown-item" href="#">Oldest</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <h4>Currency</h4>
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdowndepositunitedstates" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                USD - United States Dollar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdowndepositunitedstates">
+                <a class="dropdown-item" href="#">Oldest</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <div class="amount">
+              <h4>Amount</h4>
+              <input type="text" name="Amount" placeholder="Amount" value="600.00">
+            </div>
+            <button class="btn btn-primary" handle_modal="set-withdrawal-modal">Continue</button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane tab-pane-child fade" id="internal-transfer" role="tabpanel" aria-labelledby="internal-transfer-tab">
+        <div class="internal-area">
+          <h3 class="label-payment">payment methods</h3>
+          <div class="methods">
+            <div class="method">
+              <img src="../assets/imgs/between.png" alt="Between icon">
+              <span>Between your accounts</span>
+            </div>
+            <div class="method">
+              <img src="../assets/imgs/another.png" alt="Another icon">
+              <span>To another's account</span>
+            </div>
+          </div>
+        </div>
+        <div class="payment-detail" style="display: none;">
+          <h3 class="label-payment">Payment Details</h3>
+          <div class="payment-set">
+            <div class="dropdown">
+              <h4>From</h4>
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownfilterreal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                3132095
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownfilterreal">
+                <a class="dropdown-item" href="#">Oldest</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <h4>To</h4>
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownfilterreal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                31567922
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownfilterreal">
+                <a class="dropdown-item" href="#">Oldest</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <div class="owner-payment" style="display: none;">
+              <h4>Owner</h4>
+              <input type="text" name="Amount" placeholder="Amount" value="Mike Tyson (mike.t.2020@gmail.com)">
+            </div>
+            <div class="amount">
+              <h4>Amount (USD)</h4>
+              <input type="text" name="Amount" placeholder="Amount" value="600.00">
+            </div>
+            <div class="dropdown otpvia" style="display: none;">
+              <h4>Get OTP via</h4>
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdowngetotptransfer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Email
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdowngetotptransfer">
+                <a class="dropdown-item" href="#">Oldest</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            
+            <div class="otpfunds checked" style="display: none;">
+              <h4>OTP</h4>
+              <input type="text" name="Amount" placeholder="Amount" value="123456">
+            </div>
+            <button class="btn btn-confirm" handle_modal="set-internal-transfer-modal">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="set-deposit-modal" tabindex="-1" role="dialog" aria-labelledby="set-deposit" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <img src="../assets/imgs/markdone.png" alt="mark done icon">
+    <h4>deposit done</h4>
+    <button type="button" class="btn btn-secondary">Close</button>
+  </div>
+</div>
+<div class="modal fade" id="set-withdrawal-modal" tabindex="-1" role="dialog" aria-labelledby="set-withdrawal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <img src="../assets/imgs/markdone.png" alt="mark done icon">
+    <h4>withdrawal done</h4>
+    <button type="button" class="btn btn-secondary">Close</button>
+  </div>
+</div>
+<div class="modal fade" id="set-internal-transfer-modal" tabindex="-1" role="dialog" aria-labelledby="set-transfer" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <img src="../assets/imgs/markdone.png" alt="mark done icon">
+    <h4>internal transfer done</h4>
+    <button type="button" class="btn btn-secondary">Close</button>
+  </div>
+</div>

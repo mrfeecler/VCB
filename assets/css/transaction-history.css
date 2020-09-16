@@ -1,0 +1,92 @@
+#transaction-history .history-account-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  #transaction-history .history-account-area h2 {
+    margin-bottom: 30px; }
+
+.history-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 15px; }
+  .history-filter-bar h4 {
+    font-weight: 700;
+    font-size: 14px; }
+  .history-filter-bar .dropdown .dropdown-toggle {
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #333333;
+    min-width: 150px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 4px; }
+    .history-filter-bar .dropdown .dropdown-toggle::after {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%); }
+  .history-filter-bar .dropdown-toggle::after {
+    border-top: 6px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent; }
+  .history-filter-bar > div {
+    margin-right: 20px; }
+  .history-filter-bar .input-daterange {
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: 300px; }
+    .history-filter-bar .input-daterange input {
+      border: none; }
+    .history-filter-bar .input-daterange .dropdown-toggle:after {
+      transform: rotate(270deg); }
+
+.history-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .history-content .history-table {
+    margin-bottom: 20px; }
+  .history-content table {
+    width: 100%;
+    color: #333; }
+    .history-content table th {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+      height: 52px; }
+  .history-content tbody {
+    border: solid #9E9E9E;
+    border-width: 1px 0; }
+    .history-content tbody tr {
+      height: 53px; }
+    .history-content tbody td {
+      font-size: 14px; }
+      .history-content tbody td.pending {
+        color: #EC2028; }
+  .history-content nav {
+    margin-left: auto; }
+    .history-content nav .next .dropdown-toggle:after {
+      transform: rotate(270deg); }
+    .history-content nav .prev .dropdown-toggle:after {
+      transform: rotate(90deg); }
+    .history-content nav .page-item {
+      margin-left: 4px; }
+      .history-content nav .page-item .page-link {
+        background-color: #F5F5F5;
+        color: #333333;
+        border-radius: 4px; }
+      .history-content nav .page-item.active .page-link {
+        border: 1px solid #9E9E9E;
+        background-color: transparent; }
+
+/*# sourceMappingURL=transaction-history.css.map */

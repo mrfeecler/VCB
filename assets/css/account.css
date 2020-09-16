@@ -1,0 +1,582 @@
+#my-account {
+  flex-direction: column; }
+  #my-account h2 {
+    margin-bottom: 18px; }
+  #my-account .nav-tabs .nav-link {
+    padding: 0 16px;
+    color: #333333; }
+    #my-account .nav-tabs .nav-link:hover, #my-account .nav-tabs .nav-link.active {
+      border: solid #EC2028;
+      border-width: 0 0 4px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #EC2028; }
+  #my-account #account-tabs {
+    margin-bottom: 30px; }
+  #my-account .tab-pane {
+    flex-direction: column;
+    flex-wrap: wrap; }
+  #my-account .control-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    #my-account .control-bar .filter {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center; }
+    #my-account .control-bar .dropdown {
+      margin-left: 10px; }
+      #my-account .control-bar .dropdown .dropdown-toggle {
+        border: 1px solid #9E9E9E;
+        border-radius: 4px;
+        background-color: transparent;
+        color: #333333;
+        min-width: 150px;
+        text-align: left;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 40px; }
+        #my-account .control-bar .dropdown .dropdown-toggle::after {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%); }
+    #my-account .control-bar .btn {
+      width: 160px;
+      height: 40px;
+      font-size: 14px; }
+  #my-account .real-contents .real-content {
+    margin-top: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px; }
+  #my-account .real-contents .top-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 28px; }
+    #my-account .real-contents .top-content .real-button {
+      width: 40px;
+      height: 24px;
+      background-color: #0076DA;
+      border-radius: 2px;
+      color: white;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 24px;
+      margin-right: 8px; }
+    #my-account .real-contents .top-content .mt5-button {
+      width: 40px;
+      height: 24px;
+      background-color: #9E9E9E;
+      border-radius: 2px;
+      color: white;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 24px;
+      margin-right: 8px; }
+    #my-account .real-contents .top-content p {
+      margin-bottom: 0; }
+  #my-account .real-contents .bottom-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    #my-account .real-contents .bottom-content .price {
+      font-weight: 700;
+      font-size: 18px;
+      color: #333333; }
+      #my-account .real-contents .bottom-content .price .price-int {
+        font-size: 30px; }
+  #my-account .real-contents .ctas-buttons {
+    width: calc(100% - 130px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+    #my-account .real-contents .ctas-buttons .trade-cta .btn,
+    #my-account .real-contents .ctas-buttons > button {
+      height: 40px;
+      border: none;
+      border-radius: 4px;
+      width: 160px;
+      color: #333333;
+      background-color: #F2F2F2;
+      margin-right: 12px; }
+    #my-account .real-contents .ctas-buttons .trade-cta .dropdown-toggle::after {
+      content: none; }
+    #my-account .real-contents .ctas-buttons .trade-cta .btn {
+      color: #FFFFFF;
+      background-color: #0076DA; }
+    #my-account .real-contents .ctas-buttons .settings-cta .btn {
+      height: 40px;
+      position: relative;
+      padding-right: 30px; }
+    #my-account .real-contents .ctas-buttons .settings-cta .dropdown-toggle::after {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%); }
+    #my-account .real-contents .ctas-buttons .settings-cta .dropdown-menu {
+      width: 240px;
+      padding: 10px 0;
+      left: auto !important;
+      right: 0; }
+      #my-account .real-contents .ctas-buttons .settings-cta .dropdown-menu li a {
+        color: #333333;
+        padding: 0 14px;
+        display: inline-block;
+        height: 36px;
+        width: 100%;
+        line-height: 36px; }
+        #my-account .real-contents .ctas-buttons .settings-cta .dropdown-menu li a:hover {
+          text-decoration: none;
+          background-color: rgba(0, 118, 218, 0.1); }
+  #my-account #set-trade-modal,
+  #my-account #set-pass-modal,
+  #my-account #set-ac-modal,
+  #my-account #set-nickname-modal,
+  #my-account #set-leverage-modal,
+  #my-account #set-balance-modal {
+    height: 100%;
+    width: 100%; }
+    #my-account #set-trade-modal .modal-dialog,
+    #my-account #set-pass-modal .modal-dialog,
+    #my-account #set-ac-modal .modal-dialog,
+    #my-account #set-nickname-modal .modal-dialog,
+    #my-account #set-leverage-modal .modal-dialog,
+    #my-account #set-balance-modal .modal-dialog {
+      width: 600px;
+      margin: auto;
+      max-width: unset; }
+    #my-account #set-trade-modal .modal-header,
+    #my-account #set-pass-modal .modal-header,
+    #my-account #set-ac-modal .modal-header,
+    #my-account #set-nickname-modal .modal-header,
+    #my-account #set-leverage-modal .modal-header,
+    #my-account #set-balance-modal .modal-header {
+      border: 0;
+      position: relative;
+      flex-direction: column;
+      color: #333333;
+      margin-bottom: 30px;
+      padding: 20px 30px 0; }
+      #my-account #set-trade-modal .modal-header .close,
+      #my-account #set-pass-modal .modal-header .close,
+      #my-account #set-ac-modal .modal-header .close,
+      #my-account #set-nickname-modal .modal-header .close,
+      #my-account #set-leverage-modal .modal-header .close,
+      #my-account #set-balance-modal .modal-header .close {
+        position: absolute;
+        right: 16px;
+        top: 16px; }
+      #my-account #set-trade-modal .modal-header p,
+      #my-account #set-pass-modal .modal-header p,
+      #my-account #set-ac-modal .modal-header p,
+      #my-account #set-nickname-modal .modal-header p,
+      #my-account #set-leverage-modal .modal-header p,
+      #my-account #set-balance-modal .modal-header p {
+        margin-bottom: 0; }
+    #my-account #set-trade-modal .modal-body,
+    #my-account #set-pass-modal .modal-body,
+    #my-account #set-ac-modal .modal-body,
+    #my-account #set-nickname-modal .modal-body,
+    #my-account #set-leverage-modal .modal-body,
+    #my-account #set-balance-modal .modal-body {
+      padding: 0 30px; }
+      #my-account #set-trade-modal .modal-body .balance-label,
+      #my-account #set-pass-modal .modal-body .balance-label,
+      #my-account #set-ac-modal .modal-body .balance-label,
+      #my-account #set-nickname-modal .modal-body .balance-label,
+      #my-account #set-leverage-modal .modal-body .balance-label,
+      #my-account #set-balance-modal .modal-body .balance-label {
+        font-weight: 700;
+        margin-bottom: 10px; }
+      #my-account #set-trade-modal .modal-body input,
+      #my-account #set-pass-modal .modal-body input,
+      #my-account #set-ac-modal .modal-body input,
+      #my-account #set-nickname-modal .modal-body input,
+      #my-account #set-leverage-modal .modal-body input,
+      #my-account #set-balance-modal .modal-body input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #9E9E9E;
+        border-radius: 4px;
+        padding-left: 14px;
+        padding-right: 14px; }
+      #my-account #set-trade-modal .modal-body .leverage-note,
+      #my-account #set-pass-modal .modal-body .leverage-note,
+      #my-account #set-ac-modal .modal-body .leverage-note,
+      #my-account #set-nickname-modal .modal-body .leverage-note,
+      #my-account #set-leverage-modal .modal-body .leverage-note,
+      #my-account #set-balance-modal .modal-body .leverage-note {
+        margin-top: 30px;
+        margin-bottom: 0;
+        background-color: rgba(236, 32, 40, 0.1);
+        color: #333333;
+        padding: 12px 14px;
+        min-height: 44px; }
+        #my-account #set-trade-modal .modal-body .leverage-note a,
+        #my-account #set-pass-modal .modal-body .leverage-note a,
+        #my-account #set-ac-modal .modal-body .leverage-note a,
+        #my-account #set-nickname-modal .modal-body .leverage-note a,
+        #my-account #set-leverage-modal .modal-body .leverage-note a,
+        #my-account #set-balance-modal .modal-body .leverage-note a {
+          color: #0076DA;
+          text-decoration: underline; }
+    #my-account #set-trade-modal .modal-footer,
+    #my-account #set-pass-modal .modal-footer,
+    #my-account #set-ac-modal .modal-footer,
+    #my-account #set-nickname-modal .modal-footer,
+    #my-account #set-leverage-modal .modal-footer,
+    #my-account #set-balance-modal .modal-footer {
+      padding: 34px 30px 40px;
+      border: 0;
+      justify-content: center; }
+      #my-account #set-trade-modal .modal-footer .btn,
+      #my-account #set-pass-modal .modal-footer .btn,
+      #my-account #set-ac-modal .modal-footer .btn,
+      #my-account #set-nickname-modal .modal-footer .btn,
+      #my-account #set-leverage-modal .modal-footer .btn,
+      #my-account #set-balance-modal .modal-footer .btn {
+        width: 320px; }
+    #my-account #set-trade-modal h5,
+    #my-account #set-pass-modal h5,
+    #my-account #set-ac-modal h5,
+    #my-account #set-nickname-modal h5,
+    #my-account #set-leverage-modal h5,
+    #my-account #set-balance-modal h5 {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 8px; }
+  #my-account #set-leverage-modal .dropdown button {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  #my-account #set-nickname-modal .modal-body > p {
+    margin-bottom: 0;
+    margin-top: 30px; }
+  #my-account #set-trade-modal .modal-body .balance,
+  #my-account #set-ac-modal .modal-body .balance {
+    background-color: #F2F2F2;
+    padding: 30px; }
+  #my-account #set-trade-modal .modal-body .first-text,
+  #my-account #set-ac-modal .modal-body .first-text {
+    font-weight: 700; }
+  #my-account #set-trade-modal .modal-body p,
+  #my-account #set-ac-modal .modal-body p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; }
+  #my-account #set-trade-modal .modal-body span,
+  #my-account #set-ac-modal .modal-body span {
+    text-align: left;
+    font-weight: 400;
+    width: 175px;
+    display: inline-block; }
+  #my-account #set-trade-modal .modal-body img,
+  #my-account #set-ac-modal .modal-body img {
+    margin-left: auto; }
+  #my-account #set-trade-modal .modal-footer .btn,
+  #my-account #set-ac-modal .modal-footer .btn {
+    border: 1px solid #9E9E9E;
+    background-color: transparent;
+    color: #333333;
+    width: 320px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px; }
+  #my-account #set-pass-modal .current-pass {
+    margin-bottom: 20px; }
+    #my-account #set-pass-modal .current-pass input {
+      background: url("../imgs/check-icon.png") no-repeat;
+      background-position: right 10px top 6px;
+      background-size: 24px 24px; }
+  #my-account #set-pass-modal .new-pass {
+    position: relative; }
+    #my-account #set-pass-modal .new-pass .showpass {
+      width: 24px;
+      display: inline-block;
+      position: absolute;
+      height: 24px;
+      background: url("../imgs/eye.png") no-repeat center;
+      right: 14px;
+      bottom: 8px;
+      cursor: pointer; }
+  #my-account #set-trade-modal .modal-footer {
+    display: flex;
+    flex-direction: column; }
+    #my-account #set-trade-modal .modal-footer > button.btn {
+      background-color: #0076DA;
+      width: 100%;
+      margin-bottom: 20px;
+      color: white;
+      padding: 0; }
+    #my-account #set-trade-modal .modal-footer .cta-btns {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%; }
+      #my-account #set-trade-modal .modal-footer .cta-btns > * {
+        width: 260px; }
+      #my-account #set-trade-modal .modal-footer .cta-btns .btn {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 14px;
+        padding-right: 14px;
+        position: relative; }
+        #my-account #set-trade-modal .modal-footer .cta-btns .btn:after {
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          transform: translateY(-50%); }
+      #my-account #set-trade-modal .modal-footer .cta-btns button {
+        background-color: transparent;
+        border: 1px solid #9E9E9E;
+        border-radius: 4px; }
+
+#create-account .create-account {
+  width: 100%; }
+#create-account h2 {
+  margin-bottom: 20px;
+  color: #333333; }
+#create-account .create-account-content > h3 {
+  font-weight: 700;
+  color: #0076DA;
+  position: relative;
+  width: 86px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+  #create-account .create-account-content > h3:before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #0076DA;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0; }
+#create-account .create-account-content > p {
+  max-width: 510px;
+  color: #333333;
+  margin-bottom: 30px; }
+#create-account .standart-account {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #0076DA;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 200px; }
+  #create-account .standart-account .left-standart-account {
+    width: calc(100% - 370px);
+    display: flex;
+    flex-direction: column; }
+    #create-account .standart-account .left-standart-account .cta-standart,
+    #create-account .standart-account .left-standart-account p {
+      padding-left: 20px;
+      padding-right: 20px; }
+    #create-account .standart-account .left-standart-account .cta-standart {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      margin-top: auto; }
+      #create-account .standart-account .left-standart-account .cta-standart button {
+        width: 49%;
+        max-width: 270px;
+        border-radius: 4px;
+        font-size: 14px; }
+      #create-account .standart-account .left-standart-account .cta-standart .btn-second {
+        background-color: #F2F2F2;
+        color: #333333; }
+  #create-account .standart-account .right-standart-account {
+    width: 370px;
+    padding: 28px 30px;
+    background-color: #F2F2F2; }
+    #create-account .standart-account .right-standart-account p {
+      color: #333333;
+      background: url(../imgs/arrow-red.png) no-repeat;
+      background-size: 12px 10px;
+      margin-bottom: 15px;
+      padding-left: 32px;
+      background-position: 0 7px; }
+  #create-account .standart-account h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: #0076DA;
+    margin-right: auto;
+    display: inline-block;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 22px; }
+#create-account .step2 .standart-account {
+  border: none;
+  box-shadow: none; }
+  #create-account .step2 .standart-account .left-standart-account {
+    padding-right: 30px; }
+    #create-account .step2 .standart-account .left-standart-account p {
+      padding: 0; }
+#create-account .step2 .right-standart-account {
+  margin-bottom: auto;
+  min-height: 200px; }
+#create-account .step2 .boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+  #create-account .step2 .boxes h5 {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px; }
+#create-account .step2 .box {
+  border: 1px solid #9E9E9E;
+  border-radius: 8px;
+  padding: 20px 10px 20px 40px;
+  position: relative;
+  width: 49%;
+  max-width: 270px; }
+  #create-account .step2 .box:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #9E9E9E;
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 20px; }
+  #create-account .step2 .box h6 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #333; }
+  #create-account .step2 .box.check {
+    border-color: #0076DA; }
+    #create-account .step2 .box.check:before {
+      border: 4px solid #fff;
+      background-color: #0076DA;
+      box-shadow: 0 0 1px 1px #0076DA; }
+#create-account .step2 .account-nickname,
+#create-account .step2 .currency {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px; }
+  #create-account .step2 .account-nickname .create-account-nickname,
+  #create-account .step2 .account-nickname .password-account-nickname,
+  #create-account .step2 .account-nickname .dropdown,
+  #create-account .step2 .currency .create-account-nickname,
+  #create-account .step2 .currency .password-account-nickname,
+  #create-account .step2 .currency .dropdown {
+    max-width: 270px;
+    width: 49%; }
+    #create-account .step2 .account-nickname .create-account-nickname h6,
+    #create-account .step2 .account-nickname .password-account-nickname h6,
+    #create-account .step2 .account-nickname .dropdown h6,
+    #create-account .step2 .currency .create-account-nickname h6,
+    #create-account .step2 .currency .password-account-nickname h6,
+    #create-account .step2 .currency .dropdown h6 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px; }
+    #create-account .step2 .account-nickname .create-account-nickname > a,
+    #create-account .step2 .account-nickname .password-account-nickname > a,
+    #create-account .step2 .account-nickname .dropdown > a,
+    #create-account .step2 .currency .create-account-nickname > a,
+    #create-account .step2 .currency .password-account-nickname > a,
+    #create-account .step2 .currency .dropdown > a {
+      border-radius: 4px;
+      height: 40px;
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid #9E9E9E;
+      color: #333333;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+#create-account .step2 .account-nickname {
+  margin-bottom: 40px; }
+  #create-account .step2 .account-nickname input {
+    width: 100%;
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px; }
+#create-account .step2 .cta-account {
+  width: 100%;
+  border-top: 1px solid #9E9E9E;
+  padding-top: 30px; }
+  #create-account .step2 .cta-account button {
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 0; }
+#create-account #create-account-modal .modal-dialog {
+  width: 400px;
+  height: 60px;
+  text-align: center; }
+#create-account #create-account-modal .modal-footer {
+  border: none;
+  margin: auto; }
+#create-account #create-account-modal img {
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px; }
+#create-account #create-account-modal .modal-content {
+  padding: 40px; }
+  #create-account #create-account-modal .modal-content > p {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+#create-account #create-account-modal button.close {
+  width: 160px;
+  height: 40px;
+  border: 1px solid #9E9E9E;
+  border-radius: 4px;
+  margin: auto;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: transparent; }
+
+/*# sourceMappingURL=account.css.map */

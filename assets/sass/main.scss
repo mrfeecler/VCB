@@ -1,0 +1,428 @@
+body .header,
+body .main-content,
+body .footer{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #F2F2F2;
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 37px;
+  }
+  .btn-primary {
+    background-color: #0076DA;
+    border-color: #0076DA;
+  }
+}
+body {
+  background-color: #F2F2F2!important;
+}
+body .header {
+  height: 80px;
+  background-color: #001847;
+  margin-bottom: 20px;
+  .logo {
+    height: 80px;
+    a {
+      display: inline-block;
+      height: 100px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .col-md-12 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.tab-pane {
+  display: none;
+  &.show {
+    display: flex;
+  }
+}
+.infomations {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  .money {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 40px;
+  }
+  a {
+    color: white;
+    padding: 0 16px;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background-color: #1A305A;
+    }
+  }
+  .dropdown > a {
+    color: #F2F2F2;
+  }
+  .dropdown-menu {
+    left: auto!important;
+    right: 0;
+    background-color: #1A305A;
+    top: 100%!important;
+    transform: none!important;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    padding: 18px 20px 13px;
+    a {
+      padding: 0;
+    }
+    .name {
+      font-weight: 700;
+    }
+    .email {
+      opacity: 0.6;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+    .logout {
+      border-top: 1px solid white;
+      padding-top: 10px;
+      font-size: 12px;
+    }
+  }
+  .account,
+  .language {
+    #dropdownMenuAccountLink,
+    #dropdownMenuLanguageLink {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      img {
+        height: auto;
+        margin: auto 0 auto 5px;
+      }
+    }
+  }
+}
+.dropdown.show > a {
+  background-color: #1A305A;
+}
+.language .dropdown-menu {
+  padding: 10px 0;
+  .dropdown-item {
+    height: 40px;
+    padding: 0 20px;
+    line-height: 40px;
+    &:hover {
+      background-color: #001847;
+    }
+  }
+}
+body #footer {
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #9E9E9E;
+  }
+  .menu-footer {
+    width: calc(100% - 90px);
+    min-height: 60px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin-bottom: 0;
+      align-items: center;
+      height: 100%;
+    }
+    li {
+      margin-right: 50px;
+    }
+    a {
+      font-size: 12px;
+      color: #333333;
+      text-decoration: underline;
+    }
+  }
+  .copy-right {
+    width: 90px;
+    color: #333333;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    margin: auto;
+  }
+}
+
+.main-content .nav-link {
+  padding-left: 0;
+}
+
+//sign-in
+.reset,
+.register,
+.sign-in {
+  width: 100%;
+  min-height: 90vh;
+  label {
+    font-weight: 700;
+  }
+  input {
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #C4C4C4;
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #C4C4C4;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: #C4C4C4;
+    }
+  }
+  .email {
+    margin-bottom: 18px;
+  }
+  .btn-submit {
+    margin: 30px auto 40px;
+    max-width: 320px;
+    font-size: 14px;
+  }
+  .err-mess {
+    margin-top: 18px;
+    p {
+      margin: 0;
+      color: #EC2028;
+    }
+  }
+  .pass {
+    position: relative;
+  }
+  .showpass {
+    width: 24px;
+    display: inline-block;
+    position: absolute;
+    height: 24px;
+    background: url('../imgs/eye.png') no-repeat center;
+    right: 14px;
+    bottom: 8px;
+    cursor: pointer;
+  }
+  .forgot {
+    font-size: 16px;
+    color: #EC2028;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+  }
+  .text-inner {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    .signin-link,
+    .register-link {
+      font-weight: 400;
+      display: inline-block;
+      margin-left: 3px;
+      text-decoration: underline;
+    }
+  }
+}
+.box {
+  &-middle {
+    width: 480px;
+    margin: 60px auto auto;
+  }
+  &-inner {
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 30px 30px 40px;
+    margin-bottom: 60px;
+  }
+}
+
+//register
+.term {
+  color: #9E9E9E;
+  font-size: 12px;
+  letter-spacing: -.3px;
+}
+.step3,
+.step2 {
+  position: relative;
+  .phone-verify {
+    width: 100%;
+  }
+  .showstep {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    color: #9E9E9E;
+    text-transform: uppercase;
+  }
+  .intl-tel-input {
+    width: 100%;
+    display: flex;
+    .selected-flag {
+      z-index: 4;
+    }
+    .country-list {
+      z-index: 5;
+    }
+    &.allow-dropdown.separate-dial-code .flag-container .selected-flag {
+      width: 120px;
+      border-right: 1px solid #9E9E9E;
+      background-color: transparent;
+    }
+    .selected-flag .iti-arrow {
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 8px solid #555;
+      top: 46%;
+    }
+  }
+  .input-group .intl-tel-input .form-control {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 0;
+    padding-left: 130px!important;
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+  }
+}
+
+.step3 {
+  .btn-submit {
+    margin-bottom: 0;
+  }
+  .form {
+    .zip {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      & > div {
+        width: 200px;
+      }
+    }
+    .address-area .input-group {
+      display: flex;
+      flex-direction: column;
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .intl-tel-input.allow-dropdown.separate-dial-code {
+    height: 40px;
+    .phone-verify {
+      display: none;
+    }
+    .flag-container {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      .selected-flag {
+        width: 100%;
+        border-right: none;
+      }
+    }
+  }
+}
+
+.reset {
+  .btn-submit {
+    margin-bottom: 0;
+  }
+  .signin-link {
+    display: flex;
+    cursor: pointer;
+    margin: 30px auto 0;
+    max-width: 320px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 4px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .step3 input {
+    background: url('../imgs/check-icon.png') no-repeat;
+    background-position: right 10px top 6px;
+    background-size: 24px 24px; 
+  }
+  .step4 .sign-in-title {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.content {
+  padding: 20px 15px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  .right-side-bar {
+    width: 100px;
+    .nav-item {
+      margin-bottom: 20px;
+      a {
+        display: flex;
+        flex-direction: column;
+        color: #333333;
+        text-align: center;
+        padding: 10px 15px 11px;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -.5px;
+        &.active {
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 0 15px rgba(0,0,0,0.1);
+          img {
+            filter: invert(12%) sepia(67%) saturate(6490%) hue-rotate(351deg) brightness(115%) contrast(88%);
+          }         
+        }
+        &:hover {
+          background-color: white;
+          border-radius: 8px; 
+          img {
+            filter: invert(12%) sepia(67%) saturate(6490%) hue-rotate(351deg) brightness(115%) contrast(88%);
+          }
+        }
+      }
+    }
+  }
+  .left-side-bar {
+    width: calc(100% - 140px);
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+  }
+}
+

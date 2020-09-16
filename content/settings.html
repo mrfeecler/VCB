@@ -1,0 +1,330 @@
+<div class="settings">
+  <h2 class="settings-title">
+    Settings
+  </h2>
+  <div class="settings-contents">
+    <ul class="nav nav-tabs" id="settings-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="settings-profile-tab" data-toggle="tab" href="#settings-profile" role="tab" aria-controls="settings-profile" aria-selected="true">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="settings-password-tab" data-toggle="tab" href="#setting-password" role="tab" aria-controls="setting-password" aria-selected="false">Password</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="settings-verify-tab" data-toggle="tab" href="#setting-verify" role="tab" aria-controls="setting-verify" aria-selected="false">Verify</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="settings-notification-tab" data-toggle="tab" href="#setting-notification" role="tab" aria-controls="setting-notification" aria-selected="false">Notification</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="settings-tabs-content">
+      <div class="tab-pane fade show active" id="settings-profile" role="tabpanel" aria-labelledby="settings-profile-tab">
+        <div class="settings-profile">
+          <div class="settings-profile-info">
+            <h3>
+              Personal information
+            </h3>
+            <div class="settings-profile-info-contents">
+              <div class="settings-profile-info-content">
+                <div class="settings-profile-info-label">
+                  Full name
+                </div>
+                <div class="settings-profile-info-value">
+                  <input type="text" name="profile name" value="Pham Hong Phuc">
+                </div>
+              </div>
+              <div class="settings-profile-info-content">
+                <div class="settings-profile-info-label">
+                  Email
+                </div>
+                <div class="settings-profile-info-value">
+                  <input type="email" name="profile name" value="example@gmail.com">
+                </div>
+              </div>
+              <div class="settings-profile-info-content">
+                <div class="settings-profile-info-label">
+                  Phone Number
+                </div>
+                <div class="settings-profile-info-value">
+                  <input type="tel" class="form-control phone-verify" placeholder="1234 567 890" value="1234 567 890">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="settings-address-info">
+            <h3>
+              address information
+            </h3>
+            <div class="settings-address-info-contents">
+              <div class="settings-address-info-content setting-country">
+                <div class="settings-address-info-label">
+                  Country / Religion
+                </div>
+                <div class="settings-address-info-value">
+                  <input type="tel" class="form-control phone-verify" placeholder="1234 567 890" value="1234 567 890">
+                </div>
+              </div>
+              <div class="settings-address-info-content it2columns">
+                <div class="settings-address-info-content">
+                  <div class="settings-address-info-label">
+                    City
+                  </div>
+                  <div class="settings-address-info-value">
+                    <input type="text" name="setting-city" value="Hanoi">
+                  </div>
+                </div>
+                <div class="settings-address-info-content">
+                  <div class="settings-address-info-label">
+                    Zip Code
+                  </div>
+                  <div class="settings-address-info-value">
+                    <input type="text" name="setting-zip" value="100000">
+                  </div>
+                </div>
+              </div>
+              <div class="settings-address-info-content">
+                <div class="settings-address-info-label">
+                  Address
+                </div>
+                <div class="settings-address-info-value">
+                  <input type="text" name="setting-addr" value="G2 Vinhomes Greenbay, Me Tri, Nam Tu Liem">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" handle_modal="set-profile-modal">Update</button>  
+        </div>
+      </div>
+      <div class="tab-pane fade" id="setting-password" role="tabpanel" aria-labelledby="settings-password-tab">
+        <div class="setting-password">
+          <div class="settings-password-area">
+            <h4>change password</h4>
+            <div class="password checked">
+              <label for="setting-change-password">Current Password</label>
+              <input type="password" id="setting-change-password" class="form-control" placeholder="Current Password" required autofocus="" value="123456">
+            </div>
+            <div class="password">
+              <label for="setting-change-new-password">New Password</label>
+              <input type="password" id="setting-change-new-password" class="form-control" placeholder="New Password" required value="123456">
+              <span class="showpass"></span>
+            </div>
+            <div class="err-mess" style="display: none;">
+              <p>Password required at least 6 characters and one upper case letter. Please try again.</p>
+            </div>  
+          </div>
+          <button class="btn btn-primary" type="submit" handle_modal="set-password-modal">Update</button>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="setting-verify" role="tabpanel" aria-labelledby="settings-verify-tab">
+        <div class="setting-verify">
+          <h3>
+            verify status
+          </h3>
+          <div class="verify-status">
+            <div class="active-line"></div>
+            <div class="verify-email active">
+              <p class="verify-label">Email</p>
+              <p class="verify-icon">
+                <img src="../assets/imgs/verify-email.png" alt="verify email icon">
+              </p>
+            </div>
+            <div class="verify-phone">
+              <p class="verify-label">Phone</p>
+              <p class="verify-icon">
+                <img src="../assets/imgs/verify-phone.png" alt="verify phone icon">
+              </p>
+            </div>
+            <div class="verify-identity">
+              <p class="verify-label">Identity</p>
+              <p class="verify-icon">
+                <img src="../assets/imgs/verify-indentity.png" alt="verify identity icon">
+              </p>
+            </div>
+            <div class="verify-address">
+              <p class="verify-label">Address</p>
+              <p class="verify-icon">
+                <img src="../assets/imgs/verify-address.png" alt="verify address icon">
+              </p>
+            </div>
+          </div>
+          <div class="verify-contents">
+            <div class="verify-content verify-content-email">
+              <div class="verify-content-get-otp">
+                <div class="verify-content-area">
+                  <div class="verify-content-label">
+                    Email
+                  </div>
+                  <div class="verify-content-value">
+                    <input type="email" name="verify-content-value" value="example@gmail.com">
+                  </div>
+                </div>
+                <div class="verify-content-cta">
+                  <button class="btn btn-secondary">Get OTP</button>
+                </div>  
+              </div>
+              <div class="verify-content-otp checked">
+                <p>
+                  OTP
+                </p>
+                <input type="text" name="verify-content-otp" value="123456">
+              </div>  
+              <button class="btn btn-primary" handle_modal="set-verify-email-modal">
+                Verify
+              </button>
+            </div>
+            <div class="verify-content verify-content-phone" style="display: none;">
+              <div class="verify-content-get-otp">
+                <div class="verify-content-area">
+                  <div class="verify-content-label">
+                    Phone Number
+                  </div>
+                  <div class="verify-content-value">
+                    <input type="phone" name="verify-content-value" value="1234 567 890" class="phone-verify">
+                  </div>
+                </div>
+                <div class="verify-content-cta">
+                  <button class="btn btn-secondary">Get OTP</button>
+                </div>  
+              </div>
+              <div class="verify-content-otp checked">
+                <p>
+                  OTP
+                </p>
+                <input type="text" name="verify-content-otp" value="123456">
+              </div>  
+              <button class="btn btn-primary" handle_modal="set-verify-phone-modal">
+                Verify
+              </button>
+            </div>
+            <div class="verify-content verify-content-identity" style="display: none;">
+              <h6>Document Type</h6>
+              <p>Please take a photo of your Proof of Identity document and ensure it meets the following requirements.</p>
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownfilterreal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ID Card
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownfilterreal">
+                  <a class="dropdown-item" href="#">Oldest</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <div class="verify-content-boxes">
+                <div class="verify-content-box">
+                  <p>
+                    <img src="../assets/imgs/upload-image-icon.png" alt="upload">
+                    Upload the frontside. Maximum file size 2MB
+                  </p>
+                </div>
+                <div class="verify-content-box">
+                  <p>
+                    <img src="../assets/imgs/upload-image-icon.png" alt="upload">
+                    Upload the frontside. Maximum file size 2MB
+                  </p>
+                </div>  
+              </div>  
+              <button class="btn btn-primary" handle_modal="set-verify-document-modal">
+                Submit
+              </button>
+            </div>
+            <div class="verify-content verify-content-address" style="display: none;">
+              <h6>Document Type</h6>
+                <p>Please take a photo of your Proof of Identity document and ensure it meets the following requirements.</p>
+                <div class="dropdown">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownfilterreal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Bank Statement
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownfilterreal">
+                    <a class="dropdown-item" href="#">Oldest</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+                <div class="verify-content-boxes">
+                  <div class="verify-content-box">
+                    <p>
+                      <img src="../assets/imgs/upload-image-icon.png" alt="upload">
+                      Upload the frontside. Maximum file size 2MB
+                    </p>
+                  </div>
+                </div>  
+                <button class="btn btn-primary" handle_modal="set-verify-document-submit-modal">
+                  Submit
+                </button>
+            </div>
+          </div>
+          <div class="verify-done" style="display: none">
+            <img src="../assets/imgs/markdone.png" alt="mark done icon">
+            <p>Your account has been verify. Let's trade today!</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="setting-notification" role="tabpanel" aria-labelledby="settings-notification-tab">
+        <div class="setting-notification">
+          <div class="setting-notification-area">
+            <h4>
+              Notification setting
+            </h4>
+            <div class="box check">
+              <h6>Notify about new clients</h6>
+              <p>
+                When clients register using your partner link a notification will be sent to the email address you indicated during registration.
+              </p>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit" handle_modal="set-notification-modal">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="set-profile-modal" tabindex="-1" role="dialog" aria-labelledby="set-profile" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <img src="../assets/imgs/markdone.png" alt="mark done icon">
+    <h4>profile update done</h4>
+    <button type="button" class="btn btn-secondary close">Close</button>
+  </div>
+</div>
+<div class="modal fade" id="set-password-modal" tabindex="-1" role="dialog" aria-labelledby="set-password" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <img src="../assets/imgs/markdone.png" alt="mark done icon">
+    <h4>password change done</h4>
+    <button type="button" class="btn btn-secondary close">Close</button>
+  </div>
+</div>
+<div class="modal fade" id="set-notification-modal" tabindex="-1" role="dialog" aria-labelledby="set-notification" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <img src="../assets/imgs/markdone.png" alt="mark done icon">
+    <h4>notification update done</h4>
+    <button type="button" class="btn btn-secondary close">Close</button>
+  </div>
+</div>
+<div class="modal fade" id="set-verify-email-modal" tabindex="-1" role="dialog" aria-labelledby="set-notification" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <img src="../assets/imgs/markdone.png" alt="mark done icon">
+    <h4>email verify done</h4>
+    <button type="button" class="btn btn-secondary close" open_next="verify-content-phone" tab_line="verify-phone">Close</button>
+  </div>
+</div>
+<div class="modal fade" id="set-verify-phone-modal" tabindex="-1" role="dialog" aria-labelledby="set-notification" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <img src="../assets/imgs/markdone.png" alt="mark done icon">
+    <h4>phone number verify done</h4>
+    <button type="button" class="btn btn-secondary close" open_next="verify-content-identity" tab_line="verify-identity">Close</button>
+  </div>
+</div>
+<div class="modal fade" id="set-verify-document-modal" tabindex="-1" role="dialog" aria-labelledby="set-notification" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <img src="../assets/imgs/markdone.png" alt="mark done icon">
+    <h4>document submit done</h4>
+    <button type="button" class="btn btn-secondary close" open_next="verify-content-address" tab_line="verify-address">Close</button>
+  </div>
+</div>
+<div class="modal fade" id="set-verify-document-submit-modal" tabindex="-1" role="dialog" aria-labelledby="set-notification" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <img src="../assets/imgs/markdone.png" alt="mark done icon">
+    <h4>document submit done</h4>
+    <button type="button" class="btn btn-secondary close" theend="true">Close</button>
+  </div>
+</div>

@@ -1,0 +1,171 @@
+.funds-management {
+  width: 100%; }
+  .funds-management .nav-tabs {
+    margin-bottom: 30px; }
+    .funds-management .nav-tabs .nav-link {
+      padding: 0 16px;
+      color: #333333; }
+      .funds-management .nav-tabs .nav-link:hover, .funds-management .nav-tabs .nav-link.active {
+        border: solid #EC2028;
+        border-width: 0 0 4px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #EC2028; }
+  .funds-management #funds-tabs-content .tab-pane.show {
+    display: flex;
+    flex-direction: column; }
+  .funds-management #funds-tabs-content .label-payment {
+    color: #0076DA;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 30px; }
+  .funds-management #funds-tabs-content .methods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .funds-management #funds-tabs-content .method {
+    width: calc((100% - 90px) / 4);
+    max-width: 220px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 13px 13px 33px;
+    position: relative;
+    cursor: pointer; }
+    .funds-management #funds-tabs-content .method:last-child {
+      margin-right: auto;
+      margin-left: 30px; }
+    .funds-management #funds-tabs-content .method span {
+      position: absolute;
+      left: 13px;
+      bottom: 13px;
+      font-size: 14px;
+      font-weight: 700;
+      width: calc(100% - 26px);
+      text-align: center; }
+    .funds-management #funds-tabs-content .method.active {
+      border: 2px solid #0076DA; }
+  .funds-management #funds-tabs-content .internal-area,
+  .funds-management #funds-tabs-content .withdrawal-area,
+  .funds-management #funds-tabs-content .deposit-area {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #9E9E9E;
+    margin-bottom: 30px; }
+  .funds-management #funds-tabs-content .payment-detail .label-payment {
+    margin-bottom: 20px; }
+  .funds-management #funds-tabs-content .payment-detail .payment-set {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set > * {
+      width: calc((100% - 90px) / 4);
+      margin-bottom: 30px; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set h4 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set > .btn {
+      margin-top: auto;
+      height: 40px;
+      background-color: #0076DA;
+      border-radius: 4px;
+      font-size: 14px;
+      color: white; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set .amount input {
+      height: 40px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      padding-left: 14px;
+      width: 100%; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set .otpfunds,
+    .funds-management #funds-tabs-content .payment-detail .payment-set .owner-payment {
+      width: calc(50% - 15px); }
+      .funds-management #funds-tabs-content .payment-detail .payment-set .otpfunds input,
+      .funds-management #funds-tabs-content .payment-detail .payment-set .owner-payment input {
+        height: 40px;
+        border: 1px solid #9E9E9E;
+        border-radius: 4px;
+        padding-left: 14px;
+        width: 100%;
+        background-color: #F5F5F5; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set .otpvia {
+      margin: 0 30px; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set .otpfunds {
+      width: calc((100% - 90px) / 4); }
+      .funds-management #funds-tabs-content .payment-detail .payment-set .otpfunds input {
+        background-color: white;
+        padding-right: 40px; }
+      .funds-management #funds-tabs-content .payment-detail .payment-set .otpfunds.checked input {
+        background: url("../imgs/check-icon.png") no-repeat;
+        background-size: 24px 24px;
+        background-position: right 15px top 50%; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set .btn-get-otp {
+      margin-right: auto; }
+  .funds-management #funds-tabs-content .dropdown .dropdown-toggle {
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #333333;
+    min-width: 150px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 30px;
+    height: 40px; }
+    .funds-management #funds-tabs-content .dropdown .dropdown-toggle::after {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%); }
+
+#set-withdrawal-modal,
+#set-deposit-modal,
+#set-internal-transfer-modal {
+  z-index: 1050; }
+  #set-withdrawal-modal .modal-dialog,
+  #set-deposit-modal .modal-dialog,
+  #set-internal-transfer-modal .modal-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 260px;
+    background: white;
+    margin: auto;
+    border-radius: 8px;
+    align-items: center;
+    pointer-events: unset; }
+    #set-withdrawal-modal .modal-dialog img,
+    #set-deposit-modal .modal-dialog img,
+    #set-internal-transfer-modal .modal-dialog img {
+      margin: 0 auto 15px; }
+    #set-withdrawal-modal .modal-dialog h4,
+    #set-deposit-modal .modal-dialog h4,
+    #set-internal-transfer-modal .modal-dialog h4 {
+      margin-bottom: 50px;
+      color: #333333;
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: uppercase; }
+    #set-withdrawal-modal .modal-dialog .btn,
+    #set-deposit-modal .modal-dialog .btn,
+    #set-internal-transfer-modal .modal-dialog .btn {
+      width: 160px;
+      height: 40px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      background-color: white;
+      color: #333333;
+      font-size: 14px; }
+
+/*# sourceMappingURL=funds-management.css.map */

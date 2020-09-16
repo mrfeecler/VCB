@@ -1,0 +1,404 @@
+.strategies {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .strategies h2.strategies-title {
+    margin-bottom: 30px; }
+  .strategies-contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #9E9E9E;
+    margin-bottom: 20px; }
+  .strategies-content {
+    width: calc((100% - 90px) / 4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    cursor: pointer; }
+    .strategies-content img {
+      width: 100%; }
+  .strategies-image-area {
+    position: relative; }
+    .strategies-image-area p {
+      position: absolute;
+      bottom: 17px;
+      left: 14px;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: 700;
+      color: white; }
+  .strategies-ratio {
+    padding: 14px 15px 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .strategies-ratio .strategies-commission,
+    .strategies-ratio .strategies-leverage,
+    .strategies-ratio .strategies-followers,
+    .strategies-ratio .strategies-profit {
+      width: calc((100% - 12px) / 2);
+      margin-bottom: 12px;
+      background-color: #F2F2F2;
+      padding: 6px; }
+      .strategies-ratio .strategies-commission--label,
+      .strategies-ratio .strategies-leverage--label,
+      .strategies-ratio .strategies-followers--label,
+      .strategies-ratio .strategies-profit--label {
+        color: #333333;
+        font-size: 8px;
+        text-transform: uppercase;
+        margin-bottom: 2px; }
+      .strategies-ratio .strategies-commission--ratio,
+      .strategies-ratio .strategies-leverage--ratio,
+      .strategies-ratio .strategies-followers--ratio,
+      .strategies-ratio .strategies-profit--ratio {
+        font-size: 14px;
+        font-weight: 700; }
+    .strategies-ratio .strategies-profit--ratio {
+      color: #00A759; }
+  .strategies nav {
+    margin-left: auto; }
+    .strategies nav .next .dropdown-toggle:after {
+      transform: rotate(270deg); }
+    .strategies nav .prev .dropdown-toggle:after {
+      transform: rotate(90deg); }
+    .strategies nav .page-item {
+      margin-left: 4px; }
+      .strategies nav .page-item .page-link {
+        background-color: #F5F5F5;
+        color: #333333;
+        border-radius: 4px; }
+      .strategies nav .page-item.active .page-link {
+        border: 1px solid #9E9E9E;
+        background-color: transparent; }
+
+.strategies-campaign-details {
+  width: 100%; }
+  .strategies-campaign-details h2.strategies-title {
+    margin-bottom: 30px; }
+  .strategies-campaign-details .banner-strategies-campaign {
+    margin-bottom: 30px; }
+    .strategies-campaign-details .banner-strategies-campaign img {
+      width: 100%; }
+  .strategies-campaign-details .strategies-infomations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    .strategies-campaign-details .strategies-infomations > div {
+      width: calc((100% - 30px) / 2);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 18px 20px;
+      border-radius: 8px; }
+      .strategies-campaign-details .strategies-infomations > div.strategies-infomations-about {
+        padding-bottom: 0; }
+  .strategies-campaign-details .fxtrade24 h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px; }
+  .strategies-campaign-details .fxtrade24-content {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 45px; }
+  .strategies-campaign-details .fxtrade24-ctas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .strategies-campaign-details .fxtrade24-ctas > div {
+      width: calc((100% - 30px) / 2);
+      background-color: #F2F2F2;
+      border-radius: 4px;
+      height: 60px;
+      padding: 11px 14px; }
+    .strategies-campaign-details .fxtrade24-ctas .fxtrade24-profit {
+      display: flex;
+      flex-direction: column; }
+      .strategies-campaign-details .fxtrade24-ctas .fxtrade24-profit-label {
+        color: #333333;
+        font-size: 10px;
+        font-weight: 400;
+        margin-bottom: 2px; }
+      .strategies-campaign-details .fxtrade24-ctas .fxtrade24-profit-ratio {
+        color: #00A759;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 133%; }
+    .strategies-campaign-details .fxtrade24-ctas .fxtrade24-copying {
+      display: flex;
+      flex-direction: row;
+      flex-direction: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: #0076DA;
+      font-size: 14px;
+      font-weight: 400;
+      color: white;
+      cursor: pointer; }
+      .strategies-campaign-details .fxtrade24-ctas .fxtrade24-copying img {
+        margin-right: 9px; }
+  .strategies-campaign-details .strategies-infomations-about h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 9px; }
+  .strategies-campaign-details .strategies-infomations-about .strategies-abouts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .strategies-campaign-details .strategies-infomations-about .strategies-abouts .strategies-about {
+      width: calc((100% - 20px) / 2);
+      background-color: #F2F2F2;
+      min-height: 70px;
+      border-radius: 4px;
+      padding: 12px 14px;
+      margin-bottom: 20px; }
+      .strategies-campaign-details .strategies-infomations-about .strategies-abouts .strategies-about-label {
+        color: #333333;
+        font-size: 10px;
+        font-weight: 400;
+        margin-bottom: 2px;
+        text-transform: uppercase; }
+      .strategies-campaign-details .strategies-infomations-about .strategies-abouts .strategies-about-value {
+        font-size: 20px;
+        font-weight: 700; }
+  .strategies-campaign-details .strategies-statistics {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 19px 20px;
+    margin-bottom: 30px; }
+    .strategies-campaign-details .strategies-statistics h4 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 13px; }
+    .strategies-campaign-details .strategies-statistics .statistics-chart {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      padding-top: 13px; }
+    .strategies-campaign-details .strategies-statistics #statisticschart {
+      width: 100% !important;
+      margin-left: -11px;
+      margin-bottom: -25px; }
+    .strategies-campaign-details .strategies-statistics .label-chart {
+      position: absolute;
+      font-size: 10px;
+      color: #C4C4C4; }
+      .strategies-campaign-details .strategies-statistics .label-chart.upper-limit {
+        top: 0; }
+      .strategies-campaign-details .strategies-statistics .label-chart.lower-limit {
+        bottom: 38px; }
+      .strategies-campaign-details .strategies-statistics .label-chart.base-limit {
+        top: calc(50% - 20px);
+        transform: translateY(-50%); }
+    .strategies-campaign-details .strategies-statistics .statistics-filter-bar {
+      margin-bottom: 36px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .strategies-campaign-details .strategies-statistics .statistics-filter-bar > div {
+        margin-right: 20px; }
+      .strategies-campaign-details .strategies-statistics .statistics-filter-bar h5 {
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+        margin-bottom: 7px; }
+      .strategies-campaign-details .strategies-statistics .statistics-filter-bar .dropdown > a {
+        border: 1px solid #9E9E9E;
+        border-radius: 4px;
+        background-color: transparent;
+        color: #333333;
+        min-width: 150px;
+        text-align: left;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 40px; }
+        .strategies-campaign-details .strategies-statistics .statistics-filter-bar .dropdown > a::after {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%); }
+  .strategies-campaign-details .strategies-order {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 19px 20px;
+    margin-bottom: 30px; }
+    .strategies-campaign-details .strategies-order h4 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 13px; }
+    .strategies-campaign-details .strategies-order table {
+      width: 100%;
+      color: #333;
+      margin-bottom: 20px; }
+      .strategies-campaign-details .strategies-order table th {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        height: 52px; }
+        .strategies-campaign-details .strategies-order table th:last-child {
+          text-align: right; }
+        .strategies-campaign-details .strategies-order table th:first-child {
+          padding-left: 40px; }
+    .strategies-campaign-details .strategies-order tbody {
+      border: solid #9E9E9E;
+      border-width: 1px 0; }
+      .strategies-campaign-details .strategies-order tbody tr {
+        height: 53px; }
+      .strategies-campaign-details .strategies-order tbody td {
+        font-size: 14px; }
+        .strategies-campaign-details .strategies-order tbody td.pending {
+          color: #EC2028; }
+        .strategies-campaign-details .strategies-order tbody td:last-child {
+          text-align: right; }
+        .strategies-campaign-details .strategies-order tbody td:first-child {
+          padding-left: 40px; }
+        .strategies-campaign-details .strategies-order tbody td.level {
+          background: url(../imgs/arrow-red.png) no-repeat;
+          background-size: 12px 10px;
+          background-position: left 40px top 50%;
+          padding-left: 70px; }
+          .strategies-campaign-details .strategies-order tbody td.level.lvl2 {
+            background-position: left 70px top 50%;
+            padding-left: 100px; }
+    .strategies-campaign-details .strategies-order nav {
+      margin-left: auto; }
+      .strategies-campaign-details .strategies-order nav .pagination {
+        margin-bottom: 0; }
+      .strategies-campaign-details .strategies-order nav .next .dropdown-toggle:after {
+        transform: rotate(270deg); }
+      .strategies-campaign-details .strategies-order nav .prev .dropdown-toggle:after {
+        transform: rotate(90deg); }
+      .strategies-campaign-details .strategies-order nav .page-item {
+        margin-left: 4px; }
+        .strategies-campaign-details .strategies-order nav .page-item .page-link {
+          background-color: #F5F5F5;
+          color: #333333;
+          border-radius: 4px; }
+        .strategies-campaign-details .strategies-order nav .page-item.active .page-link {
+          border: 1px solid #9E9E9E;
+          background-color: transparent; }
+    .strategies-campaign-details .strategies-order #strategies-order {
+      width: 100%;
+      flex-direction: column; }
+    .strategies-campaign-details .strategies-order .nav-tabs .nav-link {
+      padding: 0 16px;
+      color: #333333; }
+      .strategies-campaign-details .strategies-order .nav-tabs .nav-link:hover, .strategies-campaign-details .strategies-order .nav-tabs .nav-link.active {
+        border: solid #EC2028;
+        border-width: 0 0 4px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #EC2028; }
+
+#set-start-copying-modal {
+  height: 100%;
+  width: 100%; }
+  #set-start-copying-modal .modal-dialog {
+    width: 600px;
+    margin: auto;
+    max-width: unset; }
+  #set-start-copying-modal .modal-header {
+    border: 0;
+    position: relative;
+    flex-direction: column;
+    color: #333333;
+    margin-bottom: 30px;
+    padding: 20px 30px 0; }
+    #set-start-copying-modal .modal-header .close {
+      position: absolute;
+      right: 16px;
+      top: 16px; }
+    #set-start-copying-modal .modal-header p {
+      margin-bottom: 0; }
+  #set-start-copying-modal h5 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px; }
+  #set-start-copying-modal .modal-body {
+    padding: 0 30px; }
+    #set-start-copying-modal .modal-body .start-copying-contents {
+      display: flex;
+      flex-direction: wrap;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    #set-start-copying-modal .modal-body .start-copying-content {
+      width: calc((100% - 16px) / 2);
+      margin-bottom: 28px; }
+      #set-start-copying-modal .modal-body .start-copying-content .start-copying-content {
+        margin-bottom: 0; }
+      #set-start-copying-modal .modal-body .start-copying-content-label {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 10px; }
+      #set-start-copying-modal .modal-body .start-copying-content-value input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #9E9E9E;
+        border-radius: 4px;
+        padding-left: 14px;
+        padding-right: 14px;
+        background-color: #F2F2F2; }
+      #set-start-copying-modal .modal-body .start-copying-content.otpfunds input {
+        background-color: white;
+        padding-right: 40px; }
+      #set-start-copying-modal .modal-body .start-copying-content.otpfunds.checked input {
+        background: url("../imgs/check-icon.png") no-repeat;
+        background-size: 24px 24px;
+        background-position: right 15px top 50%; }
+      #set-start-copying-modal .modal-body .start-copying-content.dropdown .dropdown-toggle {
+        border: 1px solid #9E9E9E;
+        border-radius: 4px;
+        background-color: transparent;
+        color: #333333;
+        min-width: 150px;
+        text-align: left;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 30px;
+        height: 40px; }
+        #set-start-copying-modal .modal-body .start-copying-content.dropdown .dropdown-toggle::after {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%); }
+    #set-start-copying-modal .modal-body input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      padding-left: 14px;
+      padding-right: 14px; }
+  #set-start-copying-modal .modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 12px 30px 40px;
+    border: 0; }
+    #set-start-copying-modal .modal-footer .btn {
+      border: 1px solid #9E9E9E;
+      background-color: transparent;
+      color: #333333;
+      width: 320px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 40px;
+      padding: 0;
+      text-shadow: none; }
+      #set-start-copying-modal .modal-footer .btn.btn-primary {
+        background-color: #0076DA;
+        color: white; }
+
+/*# sourceMappingURL=strategies.css.map */

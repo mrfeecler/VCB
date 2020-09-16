@@ -1,0 +1,431 @@
+.settings {
+  width: 100%; }
+  .settings h2.settings-title {
+    margin-bottom: 20px; }
+  .settings .nav-tabs .nav-link {
+    padding: 0 16px;
+    color: #333333; }
+    .settings .nav-tabs .nav-link:hover, .settings .nav-tabs .nav-link.active {
+      border: solid #EC2028;
+      border-width: 0 0 4px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #EC2028; }
+  .settings .settings-profile-info,
+  .settings .settings-address-info {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9E9E9E; }
+    .settings .settings-profile-info h3,
+    .settings .settings-address-info h3 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .settings .settings-profile-info-contents,
+    .settings .settings-address-info-contents {
+      display: flex;
+      flex-direction: column; }
+      .settings .settings-profile-info-contents .intl-tel-input,
+      .settings .settings-address-info-contents .intl-tel-input {
+        width: 100%;
+        display: flex; }
+        .settings .settings-profile-info-contents .intl-tel-input .selected-flag,
+        .settings .settings-address-info-contents .intl-tel-input .selected-flag {
+          z-index: 4; }
+        .settings .settings-profile-info-contents .intl-tel-input .country-list,
+        .settings .settings-address-info-contents .intl-tel-input .country-list {
+          z-index: 5; }
+        .settings .settings-profile-info-contents .intl-tel-input.allow-dropdown.separate-dial-code .flag-container .selected-flag,
+        .settings .settings-address-info-contents .intl-tel-input.allow-dropdown.separate-dial-code .flag-container .selected-flag {
+          width: 120px;
+          border-right: 1px solid #9E9E9E;
+          background-color: transparent; }
+        .settings .settings-profile-info-contents .intl-tel-input .selected-flag .iti-arrow,
+        .settings .settings-address-info-contents .intl-tel-input .selected-flag .iti-arrow {
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 8px solid #555;
+          top: 46%; }
+      .settings .settings-profile-info-contents .input-group .intl-tel-input .form-control,
+      .settings .settings-address-info-contents .input-group .intl-tel-input .form-control {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 0;
+        padding-left: 130px !important;
+        border: 1px solid #9E9E9E;
+        border-radius: 4px; }
+    .settings .settings-profile-info-content,
+    .settings .settings-address-info-content {
+      margin-bottom: 21px; }
+      .settings .settings-profile-info-content.it2columns,
+      .settings .settings-address-info-content.it2columns {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .settings .settings-profile-info-content.it2columns > div,
+        .settings .settings-address-info-content.it2columns > div {
+          width: calc((100% - 30px) / 2); }
+    .settings .settings-profile-info-value > input,
+    .settings .settings-address-info-value > input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      padding-left: 14px;
+      padding-right: 14px;
+      background-color: transparent; }
+    .settings .settings-profile-info-value .intl-tel-input.allow-dropdown.separate-dial-code input[type=tel],
+    .settings .settings-address-info-value .intl-tel-input.allow-dropdown.separate-dial-code input[type=tel] {
+      padding-left: 130px; }
+    .settings .settings-profile-info-label,
+    .settings .settings-address-info-label {
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 700; }
+  .settings .settings-address-info .intl-tel-input.allow-dropdown.separate-dial-code {
+    height: 40px; }
+    .settings .settings-address-info .intl-tel-input.allow-dropdown.separate-dial-code .phone-verify {
+      display: none; }
+    .settings .settings-address-info .intl-tel-input.allow-dropdown.separate-dial-code .flag-container {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px; }
+      .settings .settings-address-info .intl-tel-input.allow-dropdown.separate-dial-code .flag-container .selected-flag {
+        width: 100%;
+        border-right: none; }
+  .settings .setting-password,
+  .settings .settings-profile {
+    display: flex;
+    flex-direction: column;
+    max-width: 470px;
+    padding-top: 30px;
+    width: 100%; }
+    .settings .setting-password > .btn,
+    .settings .settings-profile > .btn {
+      border-radius: 4px;
+      width: 220px;
+      height: 40px;
+      color: white;
+      font-size: 14px;
+      font-weight: 400; }
+  .settings .setting-password .settings-password-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #9E9E9E;
+    margin-bottom: 30px;
+    padding-bottom: 19px; }
+  .settings .setting-password h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  .settings .setting-password label {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px; }
+  .settings .setting-password .password {
+    position: relative;
+    margin-bottom: 21px; }
+    .settings .setting-password .password .showpass {
+      width: 24px;
+      display: inline-block;
+      position: absolute;
+      height: 24px;
+      background: url("../imgs/eye.png") no-repeat center;
+      right: 14px;
+      bottom: 8px;
+      cursor: pointer; }
+    .settings .setting-password .password input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      padding-left: 14px;
+      padding-right: 14px;
+      background-color: transparent; }
+    .settings .setting-password .password.checked input {
+      background: url("../imgs/check-icon.png") no-repeat;
+      background-size: 24px 24px;
+      background-position: right 15px top 50%; }
+  .settings .setting-notification {
+    padding-top: 30px;
+    max-width: 470px;
+    width: 100%; }
+    .settings .setting-notification-area {
+      padding-bottom: 40px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #9E9E9E; }
+    .settings .setting-notification h4 {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 20px; }
+    .settings .setting-notification .box {
+      position: relative;
+      padding-left: 32px; }
+      .settings .setting-notification .box:before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #9E9E9E;
+        display: inline-block;
+        position: absolute;
+        left: 3px;
+        top: 0; }
+      .settings .setting-notification .box h6 {
+        font-weight: 700;
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 0; }
+      .settings .setting-notification .box p {
+        color: #333;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 0; }
+      .settings .setting-notification .box.check {
+        border-color: #0076DA; }
+        .settings .setting-notification .box.check:before {
+          border: 4px solid #fff;
+          background-color: #0076DA;
+          box-shadow: 0 0 1px 1px #0076DA; }
+  .settings .setting-verify {
+    padding-top: 30px;
+    width: 100%; }
+    .settings .setting-verify h3 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 60px; }
+    .settings .setting-verify.done h3 {
+      margin-bottom: 20px; }
+    .settings .setting-verify .verify-done img {
+      margin-bottom: 18px;
+      width: 60px;
+      height: 60px; }
+    .settings .setting-verify .verify-done p {
+      color: #333333;
+      font-size: 18px;
+      font-weight: 400; }
+    .settings .setting-verify .verify-status {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 38px; }
+      .settings .setting-verify .verify-status p {
+        margin-bottom: 0; }
+      .settings .setting-verify .verify-status > div {
+        position: relative;
+        width: calc((100% - 150px) / 4); }
+        .settings .setting-verify .verify-status > div:first-child {
+          width: 150px; }
+          .settings .setting-verify .verify-status > div:first-child:before {
+            background-color: #0076DA; }
+        .settings .setting-verify .verify-status > div:before {
+          content: "";
+          width: 100%;
+          position: absolute;
+          left: 0;
+          height: 1px;
+          background-color: #C4C4C4;
+          top: 50%; }
+        .settings .setting-verify .verify-status > div.active .verify-icon {
+          background-color: #0076DA; }
+        .settings .setting-verify .verify-status > div.active-line:before {
+          background-color: #0076DA; }
+    .settings .setting-verify .verify-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #9E9E9E;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+    .settings .setting-verify .verify-label {
+      position: absolute;
+      top: -41px;
+      margin-bottom: 0;
+      color: #333333;
+      font-size: 14px; }
+
+.verify-contents .verify-content {
+  width: 470px; }
+  .verify-contents .verify-content-otp {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #9E9E9E; }
+    .verify-contents .verify-content-otp input {
+      height: 40px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      padding-left: 14px;
+      width: 100%;
+      background-color: transparent; }
+    .verify-contents .verify-content-otp.checked input {
+      background: url("../imgs/check-icon.png") no-repeat;
+      background-size: 24px 24px;
+      background-position: right 15px top 50%; }
+    .verify-contents .verify-content-otp p {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px; }
+  .verify-contents .verify-content-get-otp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    position: relative;
+    margin-bottom: 20px; }
+  .verify-contents .verify-content-value input {
+    height: 40px;
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+    padding-left: 14px;
+    width: 100%;
+    background-color: #F5F5F5; }
+  .verify-contents .verify-content-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333; }
+  .verify-contents .verify-content-cta {
+    width: 120px; }
+    .verify-contents .verify-content-cta .btn {
+      width: 100%;
+      background-color: #9E9E9E;
+      border-radius: 4px;
+      font-weight: 400;
+      font-size: 14px;
+      height: 40px; }
+  .verify-contents .verify-content-area {
+    width: calc(100% - 130px); }
+  .verify-contents .verify-content-address > button, .verify-contents .verify-content-identity > button, .verify-contents .verify-content-phone > button, .verify-contents .verify-content-email > button {
+    width: 220px;
+    background-color: #0076DA;
+    border-radius: 4px; }
+  .verify-contents .verify-content-phone .intl-tel-input {
+    width: 100%; }
+  .verify-contents .verify-content-phone .btn {
+    background-color: #0076DA; }
+  .verify-contents .verify-content-address > h6, .verify-contents .verify-content-identity > h6 {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 16px; }
+  .verify-contents .verify-content-address > p, .verify-contents .verify-content-identity > p {
+    margin-bottom: 35px; }
+  .verify-contents .verify-content-address .dropdown, .verify-contents .verify-content-identity .dropdown {
+    margin-bottom: 30px; }
+    .verify-contents .verify-content-address .dropdown .dropdown-toggle, .verify-contents .verify-content-identity .dropdown .dropdown-toggle {
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      background-color: transparent;
+      color: #333333;
+      width: 220px;
+      text-align: left;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-right: 30px;
+      height: 40px; }
+      .verify-contents .verify-content-address .dropdown .dropdown-toggle::after, .verify-contents .verify-content-identity .dropdown .dropdown-toggle::after {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%); }
+  .verify-contents .verify-content-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #9E9E9E; }
+  .verify-contents .verify-content-box {
+    width: calc((100% - 30px) / 2);
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px; }
+    .verify-contents .verify-content-box p {
+      opacity: 0.5;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 14px;
+      max-width: 150px;
+      text-align: center; }
+
+#set-verify-email-modal,
+#set-verify-phone-modal,
+#set-verify-document-modal,
+#set-verify-document-submit-modal,
+#set-profile-modal,
+#set-password-modal,
+#set-notification-modal {
+  z-index: 1050; }
+  #set-verify-email-modal .modal-dialog,
+  #set-verify-phone-modal .modal-dialog,
+  #set-verify-document-modal .modal-dialog,
+  #set-verify-document-submit-modal .modal-dialog,
+  #set-profile-modal .modal-dialog,
+  #set-password-modal .modal-dialog,
+  #set-notification-modal .modal-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 260px;
+    background: white;
+    margin: auto;
+    border-radius: 8px;
+    align-items: center;
+    pointer-events: unset; }
+    #set-verify-email-modal .modal-dialog img,
+    #set-verify-phone-modal .modal-dialog img,
+    #set-verify-document-modal .modal-dialog img,
+    #set-verify-document-submit-modal .modal-dialog img,
+    #set-profile-modal .modal-dialog img,
+    #set-password-modal .modal-dialog img,
+    #set-notification-modal .modal-dialog img {
+      margin: 0 auto 15px; }
+    #set-verify-email-modal .modal-dialog h4,
+    #set-verify-phone-modal .modal-dialog h4,
+    #set-verify-document-modal .modal-dialog h4,
+    #set-verify-document-submit-modal .modal-dialog h4,
+    #set-profile-modal .modal-dialog h4,
+    #set-password-modal .modal-dialog h4,
+    #set-notification-modal .modal-dialog h4 {
+      margin-bottom: 50px;
+      color: #333333;
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: uppercase; }
+    #set-verify-email-modal .modal-dialog .btn,
+    #set-verify-phone-modal .modal-dialog .btn,
+    #set-verify-document-modal .modal-dialog .btn,
+    #set-verify-document-submit-modal .modal-dialog .btn,
+    #set-profile-modal .modal-dialog .btn,
+    #set-password-modal .modal-dialog .btn,
+    #set-notification-modal .modal-dialog .btn {
+      width: 160px;
+      height: 40px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      background-color: white;
+      color: #333333;
+      font-size: 14px; }
+
+/*# sourceMappingURL=settings.css.map */

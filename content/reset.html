@@ -1,0 +1,81 @@
+<div class="col-md-12">
+  <div class="box-middle step1">
+    <div class="box-inner">
+      <h2 class="sign-in-title">
+        Reset Password
+      </h2>
+      <!-- <form action="sign-in_submit" method="get" accept-charset="utf-8"> -->
+      <div>
+        <div class="email">
+          <label for="input-reset-email">Your Email</label>
+          <input type="email" id="input-reset-email" class="form-control" placeholder="Email" required="" autofocus="">  
+        </div>
+        <div class="err-mess" style="display: none;">
+          <p>Incorrect email. Please check and try again.</p>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block btn-submit btn-reset" type="submit">Continue</button>
+      </div>
+      <!-- </form> -->
+    </div>
+  </div>
+  <div class="box-middle step2" style="display: none;">
+    <div class="box-inner">
+      <h2 class="sign-in-title">
+        Reset Password
+      </h2>
+      <div class="showstep">Step 2 / 3</div>
+      <!-- <form action="sign-in_submit" method="get" accept-charset="utf-8"> -->
+      <div>
+        <p>Please check the OTP just sent to your email.</p>
+        <div class="email">
+          <label for="input-reset-otp">OTP</label>
+          <input type="email" id="input-reset-otp" class="form-control" placeholder="OTP" required autofocus="" value="123456">  
+        </div>
+        <div class="err-mess" style="display: none;">
+          <p>Please fill correct OTP and try again.</p>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block btn-submit btn-reset-step2" type="submit">Continue</button>
+      </div>
+      <!-- </form> -->
+    </div>
+  </div>
+  <div class="box-middle step3" style="display: none;">
+    <div class="box-inner">
+      <h2 class="sign-in-title">
+        Reset Password
+      </h2>
+      <div class="showstep">Step 3 / 3</div>
+      <!-- <form action="sign-in_submit" method="get" accept-charset="utf-8"> -->
+      <div>
+        <div class="email">
+          <label for="input-reset-password">New Password</label>
+          <input type="password" id="input-reset-password" class="form-control" placeholder="New Password" required autofocus="" value="123456">
+        </div>
+        <div class="email">
+          <label for="input-reset-confirm-password">Confirm New Password</label>
+          <input type="password" id="input-reset-confirm-password" class="form-control" placeholder="Confirm New Password" required value="123456">
+        </div>
+
+        <div class="err-mess" style="display: none;">
+          <p>Password is required or Confirm password does not match. Please try again.</p>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block btn-submit btn-reset-step3" type="submit">Confirm</button>
+      </div>
+      <!-- </form> -->
+    </div>
+  </div>
+  <div class="box-middle step4" style="display: none;">
+    <div class="box-inner">
+      <h2 class="sign-in-title">
+        Congratulation!
+      </h2>
+      <!-- <form action="sign-in_submit" method="get" accept-charset="utf-8"> -->
+      <p class="text-center">Your password has been changed successfully.<br>
+      You can sign in now!</p>
+      <div>
+        <a href="#" class="signin-link">Go to Login</a>
+      </div>
+      <!-- </form> -->
+    </div>
+  </div>
+</div>

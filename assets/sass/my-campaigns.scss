@@ -1,0 +1,425 @@
+.my-campaigns {
+  width: 100%;
+  h2 {
+    margin-bottom: 30px;
+  }
+  .control-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .filter {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .dropdown {
+      margin-left: 10px;
+      .dropdown-toggle {
+        border: 1px solid #9E9E9E;
+        border-radius: 4px;
+        background-color: transparent;
+        color: #333333;
+        min-width: 150px;
+        text-align: left;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &::after {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    .btn {
+      width: 160px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  .campaigns {
+    .campaign-content {
+      margin-top: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .top-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      .campaign-button {
+        width: 40px;
+        height: 24px;
+        background-color: #0076DA;
+        border-radius: 2px;
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 24px;
+        margin-right: 8px;
+      }
+      .mt5-button {
+        width: 40px;
+        height: 24px;
+        background-color: #9E9E9E;
+        border-radius: 2px;
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 24px;
+        margin-right: 8px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .bottom-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .price {
+        font-weight: 700;
+        font-size: 24px;
+        color: #333333;
+        .price-int {
+          font-size: 30px;
+        }
+      }
+    }
+    .ctas-buttons {
+      width: calc(100% - 130px);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      .trade-cta .btn,
+      > button {
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+        width: 160px;
+        color: #333333;
+        background-color: #F2F2F2;
+        margin-right: 12px;
+        text-transform: capitalize;
+        &.btn-primary {
+          background-color: #0076DA;
+          color: white;
+        }
+      }
+      .trade-cta {
+        .dropdown-toggle::after {
+          content: none;
+        }
+      }
+      .settings-cta {
+        .btn {
+          height: 40px;
+          position: relative;
+        }
+        .dropdown-toggle::after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .campaign-pass {
+    position: relative;
+    .showpass {
+      width: 24px;
+      display: inline-block;
+      position: absolute;
+      height: 24px;
+      background: url('../imgs/eye.png') no-repeat center;
+      right: 14px;
+      bottom: 8px;
+      cursor: pointer;
+    }
+  }
+}
+.create-campaigns {
+  width: 100%;
+  h2 {
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 14px;
+    color: #0076DA;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  h5 {
+    text-transform: capitalize;
+    color: #333333;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  > button {
+    width: 220px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .required {
+    color: #EC2028;
+  }
+  .general-information-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > div {
+      width: calc((100% - 30px) / 2);
+      margin-bottom: 20px;
+    }
+    textarea,
+    input {
+      width: 100%;
+      border: 1px solid #9E9E9E;
+      height: 40px;
+      border-radius: 4px;
+    }
+    textarea {
+      height: 140px;
+    }
+    .campaign-image {
+      .image-content {
+        border: 1px solid #9E9E9E;
+        background-color: #F5F5F5;
+        border-radius: 4px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        max-width: 280px;
+        letter-spacing: -.3px;
+        text-align: center;
+        opacity: 0.5;
+        color: #333;
+      }
+    }
+  }
+  .campaign-details {
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #9E9E9E;
+    &-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .dropdown {
+      margin-right: 30px;
+      .dropdown-toggle {
+        border: 1px solid #9E9E9E;
+        border-radius: 4px;
+        background-color: transparent;
+        color: #333333;
+        min-width: 150px;
+        text-align: left;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 40px;
+        height: 40px;
+        &::after {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+#set-campaign-edit-modal,
+#set-campaign-info-modal,
+#set-create-campaign-modal {
+  height: 100%;
+  width: 100%;
+  .modal-dialog {
+    width: 600px;
+    margin: auto;
+    max-width: unset;
+  }
+  .modal-header {
+    border: 0;
+    position: relative;
+    flex-direction: column;
+    color: #333333;
+    margin-bottom: 30px;
+    padding: 20px 30px 0;
+    .close {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  h5 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .modal-body{
+    padding: 0 30px;
+    .balance {
+      background-color: #F2F2F2;
+      padding: 30px;  
+    }
+    .first-text {
+      font-weight: 700;
+    }
+    p {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    span {
+      text-align: left;
+      font-weight: 400;
+      width: 175px;
+      display: inline-block;
+    }
+    img {
+      margin-left: auto;
+    }
+    .balance-label {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+    .leverage-note {
+      margin-top: 30px;
+      margin-bottom: 0;
+      background-color: rgba(236, 32, 40, .1);
+      color: #333333;
+      padding: 12px 14px;
+      min-height: 44px;
+      a {
+        color: #0076DA;
+        text-decoration: underline;
+      }
+    }
+  }
+  .modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 34px 30px 40px;
+    border: 0;
+    .btn {
+      border: 1px solid #9E9E9E;
+      background-color: transparent;
+      color: #333333;
+      width: calc(50% - 10px);
+      height: 40px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 40px;
+      padding: 0;
+      text-shadow: none;
+      &.btn-primary {
+        background-color: #0076DA;
+        color: white;
+      }
+    }
+  }
+}
+#set-campaign-edit-modal,
+#set-campaign-info-modal .modal-footer {
+  .btn {
+    width: 320px;
+    margin: auto;
+    opacity: 1;
+    text-shadow: none;
+  }
+}
+#set-campaign-edit-modal {
+  h6 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .modal-body {
+    .campaign-edit-content {
+      border: 1px solid #9E9E9E;
+      background-color: transparent;
+      color: #333333;
+      width: 100%;
+      border-radius: 4px;
+      padding: 20px 17px;
+      min-height: 160px;
+      text-align: left;
+    }
+    > div {
+      margin-bottom: 20px;
+      &.campaign-edit-cover-image {
+        margin-bottom: 13px;
+      }
+    }  
+  }
+  
+  .background-cover-image {
+    position: relative;
+    .btn-cover-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: transparent;
+      transform: translateX(-50%) translateY(-50%);
+      border: 1px solid #FFFFFF;
+      color: #FFFFFF;
+      width: 160px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      opacity: 0.5;
+    }
+  }
+  .image-area:before {
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .modal-footer .btn-confirm {
+    background-color: #0076DA;
+    color: white;
+    font-weight: 400;
+    text-shadow: none;
+  }
+}

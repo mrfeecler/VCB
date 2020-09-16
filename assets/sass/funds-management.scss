@@ -1,0 +1,203 @@
+.funds-management {
+  width: 100%;
+  .nav-tabs {
+    margin-bottom: 30px;
+    .nav-link {
+      padding: 0 16px;
+      color: #333333;
+      &:hover,
+      &.active {
+        border: solid #EC2028;
+        border-width: 0 0 4px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #EC2028;
+      }
+    }  
+  }
+  #funds-tabs-content {
+    .tab-pane.show {
+      display: flex;
+      flex-direction: column;
+    }
+    .label-payment {
+      color: #0076DA;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    .methods {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .method {
+      width: calc((100% - 90px) / 4);
+      max-width: 220px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 120px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      padding: 13px 13px 33px;
+      position: relative;
+      cursor: pointer;
+      &:last-child {
+        margin-right: auto;
+        margin-left: 30px;
+      }
+      span {
+        position: absolute;
+        left: 13px;
+        bottom: 13px;
+        font-size: 14px;
+        font-weight: 700;
+        width: calc(100% - 26px);
+        text-align: center;
+      }
+      &.active {
+        border: 2px solid #0076DA;
+      }
+    }
+    .internal-area,
+    .withdrawal-area,
+    .deposit-area {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #9E9E9E;
+      margin-bottom: 30px;
+    }
+    .payment-detail {
+      .label-payment {
+        margin-bottom: 20px;
+      }
+      .payment-set {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        > * {
+          width: calc((100% - 90px) / 4);
+          margin-bottom: 30px;
+        }
+        h4 {
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        > .btn {
+          margin-top: auto;
+          height: 40px;
+          background-color: #0076DA;
+          border-radius: 4px;
+          font-size: 14px;
+          color: white;
+        }
+        .amount {
+          input {
+            height: 40px;
+            border: 1px solid #9E9E9E;
+            border-radius: 4px;
+            padding-left: 14px;
+            width: 100%;
+          }
+        }
+        .otpfunds,
+        .owner-payment {
+          width: calc(50% - 15px);
+          input {
+            height: 40px;
+            border: 1px solid #9E9E9E;
+            border-radius: 4px;
+            padding-left: 14px;
+            width: 100%;
+            background-color: #F5F5F5;
+          }
+        }
+        .otpvia {
+          margin: 0 30px;
+        }
+        .otpfunds {
+          width: calc((100% - 90px) / 4);
+          input {
+            background-color: white;
+            padding-right: 40px;
+          }
+          &.checked {
+            input {
+              background: url('../imgs/check-icon.png') no-repeat;
+              background-size: 24px 24px;
+              background-position: right 15px top 50%;
+            }
+          }
+        }
+        .btn-get-otp {
+          margin-right: auto;
+        }
+      }
+
+    }
+    .dropdown {
+      .dropdown-toggle {
+        border: 1px solid #9E9E9E;
+        border-radius: 4px;
+        background-color: transparent;
+        color: #333333;
+        min-width: 150px;
+        text-align: left;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 30px;
+        height: 40px;
+        &::after {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+#set-withdrawal-modal,
+#set-deposit-modal,
+#set-internal-transfer-modal {
+  z-index: 1050;
+  .modal-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 260px;
+    background: white;
+    margin: auto;
+    border-radius: 8px;
+    align-items: center;
+    pointer-events: unset;
+    img {
+      margin: 0 auto 15px;
+    }
+    h4 {
+      margin-bottom: 50px;
+      color: #333333;
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    .btn {
+      width: 160px;
+      height: 40px;
+      border: 1px solid #9E9E9E;
+      border-radius: 4px;
+      background-color: white;
+      color: #333333;
+      font-size: 14px;
+    }
+  }
+}

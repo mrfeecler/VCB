@@ -1,4 +1,4 @@
-<div class="strategies" style="display: none;">
+<div class="strategies">
   <h2 class="strategies-title">Strategies</h2>
   <div class="strategies-contents">
     <div class="strategies-content">
@@ -340,7 +340,7 @@
     </ul>
   </nav>
 </div>
-<div class="strategies-campaign-details">
+<div class="strategies-campaign-details" style="display: none;">
   <h2 class="strategies-title">Campaign Details</h2>
   <div class="banner-strategies-campaign">
     <img src="../assets/imgs/campaigndetails.jpg" alt="Campaign Details Banner">
@@ -468,6 +468,42 @@
         </div>  
       </div>
     </div>
+    <div class="statistics-filter-bar-mobile" style="display: none;">
+      <div class="history-account">
+        <h4>Account</h4>
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownfilterreal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            All
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownfilterreal">
+            <a class="dropdown-item" href="#">Oldest</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+      <div class="history-account">
+        <h4>Transaction</h4>
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownfilterreal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            All
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownfilterreal">
+            <a class="dropdown-item" href="#">Oldest</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>  
+      </div>
+      <div class="date">
+        <h4>Date</h4>
+        <div class="input-group input-daterange">
+          <input type="text" class="form-control" value="12/08/2020">
+          <span class="dropdown-toggle"></span>
+          <input type="text" class="form-control" value="16/08/2020">
+        </div>
+      </div> 
+    </div>    
     <div class="statistics-chart">
       <span class="label-chart upper-limit">200%</span>
       <span class="label-chart base-limit">0</span>
@@ -488,34 +524,36 @@
       </ul>
       <div class="tab-content" id="account-strategies-order-content">
         <div class="tab-pane fade show active" id="strategies-order" role="tabpanel" aria-labelledby="strategies-order-tab">
-          <table>
-            <thead>
-              <tr>
-                <th>type</th>
-                <th>symbol</th>
-                <th class="text-right">size (lot)</th>
-                <th class="text-right">swap (usd)</th>
-                <th class="text-right">profit (usd)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sell</td><td>CHF/JYPm</td><td class="text-right">0.30</td><td class="text-right">0.00 USD</td><td class="text-right">+ 70.00 USD</td>
-              </tr>
-              <tr>
-                <td>Buy</td><td>CHF/JYPm</td><td class="text-right">0.30</td><td class="text-right">0.00 USD</td><td class="text-right">- 70.00 USD</td>
-              </tr>
-              <tr>
-                <td>Sell</td><td>CHF/JYPm</td><td class="text-right">0.30</td><td class="text-right">0.00 USD</td><td class="text-right">+ 70.00 USD</td>
-              </tr>
-              <tr>
-                <td>Buy</td><td>CHF/JYPm</td><td class="text-right">0.30</td><td class="text-right">0.00 USD</td><td class="text-right">- 70.00 USD</td>
-              </tr>
-              <tr>
-                <td>Sell</td><td>CHF/JYPm</td><td class="text-right">0.30</td><td class="text-right">0.00 USD</td><td class="text-right">+ 70.00 USD</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="strategies-order-tab-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>type</th>
+                  <th>symbol</th>
+                  <th class="text-right">size (lot)</th>
+                  <th class="text-right">swap (usd)</th>
+                  <th class="text-right">profit (usd)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sell</td><td>CHF/JYPm</td><td class="text-right">0.30</td><td class="text-right">0.00 USD</td><td class="text-right">+ 70.00 USD</td>
+                </tr>
+                <tr>
+                  <td>Buy</td><td>CHF/JYPm</td><td class="text-right">0.30</td><td class="text-right">0.00 USD</td><td class="text-right">- 70.00 USD</td>
+                </tr>
+                <tr>
+                  <td>Sell</td><td>CHF/JYPm</td><td class="text-right">0.30</td><td class="text-right">0.00 USD</td><td class="text-right">+ 70.00 USD</td>
+                </tr>
+                <tr>
+                  <td>Buy</td><td>CHF/JYPm</td><td class="text-right">0.30</td><td class="text-right">0.00 USD</td><td class="text-right">- 70.00 USD</td>
+                </tr>
+                <tr>
+                  <td>Sell</td><td>CHF/JYPm</td><td class="text-right">0.30</td><td class="text-right">0.00 USD</td><td class="text-right">+ 70.00 USD</td>
+                </tr>
+              </tbody>
+            </table>  
+          </div>
           <nav aria-label="Page navigation example">
             <ul class="pagination">
               <li class="page-item disabled prev">

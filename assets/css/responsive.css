@@ -16,6 +16,16 @@
   .funds-management #funds-tabs-content .method span {
     line-height: 111%; } }
 @media (max-width: 991px) {
+  .strategies-contents {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: flex-start;
+    padding-bottom: 20px; }
+
+  .strategies-content {
+    width: calc((100% - 30px) / 3);
+    margin-bottom: 0; }
+
   #my-account .real-contents .ctas-buttons {
     width: 100%;
     justify-content: flex-start;
@@ -25,8 +35,13 @@
   #create-account .standart-account .left-standart-account {
     width: 100%; }
 
+  #create-account .step2 .standart-account .left-standart-account {
+    padding-right: 0; }
+
   .funds-management #funds-tabs-content .method {
-    width: calc((100% - 90px) / 2); }
+    width: calc((100% - 12px) / 2);
+    margin-bottom: 12px;
+    max-width: unset; }
     .funds-management #funds-tabs-content .method:last-child {
       margin-right: 0;
       margin-left: auto; }
@@ -61,7 +76,12 @@
     padding-right: 10px; }
 
   body #footer .menu-footer li {
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .create-campaigns .campaign-details-content .dropdown {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 28px; } }
 @media (max-width: 767px) {
   body .main-content, body .footer {
     background-color: white; }
@@ -189,10 +209,963 @@
     height: 60px;
     align-items: center; }
     .logout-mobile a {
-      margin: auto; } }
+      margin: auto; }
+
+  #my-account #set-trade-modal .modal-dialog, #my-account #set-pass-modal .modal-dialog, #my-account #set-ac-modal .modal-dialog, #my-account #set-nickname-modal .modal-dialog, #my-account #set-leverage-modal .modal-dialog, #my-account #set-balance-modal .modal-dialog {
+    width: calc(100% - 40px); }
+  #my-account #set-trade-modal .modal-header, #my-account #set-pass-modal .modal-header, #my-account #set-ac-modal .modal-header, #my-account #set-nickname-modal .modal-header, #my-account #set-leverage-modal .modal-header, #my-account #set-balance-modal .modal-header {
+    padding: 16px 16px 0;
+    margin-bottom: 24px; }
+  #my-account #set-trade-modal .modal-body, #my-account #set-pass-modal .modal-body, #my-account #set-ac-modal .modal-body, #my-account #set-nickname-modal .modal-body, #my-account #set-leverage-modal .modal-body, #my-account #set-balance-modal .modal-body {
+    padding: 0 16px; }
+    #my-account #set-trade-modal .modal-body .leverage-note, #my-account #set-pass-modal .modal-body .leverage-note, #my-account #set-ac-modal .modal-body .leverage-note, #my-account #set-nickname-modal .modal-body .leverage-note, #my-account #set-leverage-modal .modal-body .leverage-note, #my-account #set-balance-modal .modal-body .leverage-note {
+      margin-top: 20px; }
+  #my-account #set-trade-modal .modal-footer, #my-account #set-pass-modal .modal-footer, #my-account #set-ac-modal .modal-footer, #my-account #set-nickname-modal .modal-footer, #my-account #set-leverage-modal .modal-footer, #my-account #set-balance-modal .modal-footer {
+    padding: 24px 16px 16px; }
+  #my-account #set-trade-modal .number-account, #my-account #set-pass-modal .number-account, #my-account #set-ac-modal .number-account, #my-account #set-nickname-modal .number-account, #my-account #set-leverage-modal .number-account, #my-account #set-balance-modal .number-account {
+    font-size: 14px; }
+  #my-account #set-trade-modal h5, #my-account #set-pass-modal h5, #my-account #set-ac-modal h5, #my-account #set-nickname-modal h5, #my-account #set-leverage-modal h5, #my-account #set-balance-modal h5 {
+    font-size: 18px; }
+  #my-account #set-trade-modal .dropdown button, #my-account #set-pass-modal .dropdown button, #my-account #set-ac-modal .dropdown button, #my-account #set-nickname-modal .dropdown button, #my-account #set-leverage-modal .dropdown button, #my-account #set-balance-modal .dropdown button {
+    height: 44px; }
+  #my-account #set-nickname-modal .modal-body > p {
+    font-size: 12px;
+    margin-top: 12px; }
+  #my-account #set-trade-modal .modal-body .balance,
+  #my-account #set-ac-modal .modal-body .balance {
+    padding: 12px; }
+  #my-account #set-trade-modal .modal-body .first-text,
+  #my-account #set-ac-modal .modal-body .first-text {
+    width: 92px; }
+  #my-account #set-trade-modal .modal-body span,
+  #my-account #set-ac-modal .modal-body span {
+    width: calc(100% - 116px);
+    font-size: 12px; }
+  #my-account #set-ac-modal .modal-footer {
+    padding-top: 20px; }
+    #my-account #set-ac-modal .modal-footer .btn {
+      opacity: 1; }
+  #my-account #set-trade-modal .modal-footer {
+    padding-top: 20px; }
+    #my-account #set-trade-modal .modal-footer > button.btn {
+      margin-right: 0;
+      margin-bottom: 12px; }
+    #my-account #set-trade-modal .modal-footer .cta-btns > * {
+      width: 100%;
+      margin-bottom: 12px; }
+    #my-account #set-trade-modal .modal-footer .cta-btns button {
+      width: 100%;
+      height: 44px; }
+    #my-account #set-trade-modal .modal-footer .cta-btns .btn {
+      align-items: center;
+      justify-content: center; }
+      #my-account #set-trade-modal .modal-footer .cta-btns .btn:after {
+        position: relative;
+        right: auto;
+        transform: unset;
+        margin-left: 10px;
+        top: auto; }
+
+  #create-account .step2 .create-account-content > h3 {
+    display: none; }
+  #create-account .step2 .account-nickname,
+  #create-account .step2 .currency {
+    flex-direction: column;
+    margin-bottom: 0; }
+    #create-account .step2 .account-nickname .password-account-nickname,
+    #create-account .step2 .account-nickname .create-account-nickname,
+    #create-account .step2 .account-nickname .dropdown,
+    #create-account .step2 .currency .password-account-nickname,
+    #create-account .step2 .currency .create-account-nickname,
+    #create-account .step2 .currency .dropdown {
+      width: 100%;
+      max-width: unset;
+      margin-bottom: 30px; }
+  #create-account .step2 .boxes {
+    margin-bottom: 20px; }
+    #create-account .step2 .boxes.account-nickname {
+      margin-bottom: 0; }
+  #create-account .step2 .box {
+    width: calc((100% - 12px) / 2);
+    max-width: unset;
+    padding: 10px 10px 10px 36px; }
+    #create-account .step2 .box:before {
+      left: 10px;
+      top: 10px; }
+  #create-account .step2 .standart-account {
+    flex-wrap: wrap-reverse;
+    grid-row-gap: 28px; }
+  #create-account .step2 .left-standart-account .box p {
+    margin-bottom: 0;
+    font-size: 12px; }
+  #create-account .step2 .right-standart-account {
+    min-height: 0; }
+  #create-account .step2 .cta-account {
+    margin-bottom: 20px; }
+    #create-account .step2 .cta-account button {
+      width: 100%;
+      height: 44px; }
+
+  .funds-management #funds-tabs-content .payment-detail .payment-set {
+    flex-direction: column; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set > * {
+      width: 100%;
+      margin-bottom: 30px; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set > .btn {
+      height: 44px;
+      margin-bottom: 40px; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set #dropdowndepositunitedstates {
+      background-color: #F5F5F5; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set .otpfunds,
+    .funds-management #funds-tabs-content .payment-detail .payment-set .owner-payment {
+      width: 100%; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set .otpvia {
+      margin: 0 0 30px !important; }
+    .funds-management #funds-tabs-content .payment-detail .payment-set .otpfunds {
+      width: 100px; }
+      .funds-management #funds-tabs-content .payment-detail .payment-set .otpfunds.checked input {
+        background: none; }
+      .funds-management #funds-tabs-content .payment-detail .payment-set .otpfunds input {
+        padding-right: 10px;
+        padding-left: 10px; }
+  .funds-management #funds-tabs-content .methods {
+    margin-bottom: 6px; }
+  .funds-management #funds-tabs-content .dropdown .dropdown-toggle {
+    height: 44px; }
+
+  #set-verify-document-submit-modal,
+  #set-verify-document-modal,
+  #set-verify-phone-modal,
+  #set-verify-email-modal,
+  #set-notification-modal,
+  #set-password-modal,
+  #set-profile-modal,
+  #set-withdrawal-modal,
+  #set-internal-transfer-modal,
+  #set-deposit-modal {
+    max-width: 320px;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto; }
+    #set-verify-document-submit-modal .modal-dialog,
+    #set-verify-document-modal .modal-dialog,
+    #set-verify-phone-modal .modal-dialog,
+    #set-verify-email-modal .modal-dialog,
+    #set-notification-modal .modal-dialog,
+    #set-password-modal .modal-dialog,
+    #set-profile-modal .modal-dialog,
+    #set-withdrawal-modal .modal-dialog,
+    #set-internal-transfer-modal .modal-dialog,
+    #set-deposit-modal .modal-dialog {
+      height: auto;
+      padding: 30px 0; }
+      #set-verify-document-submit-modal .modal-dialog h4,
+      #set-verify-document-modal .modal-dialog h4,
+      #set-verify-phone-modal .modal-dialog h4,
+      #set-verify-email-modal .modal-dialog h4,
+      #set-notification-modal .modal-dialog h4,
+      #set-password-modal .modal-dialog h4,
+      #set-profile-modal .modal-dialog h4,
+      #set-withdrawal-modal .modal-dialog h4,
+      #set-internal-transfer-modal .modal-dialog h4,
+      #set-deposit-modal .modal-dialog h4 {
+        font-size: 16px;
+        margin-bottom: 40px;
+        line-height: 20px; }
+      #set-verify-document-submit-modal .modal-dialog .btn,
+      #set-verify-document-modal .modal-dialog .btn,
+      #set-verify-phone-modal .modal-dialog .btn,
+      #set-verify-email-modal .modal-dialog .btn,
+      #set-notification-modal .modal-dialog .btn,
+      #set-password-modal .modal-dialog .btn,
+      #set-profile-modal .modal-dialog .btn,
+      #set-withdrawal-modal .modal-dialog .btn,
+      #set-internal-transfer-modal .modal-dialog .btn,
+      #set-deposit-modal .modal-dialog .btn {
+        height: 44px; }
+      #set-verify-document-submit-modal .modal-dialog img,
+      #set-verify-document-modal .modal-dialog img,
+      #set-verify-phone-modal .modal-dialog img,
+      #set-verify-email-modal .modal-dialog img,
+      #set-notification-modal .modal-dialog img,
+      #set-password-modal .modal-dialog img,
+      #set-profile-modal .modal-dialog img,
+      #set-withdrawal-modal .modal-dialog img,
+      #set-internal-transfer-modal .modal-dialog img,
+      #set-deposit-modal .modal-dialog img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 20px; }
+    #set-verify-document-submit-modal .close,
+    #set-verify-document-modal .close,
+    #set-verify-phone-modal .close,
+    #set-verify-email-modal .close,
+    #set-notification-modal .close,
+    #set-password-modal .close,
+    #set-profile-modal .close,
+    #set-withdrawal-modal .close,
+    #set-internal-transfer-modal .close,
+    #set-deposit-modal .close {
+      opacity: 1; }
+
+  #transaction-history .history-account-area h2 {
+    margin-bottom: 18px; }
+
+  .history-filter-bar {
+    justify-content: space-between;
+    grid-row-gap: 18px;
+    margin-bottom: 22px; }
+    .history-filter-bar h4 {
+      margin-bottom: 10px; }
+    .history-filter-bar > div {
+      margin-right: 0; }
+    .history-filter-bar .history-account {
+      width: calc((100% - 12px) / 2); }
+    .history-filter-bar .input-daterange,
+    .history-filter-bar .dropdown .dropdown-toggle {
+      width: 100%; }
+
+  .history-content .history-table {
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 16px; }
+    .history-content .history-table::-webkit-scrollbar {
+      width: 1em; }
+    .history-content .history-table::-webkit-scrollbar-track {
+      background-color: #F2F2F2; }
+    .history-content .history-table::-webkit-scrollbar-thumb {
+      background: url("../imgs/scrollbar.png") no-repeat;
+      background-size: 100% 100%; }
+    .history-content .history-table table {
+      width: 767px;
+      margin-bottom: 16px; }
+    .history-content .history-table thead th:last-child, .history-content .history-table thead th:nth-last-child(2), .history-content .history-table thead th:nth-last-child(3),
+    .history-content .history-table tbody td:last-child,
+    .history-content .history-table tbody td:nth-last-child(2),
+    .history-content .history-table tbody td:nth-last-child(3) {
+      text-align: right; }
+  .history-content nav {
+    margin: auto; }
+    .history-content nav .page-item .page-link {
+      height: 32px;
+      width: 32px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none; }
+    .history-content nav ul {
+      margin-bottom: 68px; }
+
+  #set-campaign-edit-modal,
+  #set-create-campaign-modal,
+  #set-campaign-info-modal {
+    max-width: 320px;
+    width: calc(100% - 40px);
+    margin: auto; }
+    #set-campaign-edit-modal .modal-header,
+    #set-create-campaign-modal .modal-header,
+    #set-campaign-info-modal .modal-header {
+      padding: 16px 16px 0;
+      margin-bottom: 16px; }
+      #set-campaign-edit-modal .modal-header h5,
+      #set-create-campaign-modal .modal-header h5,
+      #set-campaign-info-modal .modal-header h5 {
+        font-size: 18px;
+        margin-bottom: 8px; }
+      #set-campaign-edit-modal .modal-header p,
+      #set-create-campaign-modal .modal-header p,
+      #set-campaign-info-modal .modal-header p {
+        font-size: 14px; }
+    #set-campaign-edit-modal .modal-body,
+    #set-create-campaign-modal .modal-body,
+    #set-campaign-info-modal .modal-body {
+      padding-left: 16px;
+      padding-right: 16px; }
+      #set-campaign-edit-modal .modal-body .balance,
+      #set-create-campaign-modal .modal-body .balance,
+      #set-campaign-info-modal .modal-body .balance {
+        padding: 12px; }
+      #set-campaign-edit-modal .modal-body .first-text,
+      #set-create-campaign-modal .modal-body .first-text,
+      #set-campaign-info-modal .modal-body .first-text {
+        width: 92px; }
+      #set-campaign-edit-modal .modal-body span,
+      #set-create-campaign-modal .modal-body span,
+      #set-campaign-info-modal .modal-body span {
+        width: calc(100% - 116px);
+        font-size: 12px; }
+      #set-campaign-edit-modal .modal-body p:last-child,
+      #set-create-campaign-modal .modal-body p:last-child,
+      #set-campaign-info-modal .modal-body p:last-child {
+        margin-bottom: 5px; }
+    #set-campaign-edit-modal .modal-footer,
+    #set-create-campaign-modal .modal-footer,
+    #set-campaign-info-modal .modal-footer {
+      padding: 20px 16px 16px; }
+      #set-campaign-edit-modal .modal-footer .btn,
+      #set-create-campaign-modal .modal-footer .btn,
+      #set-campaign-info-modal .modal-footer .btn {
+        width: 100%; }
+
+  #set-campaign-edit-modal .modal-header {
+    margin-bottom: 28px; }
+    #set-campaign-edit-modal .modal-header h5 {
+      font-size: 20px; }
+  #set-campaign-edit-modal .modal-body .campaign-edit-content {
+    min-height: 200px;
+    font-size: 14px;
+    letter-spacing: -.6px;
+    padding: 16px;
+    line-height: 123%; }
+  #set-campaign-edit-modal .modal-body > div {
+    margin-bottom: 28px; }
+    #set-campaign-edit-modal .modal-body > div.campaign-edit-cover-image {
+      width: 100%; }
+      #set-campaign-edit-modal .modal-body > div.campaign-edit-cover-image img {
+        width: 100%;
+        height: 120px; }
+
+  .my-campaigns .campaigns .ctas-buttons {
+    justify-content: space-between; }
+    .my-campaigns .campaigns .ctas-buttons > button {
+      margin-right: 0;
+      width: calc((100% - 24px) / 3);
+      letter-spacing: -.3px;
+      padding: 0; }
+    .my-campaigns .campaigns .ctas-buttons .trade-cta {
+      width: calc((100% - 24px) / 3); }
+      .my-campaigns .campaigns .ctas-buttons .trade-cta .btn {
+        letter-spacing: -.3px;
+        margin-right: 0;
+        width: 100%;
+        padding: 0; }
+
+  body .main-content .create-campaigns h2 {
+    margin-bottom: 20px; }
+
+  .create-campaigns h3 {
+    margin-bottom: 14px; }
+  .create-campaigns .general-information-content {
+    flex-direction: column; }
+    .create-campaigns .general-information-content > div {
+      width: 100%;
+      margin-bottom: 28px; }
+    .create-campaigns .general-information-content h5 {
+      margin-bottom: 10px; }
+    .create-campaigns .general-information-content input {
+      height: 44px;
+      padding-left: 10px;
+      padding-right: 10px; }
+    .create-campaigns .general-information-content textarea {
+      min-height: 203px;
+      padding: 16px; }
+  .create-campaigns .campaign-details {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+    .create-campaigns .campaign-details .dropdown {
+      margin: 0;
+      width: 100%;
+      margin-bottom: 28px; }
+  .create-campaigns > .btn {
+    width: 100%;
+    margin-bottom: 40px; }
+
+  #set-create-campaign-modal .modal-footer {
+    flex-direction: column;
+    grid-row-gap: 10px; }
+    #set-create-campaign-modal .modal-footer button.btn {
+      margin: 0;
+      height: 44px; }
+
+  .strategies h2.strategies-title {
+    margin-bottom: 20px; }
+  .strategies-ratio {
+    padding: 16px;
+    grid-row-gap: 16px; }
+    .strategies-ratio .strategies-commission,
+    .strategies-ratio .strategies-leverage,
+    .strategies-ratio .strategies-followers,
+    .strategies-ratio .strategies-profit {
+      margin-bottom: 0; }
+      .strategies-ratio .strategies-commission--label,
+      .strategies-ratio .strategies-leverage--label,
+      .strategies-ratio .strategies-followers--label,
+      .strategies-ratio .strategies-profit--label {
+        line-height: 10px; }
+      .strategies-ratio .strategies-commission--ratio,
+      .strategies-ratio .strategies-leverage--ratio,
+      .strategies-ratio .strategies-followers--ratio,
+      .strategies-ratio .strategies-profit--ratio {
+        line-height: 19px; }
+  .strategies-contents {
+    grid-row-gap: 16px;
+    border: none; }
+  .strategies-content {
+    width: 100%; }
+    .strategies-content img {
+      max-height: 120px; }
+    .strategies-content .strategies-image-area p {
+      left: 16px;
+      bottom: 16px; }
+  .strategies nav {
+    margin: auto; }
+    .strategies nav .pagination {
+      margin-bottom: 48px; }
+  .strategies-campaign-details h2.strategies-title {
+    margin-bottom: 20px; }
+  .strategies-campaign-details .banner-strategies-campaign img {
+    height: 120px;
+    margin-bottom: 2px; }
+  .strategies-campaign-details .strategies-infomations {
+    margin-bottom: 48px; }
+    .strategies-campaign-details .strategies-infomations > div {
+      box-shadow: none;
+      padding: 0; }
+      .strategies-campaign-details .strategies-infomations > div h4,
+      .strategies-campaign-details .strategies-infomations > div h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 24px; }
+      .strategies-campaign-details .strategies-infomations > div.fxtrade24 {
+        margin-bottom: 48px; }
+    .strategies-campaign-details .strategies-infomations .fxtrade24-content {
+      margin-bottom: 20px; }
+    .strategies-campaign-details .strategies-infomations .fxtrade24-ctas > div {
+      width: calc((100% - 12px) / 2); }
+    .strategies-campaign-details .strategies-infomations .fxtrade24-ctas .fxtrade24-copying {
+      flex-direction: column; }
+    .strategies-campaign-details .strategies-infomations .strategies-abouts {
+      grid-column-gap: 12px;
+      grid-row-gap: 16px; }
+      .strategies-campaign-details .strategies-infomations .strategies-abouts .strategies-about {
+        width: calc((100% - 12px) / 2);
+        margin-bottom: 0;
+        padding: 8px;
+        min-height: 50px; }
+        .strategies-campaign-details .strategies-infomations .strategies-abouts .strategies-about-label {
+          line-height: 13px; }
+        .strategies-campaign-details .strategies-infomations .strategies-abouts .strategies-about-value {
+          font-size: 14px;
+          font-weight: 700; }
+  .strategies-campaign-details .strategies-statistics {
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 38px; }
+    .strategies-campaign-details .strategies-statistics .statistics-filter-bar {
+      display: none; }
+      .strategies-campaign-details .strategies-statistics .statistics-filter-bar-mobile {
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        grid-row-gap: 18px;
+        margin-bottom: 22px; }
+        .strategies-campaign-details .strategies-statistics .statistics-filter-bar-mobile h4 {
+          margin-bottom: 10px;
+          font-weight: 700;
+          font-size: 14px; }
+        .strategies-campaign-details .strategies-statistics .statistics-filter-bar-mobile .history-account {
+          width: calc((100% - 12px) / 2);
+          margin-right: 0; }
+        .strategies-campaign-details .strategies-statistics .statistics-filter-bar-mobile .input-daterange {
+          border: 1px solid #9E9E9E;
+          border-radius: 4px;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          width: 100%; }
+          .strategies-campaign-details .strategies-statistics .statistics-filter-bar-mobile .input-daterange .dropdown-toggle:after {
+            border-top: 6px solid;
+            border-right: 6px solid transparent;
+            border-left: 6px solid transparent;
+            transform: rotate(270deg); }
+          .strategies-campaign-details .strategies-statistics .statistics-filter-bar-mobile .input-daterange input {
+            border: none; }
+        .strategies-campaign-details .strategies-statistics .statistics-filter-bar-mobile .dropdown .dropdown-toggle {
+          border: 1px solid #9E9E9E;
+          border-radius: 4px;
+          background-color: transparent;
+          color: #333333;
+          text-align: left;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          height: 40px;
+          border-radius: 4px; }
+          .strategies-campaign-details .strategies-statistics .statistics-filter-bar-mobile .dropdown .dropdown-toggle::after {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%); }
+    .strategies-campaign-details .strategies-statistics #statisticschart {
+      height: 345px !important; }
+    .strategies-campaign-details .strategies-statistics .label-chart.base-limit {
+      top: calc(50% - 30px); }
+    .strategies-campaign-details .strategies-statistics .label-chart.lower-limit {
+      bottom: 55px; }
+  .strategies-campaign-details .strategies-order {
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 48px; }
+    .strategies-campaign-details .strategies-order table {
+      min-width: 420px;
+      width: 100%;
+      margin-bottom: 16px; }
+    .strategies-campaign-details .strategies-order thead th:last-child, .strategies-campaign-details .strategies-order thead th:nth-last-child(2), .strategies-campaign-details .strategies-order thead th:nth-last-child(3),
+    .strategies-campaign-details .strategies-order tbody td:last-child,
+    .strategies-campaign-details .strategies-order tbody td:nth-last-child(2),
+    .strategies-campaign-details .strategies-order tbody td:nth-last-child(3) {
+      text-align: right; }
+    .strategies-campaign-details .strategies-order thead th:first-child,
+    .strategies-campaign-details .strategies-order tbody td:first-child {
+      padding-left: 0; }
+    .strategies-campaign-details .strategies-order nav {
+      margin: auto; }
+    .strategies-campaign-details .strategies-order .strategies-order-tab-table {
+      width: 100%;
+      overflow-x: scroll;
+      margin-bottom: 16px;
+      position: relative; }
+      .strategies-campaign-details .strategies-order .strategies-order-tab-table::-webkit-scrollbar {
+        width: 1em; }
+      .strategies-campaign-details .strategies-order .strategies-order-tab-table::-webkit-scrollbar-track {
+        background-color: #F2F2F2; }
+      .strategies-campaign-details .strategies-order .strategies-order-tab-table::-webkit-scrollbar-thumb {
+        background: url("../imgs/scrollbarorder.png") no-repeat;
+        background-size: 100% 100%; }
+
+  #set-start-copying-modal .modal-dialog {
+    width: calc(100% - 40px); }
+    #set-start-copying-modal .modal-dialog .modal-header {
+      padding: 20px;
+      margin-bottom: 8px; }
+    #set-start-copying-modal .modal-dialog .modal-body {
+      padding: 0 20px; }
+      #set-start-copying-modal .modal-dialog .modal-body .start-copying-content {
+        width: 100%; }
+        #set-start-copying-modal .modal-dialog .modal-body .start-copying-content .start-copying-content {
+          width: calc((100% - 12px) / 2); }
+        #set-start-copying-modal .modal-dialog .modal-body .start-copying-content input {
+          height: 44px; }
+        #set-start-copying-modal .modal-dialog .modal-body .start-copying-content.dropdown .dropdown-toggle {
+          height: 44px; }
+    #set-start-copying-modal .modal-dialog .modal-footer {
+      padding: 0 20px 20px; }
+      #set-start-copying-modal .modal-dialog .modal-footer .btn.btn-primary {
+        opacity: 1;
+        height: 44px; }
+    #set-start-copying-modal .modal-dialog h5 {
+      font-size: 20px;
+      line-height: 28px; }
+
+  #partnership h2 {
+    margin-bottom: 20px; }
+  #partnership .partnership-rank-box {
+    box-shadow: none;
+    padding: 14px 16px;
+    background-color: #F2F2F2;
+    margin-bottom: 38px; }
+    #partnership .partnership-rank-box .btn {
+      width: 100%;
+      align-items: center; }
+    #partnership .partnership-rank-box + .partnership-rank-box {
+      background-color: transparent;
+      padding: 0; }
+      #partnership .partnership-rank-box + .partnership-rank-box h3 {
+        margin-bottom: 10px; }
+  #partnership .partnership-rank-row {
+    margin-bottom: 0; }
+    #partnership .partnership-rank-row.partnership-rank-affiliate .partnership-rank-box {
+      background-color: transparent;
+      padding: 0;
+      margin-bottom: 38px; }
+      #partnership .partnership-rank-row.partnership-rank-affiliate .partnership-rank-box h3 {
+        margin-bottom: 10px; }
+      #partnership .partnership-rank-row.partnership-rank-affiliate .partnership-rank-box .partnership-affiliate-link input {
+        height: 44px;
+        width: calc(100% - 100px); }
+      #partnership .partnership-rank-row.partnership-rank-affiliate .partnership-rank-box .partnership-affiliate-link .btn {
+        width: 88px;
+        font-size: 14px;
+        font-weight: 400; }
+      #partnership .partnership-rank-row.partnership-rank-affiliate .partnership-rank-box .partnership-affiliate-link p {
+        text-align: left;
+        margin-bottom: 0; }
+  #partnership .partnership-rank h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 14px; }
+  #partnership .partnership-rank-price {
+    padding: 0; }
+    #partnership .partnership-rank-price .price .price-int {
+      line-height: 39px; }
+    #partnership .partnership-rank-price > p {
+      margin-bottom: 0; }
+  #partnership .partnership-rank-star {
+    grid-column-gap: 12px;
+    grid-row-gap: 12px; }
+    #partnership .partnership-rank-star > div {
+      width: calc((100% - 12px) / 2); }
+    #partnership .partnership-rank-star .primary-star {
+      padding: 12px; }
+      #partnership .partnership-rank-star .primary-star img {
+        width: 60px;
+        height: 57px;
+        margin-bottom: 12px; }
+    #partnership .partnership-rank-star .star-info .percent-spread-share {
+      font-size: 14px;
+      line-height: 19px; }
+    #partnership .partnership-rank-star .star-info .spread-share {
+      margin-bottom: 12px;
+      padding: 8px; }
+  #partnership .quick-report {
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 10px; }
+    #partnership .quick-report h4 {
+      font-size: 18px;
+      margin-bottom: 9px; }
+    #partnership .quick-report > p {
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 19px; }
+    #partnership .quick-report .input-daterange {
+      width: 100%; }
+      #partnership .quick-report .input-daterange input {
+        height: 40px; }
+    #partnership .quick-report .date {
+      margin-bottom: 31px; }
+  #partnership .chart {
+    flex-direction: column; }
+    #partnership .chart .income,
+    #partnership .chart .registrations {
+      width: 100%;
+      margin-bottom: 38px; }
+  #partnership .members {
+    padding: 0;
+    box-shadow: none; }
+    #partnership .members h4 {
+      font-size: 18px;
+      margin-bottom: 20px; }
+    #partnership .members table {
+      min-width: 553px;
+      width: 100%;
+      margin-bottom: 16px; }
+    #partnership .members thead th:last-child, #partnership .members thead th:nth-last-child(2), #partnership .members thead th:nth-last-child(3),
+    #partnership .members tbody td:last-child,
+    #partnership .members tbody td:nth-last-child(2),
+    #partnership .members tbody td:nth-last-child(3) {
+      text-align: right; }
+    #partnership .members thead th:first-child,
+    #partnership .members tbody td:first-child {
+      padding: 0; }
+    #partnership .members thead th.level,
+    #partnership .members tbody td.level {
+      background-position: left 0 top 50%; }
+      #partnership .members thead th.level.lvl1,
+      #partnership .members tbody td.level.lvl1 {
+        padding-left: 30px; }
+      #partnership .members thead th.level.lvl2,
+      #partnership .members tbody td.level.lvl2 {
+        padding-left: 60px;
+        background-position: left 30px top 50%; }
+    #partnership .members .members-table {
+      width: 100%;
+      overflow-x: scroll;
+      margin-bottom: 20px;
+      position: relative; }
+      #partnership .members .members-table::-webkit-scrollbar {
+        width: 1em; }
+      #partnership .members .members-table::-webkit-scrollbar-track {
+        background-color: #F2F2F2; }
+      #partnership .members .members-table::-webkit-scrollbar-thumb {
+        background: url("../imgs/scrollbarorder.png") no-repeat;
+        background-size: 100% 100%; }
+    #partnership .members nav {
+      margin-left: 0;
+      margin-right: auto; }
+      #partnership .members nav ul {
+        margin-bottom: 48px; }
+
+  .settings h2.settings-title {
+    margin-bottom: 11px; }
+  .settings .nav-tabs .nav-link {
+    padding: 0 9px; }
+  .settings .setting-password,
+  .settings .settings-profile {
+    padding-top: 20px; }
+    .settings .setting-password > .btn,
+    .settings .settings-profile > .btn {
+      width: 100%;
+      height: 44px;
+      margin-bottom: 48px; }
+    .settings .setting-password h3,
+    .settings .settings-profile h3 {
+      margin-bottom: 14px; }
+  .settings .settings-profile-info-content .intl-tel-input.allow-dropdown.separate-dial-code .flag-container .selected-flag {
+    width: 98px; }
+  .settings .settings-profile-info, .settings .settings-address-info {
+    padding-bottom: 2px;
+    margin-bottom: 28px; }
+    .settings .settings-profile-info .intl-tel-input.allow-dropdown.separate-dial-code,
+    .settings .settings-profile-info .intl-tel-input.allow-dropdown.separate-dial-code .flag-container, .settings .settings-address-info .intl-tel-input.allow-dropdown.separate-dial-code,
+    .settings .settings-address-info .intl-tel-input.allow-dropdown.separate-dial-code .flag-container {
+      height: 44px; }
+  .settings .settings-profile-info-content, .settings .settings-address-info-content {
+    margin-bottom: 28px; }
+    .settings .settings-profile-info-content.it2columns > div, .settings .settings-address-info-content.it2columns > div {
+      width: calc((100% - 12px) / 2); }
+  .settings .settings-profile input, .settings .settings-address input {
+    height: 44px; }
+  .settings .settings-address-info {
+    padding-bottom: 12px;
+    margin-bottom: 30px; }
+    .settings .settings-address-info-content {
+      margin-bottom: 18px; }
+  .settings .setting-password h4 {
+    margin-bottom: 14px; }
+  .settings .setting-password label {
+    margin-bottom: 10px; }
+  .settings .setting-password .password {
+    margin-bottom: 28px; }
+    .settings .setting-password .password input {
+      height: 44px; }
+  .settings .setting-password .settings-password-area {
+    padding-bottom: 2px;
+    margin-bottom: 30px; }
+  .settings .setting-notification {
+    padding-top: 20px; }
+    .settings .setting-notification .btn {
+      width: 100%;
+      margin-bottom: 48px; }
+  .settings .verify-contents .verify-content {
+    width: 100%; }
+    .settings .verify-contents .verify-content-get-otp {
+      margin-bottom: 48px;
+      padding-bottom: 104px;
+      position: relative; }
+      .settings .verify-contents .verify-content-get-otp:after {
+        content: "";
+        bottom: 74px;
+        width: 100%;
+        height: 1px;
+        background-color: #9E9E9E;
+        left: 0;
+        position: absolute; }
+      .settings .verify-contents .verify-content-get-otp .verify-content-cta {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 44px; }
+      .settings .verify-contents .verify-content-get-otp .verify-content-area {
+        width: 100%; }
+        .settings .verify-contents .verify-content-get-otp .verify-content-area input {
+          height: 44px; }
+    .settings .verify-contents .verify-content.activate .verify-content-cta {
+      display: none; }
+    .settings .verify-contents .verify-content.activate .verify-content-get-otp {
+      padding-bottom: 0;
+      margin-bottom: 28px; }
+      .settings .verify-contents .verify-content.activate .verify-content-get-otp:after {
+        content: none; }
+    .settings .verify-contents .verify-content .verify-content-otp {
+      padding-bottom: 30px;
+      margin-bottom: 30px; }
+  .settings .verify-contents .verify-content-address > button,
+  .settings .verify-contents .verify-content-identity > button,
+  .settings .verify-contents .verify-content-phone > button,
+  .settings .verify-contents .verify-content-email > button {
+    width: 100%;
+    margin-bottom: 48px; }
+  .settings .verify-contents .verify-content-address .dropdown,
+  .settings .verify-contents .verify-content-identity .dropdown {
+    margin-bottom: 20px; }
+    .settings .verify-contents .verify-content-address .dropdown .dropdown-toggle,
+    .settings .verify-contents .verify-content-identity .dropdown .dropdown-toggle {
+      width: 154px; }
+  .settings .verify-contents .verify-content-address > p,
+  .settings .verify-contents .verify-content-identity > p {
+    margin-bottom: 16px; }
+  .settings .verify-contents .verify-content-boxes {
+    padding-bottom: 30px;
+    margin-bottom: 30px; }
+  .settings .verify-contents .verify-content-box {
+    width: calc((100% - 12px) / 2);
+    height: 154px;
+    padding-right: 12px;
+    padding-left: 12px;
+    letter-spacing: -.5px; }
+  .settings .setting-verify {
+    padding-top: 20px; }
+    .settings .setting-verify h3 {
+      margin-bottom: 20px; }
+    .settings .setting-verify .verify-label {
+      top: calc(100% + 12px);
+      display: none; }
+    .settings .setting-verify .verify-status {
+      margin-bottom: 75px; }
+      .settings .setting-verify .verify-status > div.active .verify-label {
+        display: block; }
+      .settings .setting-verify .verify-status > div.active.active-line .verify-label {
+        display: none; }
+    .settings .setting-verify .verify-done {
+      margin-bottom: 30vh; }
+      .settings .setting-verify .verify-done p {
+        font-size: 14px; }
+    .settings .setting-verify .verify-status > div {
+      width: calc((100% - 30px) / 4); }
+      .settings .setting-verify .verify-status > div:first-child {
+        width: 30px; } }
 @media (max-width: 576px) {
+  body .btn {
+    height: 44px; }
+  body #create-account h2,
+  body .header h2,
+  body .main-content h2,
+  body .footer h2 {
+    font-size: 20px;
+    margin-bottom: 11px; }
   body #footer .col-md-12 {
     padding-right: 20px;
-    padding-left: 20px; } }
+    padding-left: 20px; }
+
+  .box-middle {
+    width: 100%; }
+
+  .box-inner {
+    box-shadow: none;
+    padding: 25px 5px; }
+
+  .reset .btn-submit,
+  .register .btn-submit,
+  .sign-in .btn-submit {
+    margin-top: 40px;
+    max-width: 200px; }
+
+  .register .btn-submit.btn-step3, .register .btn-submit.btn-step2 {
+    margin-top: 40px; }
+
+  .step3 .showstep,
+  .step2 .showstep {
+    top: 30px; }
+
+  .step3 .form .zip > div {
+    width: calc((100% - 12px) / 2); }
+
+  .reset p.text-center {
+    display: none; }
+    .reset p.text-center.text-center-mobile {
+      display: block !important; }
+  .reset .signin-link {
+    max-width: 200px;
+    display: none; }
+    .reset .signin-link-mobile {
+      display: flex !important; }
+
+  .my-campaigns #demo .real-contents .ctas-buttons > .trade-cta,
+  .my-campaigns #demo .real-contents .ctas-buttons > button,
+  #my-account #demo .real-contents .ctas-buttons > .trade-cta,
+  #my-account #demo .real-contents .ctas-buttons > button {
+    width: calc((100% - 12px) / 2); }
+  .my-campaigns #account-tabs,
+  #my-account #account-tabs {
+    margin-bottom: 20px; }
+  .my-campaigns .control-bar .filter > span,
+  #my-account .control-bar .filter > span {
+    display: none; }
+  .my-campaigns .control-bar .filter .dropdown,
+  #my-account .control-bar .filter .dropdown {
+    margin-left: 0; }
+    .my-campaigns .control-bar .filter .dropdown .dropdown-toggle,
+    #my-account .control-bar .filter .dropdown .dropdown-toggle {
+      border-width: 0;
+      padding: 0;
+      min-width: 80px;
+      width: 80px;
+      height: auto;
+      margin-bottom: 14px; }
+  .my-campaigns .control-bar .btn,
+  #my-account .control-bar .btn {
+    width: 100%;
+    height: 44px; }
+  .my-campaigns .real-contents .bottom-content .price .price-int,
+  #my-account .real-contents .bottom-content .price .price-int {
+    line-height: 100%; }
+  .my-campaigns .real-contents .ctas-buttons,
+  #my-account .real-contents .ctas-buttons {
+    margin-top: 19px;
+    justify-content: space-between; }
+    .my-campaigns .real-contents .ctas-buttons > .trade-cta,
+    #my-account .real-contents .ctas-buttons > .trade-cta {
+      width: calc((100% - 22px) / 3); }
+      .my-campaigns .real-contents .ctas-buttons > .trade-cta .btn,
+      #my-account .real-contents .ctas-buttons > .trade-cta .btn {
+        margin-right: 0;
+        width: 100%; }
+    .my-campaigns .real-contents .ctas-buttons > button,
+    #my-account .real-contents .ctas-buttons > button {
+      margin-right: 0;
+      width: calc((100% - 22px) / 3);
+      padding: 0;
+      letter-spacing: -.3px; }
+    .my-campaigns .real-contents .ctas-buttons .settings-cta .dropdown-menu,
+    #my-account .real-contents .ctas-buttons .settings-cta .dropdown-menu {
+      transform: none !important;
+      top: 100% !important; }
+    .my-campaigns .real-contents .ctas-buttons .settings-cta .btn,
+    #my-account .real-contents .ctas-buttons .settings-cta .btn {
+      background-color: transparent;
+      border-width: 0;
+      padding: 0 30px 0 0;
+      height: auto;
+      line-height: 100%; }
+  .my-campaigns .real-contents .real-content,
+  #my-account .real-contents .real-content {
+    position: relative;
+    margin-top: 20px;
+    padding: 15px 16px; }
+  .my-campaigns .settings-cta,
+  #my-account .settings-cta {
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+
+  #create-account #create-account-modal .modal-footer {
+    padding: 0; }
+  #create-account .standart-account h4 {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 16px;
+    font-size: 20px;
+    margin-bottom: 12px; }
+  #create-account .create-account-content > p {
+    margin-bottom: 18px; }
+  #create-account .standart-account .right-standart-account {
+    padding: 20px 16px; }
+    #create-account .standart-account .right-standart-account p:last-child {
+      margin-bottom: 0; }
+  #create-account .standart-account .left-standart-account .cta-standart {
+    padding: 0 16px;
+    margin-bottom: 16px; }
+    #create-account .standart-account .left-standart-account .cta-standart button {
+      width: calc((100% - 8px) / 2);
+      padding: 0;
+      height: 40px; }
+  #create-account .standart-account .left-standart-account p {
+    margin-bottom: 30px;
+    padding: 0 16px; }
+
+  .my-campaigns .campaigns .campaign-content {
+    position: relative; }
+  .my-campaigns .campaigns .ctas-buttons .settings-cta .btn {
+    background-color: transparent;
+    padding: 0;
+    height: auto; }
+  .my-campaigns .campaigns .settings-cta {
+    top: 15px; } }
 
 /*# sourceMappingURL=responsive.css.map */

@@ -159,16 +159,16 @@
                   </div>
                 </div>
                 <div class="verify-content-cta">
-                  <button class="btn btn-secondary">Get OTP</button>
+                  <button class="btn btn-primary btn-getotp">Get OTP</button>
                 </div>  
               </div>
-              <div class="verify-content-otp checked">
+              <div class="verify-content-otp checked" style="display: none;">
                 <p>
                   OTP
                 </p>
                 <input type="text" name="verify-content-otp" value="123456">
               </div>  
-              <button class="btn btn-primary" handle_modal="set-verify-email-modal">
+              <button class="btn btn-primary" id="btn-verify-email-modal" handle_modal="set-verify-email-modal" style="display: none;">
                 Verify
               </button>
             </div>
@@ -183,16 +183,16 @@
                   </div>
                 </div>
                 <div class="verify-content-cta">
-                  <button class="btn btn-secondary">Get OTP</button>
+                  <button class="btn btn-secondary btn-getotp">Get OTP</button>
                 </div>  
               </div>
-              <div class="verify-content-otp checked">
+              <div class="verify-content-otp checked" style="display: none;">
                 <p>
                   OTP
                 </p>
                 <input type="text" name="verify-content-otp" value="123456">
               </div>  
-              <button class="btn btn-primary" handle_modal="set-verify-phone-modal">
+              <button class="btn btn-primary" handle_modal="set-verify-phone-modal" style="display: none;">
                 Verify
               </button>
             </div>

@@ -387,4 +387,7 @@ body #footer .copy-right {
     border-radius: 10px;
     margin-bottom: 35px; }
 
+.modal-content {
+  border-radius: 8px; }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   setTimeout(function(){
     
-    $('.input-daterange .form-control').datepicker();
+    $('.input-daterange .form-control').datepicker({ dateFormat: 'dd/mm/yy' });
     
     initCountryCode();
     var closes = [
@@ -46,6 +46,7 @@ $( document ).ready(function() {
       '.btn-confirm-create',
       '#my-campaigns .btn-infomation',
       '#my-campaigns .btn-edit',
+      '.cta-account .create-account-bta',
       '.set-balance',
       '.fxtrade24-copying',
       '.funds-management .payment-set .btn-primary',
@@ -65,7 +66,7 @@ $( document ).ready(function() {
       }); 
     }
     $('body')
-      .on('mousedown', '.showpass', function() {
+      .on('mousedown touchstart', '.showpass', function() {
         $('#input-sign-in-password').attr('type', 'text');
         if ($(this).parents('.pass')) {
           $('#input-res-pass').attr('type', 'text');
@@ -80,7 +81,7 @@ $( document ).ready(function() {
           $('#setting-change-new-password').attr('type', 'text');
         }
       })
-      .on('mouseup mouseleave', '.showpass', function() {
+      .on('mouseup mouseleave touchend', '.showpass', function() {
         $('#input-sign-in-password').attr('type', 'password');
         if ($(this).parents('.pass')) {
           $('#input-res-pass').attr('type', 'password');  
@@ -115,6 +116,10 @@ $( document ).ready(function() {
           $('.setting-verify .verify-contents').hide();
           $('.setting-verify .verify-done').show();
         }
+      })
+      .on('click', '.strategies-content', function(event) {
+        $('.strategies').hide();
+        $('.strategies-campaign-details').show();
       })
       .on('click', '#funds-tabs-content .method', function(event) {
         $('#funds-tabs-content .method').removeClass('active');
@@ -218,6 +223,15 @@ $( document ).ready(function() {
         $('.sign-in').show();
         $('.register').hide();
         $('.reset').hide();
+      })
+      .on('click', '.btn-getotp', function(event) {
+        var parent = $(this).parents('.verify-content');
+        $(parent).find('.verify-content-otp').show();
+        $(parent).find('.btn-primary').show();
+        $(this).addClass('hide_in_mobile');
+        parent.addClass('activate');
+        // $('.verify-content-otp').show();
+        // $('#btn-verify-email-modal').show();
       })
       .on('click', '.forgot', function(event) {
         $('.sign-in').hide();

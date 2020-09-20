@@ -43,7 +43,8 @@
       width: calc((100% - 12px) / 2);
       margin-bottom: 12px;
       background-color: #F2F2F2;
-      padding: 6px; }
+      padding: 6px;
+      border-radius: 4px; }
       .strategies-ratio .strategies-commission--label,
       .strategies-ratio .strategies-leverage--label,
       .strategies-ratio .strategies-followers--label,
@@ -83,7 +84,8 @@
   .strategies-campaign-details .banner-strategies-campaign {
     margin-bottom: 30px; }
     .strategies-campaign-details .banner-strategies-campaign img {
-      width: 100%; }
+      width: 100%;
+      border-radius: 8px; }
   .strategies-campaign-details .strategies-infomations {
     display: flex;
     flex-direction: row;
@@ -185,8 +187,8 @@
       padding-top: 13px; }
     .strategies-campaign-details .strategies-statistics #statisticschart {
       width: 100% !important;
-      margin-left: -11px;
-      margin-bottom: -25px; }
+      margin-bottom: -25px;
+      height: 339px !important; }
     .strategies-campaign-details .strategies-statistics .label-chart {
       position: absolute;
       font-size: 10px;

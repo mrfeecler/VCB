@@ -115,7 +115,7 @@
   #partnership .chart #chartincome,
   #partnership .chart #chartregistrations {
     width: 100% !important;
-    margin-left: -11px;
+    height: 198px !important;
     margin-bottom: -25px; }
   #partnership .chart .labelchart {
     font-size: 14px;

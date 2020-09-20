@@ -305,12 +305,19 @@
       font-weight: 400;
       font-size: 14px;
       height: 40px; }
+      .verify-contents .verify-content-cta .btn.btn-getotp {
+        background-color: #0076DA; }
   .verify-contents .verify-content-area {
     width: calc(100% - 130px); }
   .verify-contents .verify-content-address > button, .verify-contents .verify-content-identity > button, .verify-contents .verify-content-phone > button, .verify-contents .verify-content-email > button {
     width: 220px;
     background-color: #0076DA;
     border-radius: 4px; }
+  .verify-contents .verify-content-phone .intl-tel-input.allow-dropdown.separate-dial-code .selected-flag {
+    background-color: #F5F5F5;
+    border-right: 1px solid #9E9E9E;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
   .verify-contents .verify-content-phone .intl-tel-input {
     width: 100%; }
   .verify-contents .verify-content-phone .btn {

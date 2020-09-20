@@ -29,6 +29,7 @@ $( document ).ready(function() {
       },
       options: {
         responsive: true,
+        maintainAspectRatio: false,
         legend: {
             position: 'bottom',
         },
@@ -40,11 +41,19 @@ $( document ).ready(function() {
             ticks: {
               display: false,
               beginAtZero: true,
-              max: 10000
-            }
+              max: 10000,
+              maxTicksLimit: 10
+            },
+            gridLines: {
+              drawBorder: false
+            },
           }],
           xAxes: [{
-            barPercentage: 0.4
+            barPercentage: 0.4,
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+              drawBorder: false,
+            }
           }]
         }
       }
@@ -74,11 +83,12 @@ $( document ).ready(function() {
             '#0076DA',
             '#0076DA'
           ],
-          borderWidth: 1
+          borderWidth: 0
         }]
       },
       options: {
         responsive: true,
+        maintainAspectRatio: false,
         legend: {
             position: 'bottom',
         },
@@ -90,11 +100,19 @@ $( document ).ready(function() {
             ticks: {
               display: false,
               beginAtZero: true,
-              max: 10
-            }
+              max: 10,
+              maxTicksLimit: 10
+            },
+            gridLines: {
+              drawBorder: false
+            },
           }],
           xAxes: [{
-            barPercentage: 0.4
+            barPercentage: 0.4,
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+              drawBorder: false,
+            }
           }]
         },
         title: {
@@ -150,6 +168,7 @@ $( document ).ready(function() {
       },
       options: {
         responsive: true,
+        maintainAspectRatio: false,
         legend: {
             position: 'bottom',
         },
@@ -163,10 +182,17 @@ $( document ).ready(function() {
               beginAtZero: true,
               max: 200,
               min: -200
-            }
+            },
+            gridLines: {
+              drawBorder: false
+            },
           }],
           xAxes: [{
-            barPercentage: 0.4
+            barPercentage: 0.4,
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+              drawBorder: false,
+            }
           }]
         },
         title: {

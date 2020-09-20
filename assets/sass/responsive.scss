@@ -32,6 +32,16 @@ $breakpoint-mobile-small: 576px;
 }
 
 @media (max-width: $breakpoint-tablet) {
+  .strategies-contents {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+  }
+  .strategies-content {
+    width: calc((100% - 30px) / 3);
+    margin-bottom: 0;
+  }
   #my-account .real-contents .ctas-buttons {
     width: 100%;
     justify-content: flex-start;
@@ -43,8 +53,13 @@ $breakpoint-mobile-small: 576px;
       width: 100%;
     }
   }
+  #create-account .step2 .standart-account .left-standart-account {
+    padding-right: 0;
+  }
   .funds-management #funds-tabs-content .method {
-    width: calc((100% - 90px) / 2);
+    width: calc((100% - 12px) / 2);
+    margin-bottom: 12px;
+    max-width: unset;
     &:last-child {
       margin-right: 0;
       margin-left: auto;
@@ -86,6 +101,13 @@ $breakpoint-mobile-small: 576px;
   }
   body #footer .menu-footer li {
     margin-right: 0;
+  }
+  .create-campaigns .campaign-details-content {
+    .dropdown {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 28px;
+    }
   }
 }
 
@@ -249,10 +271,1251 @@ $breakpoint-mobile-small: 576px;
       margin: auto;
     }
   }
+  #my-account {
+    #set {
+      &-trade-modal,
+      &-pass-modal,
+      &-ac-modal,
+      &-nickname-modal,
+      &-leverage-modal,
+      &-balance-modal {
+        .modal-dialog {
+          width: calc(100% - 40px);
+        }
+        .modal-header {
+          padding: 16px 16px 0;
+          margin-bottom: 24px;
+        }
+        .modal-body {
+          padding: 0 16px;
+          .leverage-note {
+            margin-top: 20px;
+          }
+        }
+        .modal-footer {
+          padding: 24px 16px 16px;
+        }
+        .number-account {
+          font-size: 14px;
+        }
+        h5 {
+          font-size: 18px;
+        }
+        .dropdown button {
+          height: 44px;
+        }
+      }
+    } 
+    #set-nickname-modal .modal-body > p {
+      font-size: 12px;
+      margin-top: 12px;
+    }
+    #set-trade-modal,
+    #set-ac-modal {
+      .modal-body {
+        .balance {
+          padding: 12px;
+        }
+        .first-text {
+          width: 92px;
+        }
+        span {
+          width: calc(100% - 116px);
+          font-size: 12px;
+        }
+      }
+    }
+    #set-ac-modal .modal-footer {
+      padding-top: 20px;
+      .btn {
+        opacity: 1;
+      }
+    }
+    #set-trade-modal .modal-footer {
+      padding-top: 20px;
+      > button.btn {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+      .cta-btns {
+        > * {
+          width: 100%;
+          margin-bottom: 12px;
+        }
+        button {
+          width: 100%;
+          height: 44px;
+        }
+        .btn {
+          align-items: center;
+          justify-content: center;
+          &:after {
+            position: relative;
+            right: auto;
+            transform: unset;
+            margin-left: 10px;
+            top: auto;
+          }
+        }
+      }  
+    }
+  }
+  #create-account .step2 {
+    .create-account-content > h3 {
+      display: none;
+    }
+    .account-nickname,
+    .currency {
+      flex-direction: column;
+      margin-bottom: 0;
+      .password-account-nickname,
+      .create-account-nickname,
+      .dropdown {
+        width: 100%;
+        max-width: unset;
+        margin-bottom: 30px;
+      }
+    }
+    .boxes {
+      margin-bottom: 20px;
+      &.account-nickname {
+        margin-bottom: 0;
+      }
+    }
+    .box {
+      width: calc((100% - 12px) / 2);
+      max-width: unset;
+      padding: 10px 10px 10px 36px;
+      &:before {
+        left: 10px;
+        top: 10px;
+      }
+    }
+    .standart-account {
+      flex-wrap: wrap-reverse;
+      grid-row-gap: 28px;
+    }
+    .left-standart-account .box p {
+      margin-bottom: 0;
+      font-size: 12px;
+    }
+    .right-standart-account {
+      min-height: 0;
+    }
+    .cta-account {
+      margin-bottom: 20px;
+      button {
+        width: 100%;
+        height: 44px;
+      }
+    }
+  }
+  .funds-management #funds-tabs-content {
+    .payment-detail .payment-set {
+      flex-direction: column;
+      > * {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      > .btn {
+        height: 44px;
+        margin-bottom: 40px;
+      }
+      #dropdowndepositunitedstates {
+        background-color: #F5F5F5;
+      }
+      .otpfunds,
+      .owner-payment {
+        width: 100%;
+      }
+      .otpvia {
+        margin: 0 0 30px!important;
+      }
+      .otpfunds {
+        width: 100px;
+        &.checked input {
+          background: none;
+        }
+        input {
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+      }
+    }
+    .methods {
+      margin-bottom: 6px;
+    }
+    .dropdown .dropdown-toggle {
+      height: 44px;
+    }
+  }
+  #set-verify-document-submit-modal,
+  #set-verify-document-modal,
+  #set-verify-phone-modal,
+  #set-verify-email-modal,
+  #set-notification-modal,
+  #set-password-modal,
+  #set-profile-modal,
+  #set-withdrawal-modal,
+  #set-internal-transfer-modal,
+  #set-deposit-modal {
+    max-width: 320px;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    .modal-dialog {
+      height: auto;
+      padding: 30px 0 ;
+      h4 {
+        font-size: 16px;
+        margin-bottom: 40px;
+        line-height: 20px;
+      }
+      .btn {
+        height: 44px;
+      }
+      img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 20px;
+      }
+    }
+    .close {
+      opacity: 1;
+    }
+  }
+
+  #transaction-history .history-account-area h2 {
+    margin-bottom: 18px;
+  }
+  .history-filter-bar {
+    justify-content: space-between;
+    grid-row-gap: 18px;
+    margin-bottom: 22px;
+    h4 {
+      margin-bottom: 10px;
+    }
+    > div {
+      margin-right: 0;
+    }
+    .history-account {
+      width: calc((100% - 12px) / 2);
+    }
+    .input-daterange,
+    .dropdown .dropdown-toggle {
+      width: 100%;
+    }
+  }
+  .history-content {
+    .history-table {
+      width: 100%;
+      overflow-x: scroll;
+      margin-bottom: 16px;
+      &::-webkit-scrollbar {
+          width: 1em;
+      }
+      &::-webkit-scrollbar-track {
+          background-color: #F2F2F2;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: url('../imgs/scrollbar.png') no-repeat;
+        background-size: 100% 100%; 
+      }
+      table {
+        width: 767px;
+        margin-bottom: 16px;
+      }
+      thead th,
+      tbody td {
+        &:last-child,
+        &:nth-last-child(2),
+        &:nth-last-child(3) {
+          text-align: right;
+        }
+      }
+    }
+    nav {
+      margin: auto;
+      .page-item {
+        .page-link {
+          height: 32px;
+          width: 32px;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: none;
+        }
+      }
+      ul {
+        margin-bottom: 68px;
+      }
+    }
+  }
+  #set-campaign-edit-modal,
+  #set-create-campaign-modal,
+  #set-campaign-info-modal {
+    max-width: 320px;
+    width: calc(100% - 40px);
+    margin: auto;
+    .modal-header {
+      padding: 16px 16px 0;
+      margin-bottom: 16px;
+      h5 {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .modal-body {
+      padding-left: 16px;
+      padding-right: 16px;
+      .balance {
+        padding: 12px;
+      }
+      .first-text {
+        width: 92px;
+      }
+      span {
+        width: calc(100% - 116px);
+        font-size: 12px;
+      }
+      p:last-child {
+        margin-bottom: 5px;
+      }
+    }
+    .modal-footer {
+      padding: 20px 16px 16px;
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  #set-campaign-edit-modal {
+    .modal-header {
+      margin-bottom: 28px;
+      h5 {
+        font-size: 20px;
+      }  
+    }
+    
+    .modal-body {
+      .campaign-edit-content {
+        min-height: 200px;
+        font-size: 14px;
+        letter-spacing: -.6px;
+        padding: 16px;
+        line-height: 123%;
+      }
+      > div {
+        margin-bottom: 28px;
+        &.campaign-edit-cover-image {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 120px;
+          }
+        }  
+      }
+      
+    }  
+  }
+  .my-campaigns .campaigns .ctas-buttons {
+    justify-content: space-between;
+    > button {
+      margin-right: 0;
+      width: calc((100% - 24px) / 3);
+      letter-spacing: -.3px;
+      padding: 0;
+    }
+    .trade-cta {
+      width: calc((100% - 24px) / 3);
+      .btn {
+        letter-spacing: -.3px;
+        margin-right: 0;
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+  body .main-content .create-campaigns {
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  .create-campaigns {
+    h3 {
+      margin-bottom: 14px;
+    }
+    .general-information-content {
+      flex-direction: column;
+      > div {
+        width: 100%;
+        margin-bottom: 28px;
+      }
+      h5 {
+        margin-bottom: 10px;
+      }
+      input {
+        height: 44px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      textarea {
+        min-height: 203px;
+        padding: 16px;
+      }
+    }
+    .campaign-details {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      .dropdown {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 28px;
+      }
+    }
+
+    > .btn {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+  #set-create-campaign-modal .modal-footer {
+    flex-direction: column;
+    grid-row-gap: 10px;
+    button.btn {
+      margin: 0;
+      height: 44px;
+    }
+  }
+
+  .strategies {
+    h2.strategies-title {
+      margin-bottom: 20px;
+    }
+    &-ratio {
+      padding: 16px;
+      grid-row-gap: 16px;
+      .strategies-commission,
+      .strategies-leverage,
+      .strategies-followers,
+      .strategies-profit {
+        margin-bottom: 0;
+        &--label {
+          line-height: 10px;
+        }
+        &--ratio {
+          line-height: 19px;
+        }
+      }
+    }
+    &-contents {
+      grid-row-gap: 16px;
+      border: none;
+    }
+    &-content {
+      width: 100%;
+      img {
+        max-height: 120px;
+      }
+      .strategies-image-area p {
+        left: 16px;
+        bottom: 16px;
+      }
+    }
+    nav {
+      margin: auto;
+      .pagination {
+        margin-bottom: 48px;
+      }
+    }
+    &-campaign-details {
+      h2.strategies-title {
+        margin-bottom: 20px;
+      }
+      .banner-strategies-campaign img {
+        height: 120px;
+        margin-bottom: 2px;
+      }
+      .strategies-infomations {
+        margin-bottom: 48px;
+        > div {
+          box-shadow: none;
+          padding: 0;
+          h4,
+          h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 24px;
+          }
+          &.fxtrade24 {
+            margin-bottom: 48px;
+          }
+        }
+        .fxtrade24-content {
+          margin-bottom: 20px;
+        }
+        .fxtrade24-ctas {
+          > div {
+            width: calc((100% - 12px) / 2);
+          }
+          .fxtrade24-copying {
+            flex-direction: column;
+          }  
+        }
+        .strategies-abouts {
+          grid-column-gap: 12px;
+          grid-row-gap: 16px;
+          .strategies-about {
+            width: calc((100% - 12px) / 2);
+            margin-bottom: 0;
+            padding: 8px;
+            min-height: 50px;
+            &-label {
+              line-height: 13px;
+            }
+            &-value {
+              font-size: 14px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .strategies-statistics {
+        box-shadow: none;
+        padding: 0;
+        margin-bottom: 38px;
+        .statistics-filter-bar {
+          display: none;
+          &-mobile {
+            display: flex!important;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            grid-row-gap: 18px;
+            margin-bottom: 22px;
+            h4 {
+              margin-bottom: 10px;
+              font-weight: 700;
+              font-size: 14px;
+            }
+            .history-account {
+              width: calc((100% - 12px) / 2);
+              margin-right: 0;
+            }
+            .input-daterange {
+              border: 1px solid #9E9E9E;
+              border-radius: 4px;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              width: 100%;
+              .dropdown-toggle:after {
+                border-top: 6px solid;
+                border-right: 6px solid transparent;
+                border-left: 6px solid transparent;
+                transform: rotate(270deg);
+              }
+              input {
+                border: none;
+              }
+            }
+            .dropdown .dropdown-toggle {
+              border: 1px solid #9E9E9E;
+              border-radius: 4px;
+              background-color: transparent;
+              color: #333333;
+              text-align: left;
+              position: relative;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              width: 100%;
+              height: 40px;
+              border-radius: 4px;
+              &::after {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+          }  
+        }
+        #statisticschart {
+          height: 345px!important;
+        }
+        .label-chart {
+          &.base-limit {
+            top: calc(50% - 30px);
+          }
+          &.lower-limit {
+            bottom: 55px;
+          }
+        }
+      }
+      .strategies-order {
+        box-shadow: none;
+        padding: 0;
+        margin-bottom: 48px;
+        table {
+          min-width: 420px;
+          width: 100%;
+          margin-bottom: 16px;
+        }
+        thead th,
+        tbody td {
+          &:last-child,
+          &:nth-last-child(2),
+          &:nth-last-child(3) {
+            text-align: right;
+          }
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+        nav {
+          margin: auto;
+        }
+        .strategies-order-tab-table {
+          width: 100%;
+          overflow-x: scroll;
+          margin-bottom: 16px;
+          position: relative;
+          &::-webkit-scrollbar {
+              width: 1em;
+          }
+          &::-webkit-scrollbar-track {
+              background-color: #F2F2F2;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: url('../imgs/scrollbarorder.png') no-repeat;
+            background-size: 100% 100%; 
+          }
+        }
+      }
+    }
+  }
+  #set-start-copying-modal .modal-dialog {
+    width: calc(100% - 40px);
+    .modal-header {
+      padding: 20px;
+      margin-bottom: 8px;
+    }
+    .modal-body {
+      padding: 0 20px;
+      .start-copying-content {
+        width: 100%;
+        .start-copying-content {
+          width: calc((100% - 12px) / 2);
+        }
+        input {
+          height: 44px;
+        }
+        &.dropdown .dropdown-toggle {
+          height: 44px;
+        }
+      }
+    }
+    .modal-footer {
+      padding: 0 20px 20px;
+      .btn.btn-primary {
+        opacity: 1;
+        height: 44px;
+      }
+    }
+    h5 {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  #partnership {
+    h2 {
+      margin-bottom: 20px;
+    }
+    .partnership-rank {
+      &-box {
+        box-shadow: none;
+        padding: 14px 16px;
+        background-color: #F2F2F2;
+        margin-bottom: 38px;
+        .btn {
+          width: 100%;
+          align-items: center;
+        }
+        & + .partnership-rank-box {
+          background-color: transparent;
+          padding: 0;
+          h3 {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &-row {
+        margin-bottom: 0;
+        &.partnership-rank-affiliate {
+
+          .partnership-rank-box {
+            background-color: transparent;
+            padding: 0;
+            margin-bottom: 38px;
+            h3 {
+              margin-bottom: 10px;
+            }
+            .partnership-affiliate-link {
+              input {
+                height: 44px;
+                width: calc(100% - 100px);
+              }
+              .btn {
+                width: 88px;
+                font-size: 14px;
+                font-weight: 400;
+              }
+              p {
+                text-align: left;
+                margin-bottom: 0;
+              }
+            }
+            
+          }
+        }
+      }
+      h3 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 14px;
+      }
+      &-price {
+        padding: 0;
+        .price .price-int {
+          line-height: 39px;
+        }
+        > p {
+          margin-bottom: 0;
+        }
+      }
+      &-star {
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+        > div {
+          width: calc((100% - 12px) / 2);
+        }
+        .primary-star {
+          padding: 12px;
+          img {
+            width: 60px;
+            height: 57px;
+            margin-bottom: 12px;
+          }  
+        }
+        .star-info {
+          .percent-spread-share {
+            font-size: 14px;
+            line-height: 19px;
+          }
+          .spread-share {
+            margin-bottom: 12px;
+            padding: 8px;
+          }
+        }
+        
+      }
+    }
+    .quick-report {
+      padding: 0;
+      box-shadow: none;
+      margin-bottom: 10px;
+      h4 {
+        font-size: 18px;
+        margin-bottom: 9px;
+      }
+      > p {
+        font-weight: 700;
+        margin-bottom: 10px;
+        line-height: 19px;
+      }
+      .input-daterange {
+        width: 100%;
+        input {
+          height: 40px;
+        }
+      }
+      .date {
+        margin-bottom: 31px;
+      }
+
+    }
+    .chart {
+      flex-direction: column;
+      .income,
+      .registrations {
+        width: 100%;
+        margin-bottom: 38px;
+      }
+    }
+    .members {
+      padding: 0;
+      box-shadow: none;
+      h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      table {
+        min-width: 553px;
+        width: 100%;
+        margin-bottom: 16px;
+      }
+      thead th,
+      tbody td {
+        &:last-child,
+        &:nth-last-child(2),
+        &:nth-last-child(3) {
+          text-align: right;
+        }
+        &:first-child {
+          padding: 0;
+        }
+        &.level {
+          background-position: left 0 top 50%;
+          &.lvl1 {
+            padding-left: 30px;
+          }
+          &.lvl2 {
+            padding-left: 60px;
+            background-position: left 30px top 50%;
+          }
+        }
+      }
+      .members-table {
+        width: 100%;
+        overflow-x: scroll;
+        margin-bottom: 20px;
+        position: relative;
+        &::-webkit-scrollbar {
+            width: 1em;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #F2F2F2;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: url('../imgs/scrollbarorder.png') no-repeat;
+          background-size: 100% 100%; 
+        }
+      }
+      nav {
+        margin-left: 0;
+        margin-right: auto;
+        ul {
+          margin-bottom: 48px;
+        }
+      }
+    }
+  }
+  
+  .settings {
+    h2.settings-title {
+      margin-bottom: 11px;
+    }
+    .nav-tabs .nav-link {
+      padding: 0 9px;
+    }
+    .setting-password, 
+    .settings-profile {
+      padding-top: 20px;
+      > .btn {
+        width: 100%;
+        height: 44px;
+        margin-bottom: 48px;
+      }
+      h3 {
+        margin-bottom: 14px;
+      }
+    }
+    .settings-profile-info-content .intl-tel-input.allow-dropdown.separate-dial-code .flag-container .selected-flag {
+      width: 98px;
+    }
+    .settings {
+      &-profile,
+      &-address {
+        &-info {
+          padding-bottom: 2px;
+          margin-bottom: 28px;
+          .intl-tel-input.allow-dropdown.separate-dial-code,
+          .intl-tel-input.allow-dropdown.separate-dial-code .flag-container {
+            height: 44px;
+          }
+        }
+        &-info-content {
+          margin-bottom: 28px;
+          &.it2columns > div {
+            width: calc((100% - 12px) / 2);
+          }
+        }
+        input {
+          height: 44px;
+        }
+      } 
+    }
+    .settings-address-info {
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+      &-content {
+        margin-bottom: 18px;
+      }  
+    }
+    .setting-password {
+      h4 {
+        margin-bottom: 14px;
+      }
+      label {
+        margin-bottom: 10px;
+      }
+      .password {
+        margin-bottom: 28px;
+        input {
+          height: 44px;
+        }
+      }
+      .settings-password-area {
+        padding-bottom: 2px;
+        margin-bottom: 30px;
+      }
+    }
+    .setting-notification {
+      padding-top: 20px;
+      .btn {
+        width: 100%;
+        margin-bottom: 48px;
+      }
+    }
+    .verify-contents {
+      .verify-content {
+        width: 100%;
+        &-get-otp {
+          margin-bottom: 48px;
+          padding-bottom: 104px;
+          position: relative;
+          &:after {
+            content: "";
+            bottom: 74px;
+            width: 100%;
+            height: 1px;
+            background-color: #9E9E9E;
+            left: 0;
+            position: absolute;
+          }
+          .verify-content-cta {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 44px;
+          }
+          .verify-content-area {
+            width: 100%;
+            input {
+              height: 44px;
+            }
+          }
+        }
+        &.activate {
+          .verify-content-cta {
+            display: none;
+          }
+          .verify-content-get-otp {
+            padding-bottom: 0;
+            margin-bottom: 28px;
+            &:after {
+              content: none;
+            }
+          }
+        }
+        .verify-content-otp {
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+        }
+      }
+      .verify-content-address,
+      .verify-content-identity,
+      .verify-content-phone, 
+      .verify-content-email {
+        > button {
+          width: 100%;
+          margin-bottom: 48px;
+        }
+      }
+      .verify-content-address,
+      .verify-content-identity {
+        .dropdown  {
+          margin-bottom: 20px;
+          .dropdown-toggle {
+            width: 154px;
+          }  
+        }
+        
+        > p {
+          margin-bottom: 16px;
+        }
+      }
+      .verify-content-boxes {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+      }
+      .verify-content-box {
+        width: calc((100% - 12px) / 2);
+        height: 154px;
+        padding-right: 12px;
+        padding-left: 12px;
+        letter-spacing: -.5px;
+      }
+    }
+    .setting-verify {
+      padding-top: 20px;
+      h3 {
+        margin-bottom: 20px;
+      }
+      .verify-label {
+        top: calc(100% + 12px);
+        display: none;
+
+      }
+      .verify-status {
+        margin-bottom: 75px;
+        > div {
+          &.active {
+            .verify-label {
+              display: block
+            }
+            &.active-line {
+              .verify-label {
+                display: none;
+              } 
+            }
+          }
+        }
+      }
+      .verify-done {
+        margin-bottom: 30vh;
+        p {
+          font-size: 14px;
+        }  
+      }
+      .verify-status > div {
+        width: calc((100% - 30px) / 4);
+        &:first-child {
+          width: 30px;
+        }  
+      }
+      
+    }
+
+  }
+  
+  
+  
+  
+
+
 }
 @media (max-width: $breakpoint-mobile-small) {
-  body #footer .col-md-12 {
-    padding-right: 20px;
-    padding-left: 20px;
+  body {
+    .btn {
+      height: 44px;
+    }
+    #create-account h2,
+    .header h2,
+    .main-content h2,
+    .footer h2 {
+      font-size: 20px;
+      margin-bottom: 11px;
+    }
+    #footer .col-md-12 {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
   }
+  
+  .box-middle {
+    width: 100%;
+  }
+  .box-inner {
+    box-shadow: none;
+    padding: 25px 5px;
+  }
+  .reset,
+  .register,
+  .sign-in {
+    .btn-submit {
+      margin-top: 40px;
+      max-width: 200px;
+    }
+  }
+  .register .btn-submit {
+    &.btn-step3,
+    &.btn-step2 {
+      margin-top: 40px;
+    }
+  }
+  .step3, 
+  .step2 {
+    .showstep {
+      top: 30px;
+    }
+  }
+  .step3 .form .zip > div {
+    width: calc((100% - 12px) / 2);
+  }
+  .reset {
+    p.text-center {
+      display: none;
+      &.text-center-mobile {
+        display: block!important;
+      }
+    }
+    .signin-link {
+      max-width: 200px;
+      display: none;
+      &-mobile {
+        display: flex!important;
+      }
+    }
+  }
+  .my-campaigns,
+  #my-account {
+    #demo {
+      .real-contents .ctas-buttons > .trade-cta,
+      .real-contents .ctas-buttons > button {
+        width: calc((100% - 12px) / 2);
+      }
+    }
+    #account-tabs {
+      margin-bottom: 20px;
+    }
+    .control-bar {
+      .filter {
+        > span {
+          display: none;
+        }  
+        .dropdown {
+          margin-left: 0;
+          .dropdown-toggle {
+            border-width: 0;
+            padding: 0;
+            min-width: 80px;
+            width: 80px;
+            height: auto;
+            margin-bottom: 14px;
+          }  
+        }
+        
+      }
+      .btn {
+        width: 100%;
+        height: 44px;
+      }
+    }
+    .real-contents {
+      .bottom-content .price .price-int {
+        line-height: 100%;
+      }
+      .ctas-buttons {
+        margin-top: 19px;
+        justify-content: space-between;
+        > .trade-cta {
+          width: calc((100% - 22px) / 3);
+          .btn {
+            margin-right: 0;  
+            width: 100%;
+          }
+        }
+        > button {
+          margin-right: 0;
+          width: calc((100% - 22px) / 3);
+          padding: 0;
+          letter-spacing: -.3px;
+        }
+        .settings-cta {
+          .dropdown-menu {
+            transform: none!important;
+            top: 100%!important;
+          }
+          .btn {
+            background-color: transparent;
+            border-width: 0;
+            padding: 0 30px 0 0;
+            height: auto;
+            line-height: 100%;
+          }
+        }
+        
+      }
+      .real-content {
+        position: relative;
+        margin-top: 20px;
+        padding: 15px 16px;
+      }
+    }
+    
+    .settings-cta {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  #create-account {
+    #create-account-modal .modal-footer {
+      padding: 0;
+    }
+    .standart-account h4 {
+      height: 44px;
+      line-height: 44px;
+      padding: 0 16px;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    .create-account-content > p {
+      margin-bottom: 18px;
+    }
+    .standart-account {
+      .right-standart-account {
+        padding: 20px 16px;
+        p:last-child{
+          margin-bottom: 0;
+        }
+      }
+      .left-standart-account {
+        .cta-standart {
+          padding: 0 16px;
+          margin-bottom: 16px;
+          button {
+            width: calc((100% - 8px) / 2);
+            padding: 0;
+            height: 40px;
+          }
+        }
+        p {
+          margin-bottom: 30px;
+          padding: 0 16px;
+        }
+      }  
+    }
+  }
+  .my-campaigns .campaigns {
+    .campaign-content {
+      position: relative;
+    }
+    .ctas-buttons .settings-cta .btn {
+      background-color: transparent;
+      padding: 0;
+      height: auto;
+    }
+    .settings-cta {
+      top: 15px;
+    }
+  }
+  
 }

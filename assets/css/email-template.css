@@ -1,0 +1,149 @@
+.email-template {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #fff;
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  padding: 24px;
+  color: #333333; }
+  .email-template-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 32px; }
+    .email-template-header img {
+      height: 80px;
+      width: 80px; }
+  .email-template-date {
+    color: #333333;
+    font-weight: 700;
+    font-size: 14px; }
+  .email-template h1 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 40px; }
+  .email-template h2 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 32px; }
+  .email-template-content {
+    color: #333333;
+    font-size: 18px;
+    line-height: 141%;
+    margin-bottom: 64px; }
+    .email-template-content p {
+      margin-bottom: 18px; }
+  .email-template-info-content {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #BBBBBB; }
+  .email-template-server-content {
+    margin-bottom: 66px; }
+  .email-template-server-content, .email-template-info-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center; }
+    .email-template-server-content img, .email-template-info-content img {
+      margin: auto; }
+    .email-template-server-content .server-area,
+    .email-template-server-content .infor-area, .email-template-info-content .server-area,
+    .email-template-info-content .infor-area {
+      width: calc(100% - 48px);
+      padding-left: 16px; }
+      .email-template-server-content .server-area-note,
+      .email-template-server-content .infor-area-note, .email-template-info-content .server-area-note,
+      .email-template-info-content .infor-area-note {
+        color: #333333;
+        opacity: 0.5;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px; }
+      .email-template-server-content .server-area-label,
+      .email-template-server-content .infor-area-label, .email-template-info-content .server-area-label,
+      .email-template-info-content .infor-area-label {
+        color: #333333;
+        opacity: 0.5;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 16px; }
+      .email-template-server-content .server-area-value,
+      .email-template-server-content .infor-area-value, .email-template-info-content .server-area-value,
+      .email-template-info-content .infor-area-value {
+        font-size: 24px;
+        color: #333333;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 16px; }
+        .email-template-server-content .server-area-value a,
+        .email-template-server-content .infor-area-value a, .email-template-info-content .server-area-value a,
+        .email-template-info-content .infor-area-value a {
+          color: #0076DA;
+          text-decoration: underline; }
+  .email-template-deposit {
+    margin-bottom: 64px; }
+    .email-template-deposit h2 {
+      margin-bottom: 24px; }
+    .email-template-deposit .btn {
+      height: 72px;
+      width: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      color: #FFFFFF;
+      background-color: #0076DA;
+      border-radius: 8px; }
+  .email-template-customer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 16px;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    margin-bottom: 64px; }
+    .email-template-customer img {
+      height: 80px;
+      width: 80px; }
+    .email-template-customer-content {
+      width: calc(100% - 104px);
+      padding-left: 24px; }
+      .email-template-customer-content p {
+        font-size: 16px;
+        margin-bottom: 18px; }
+    .email-template-customer .email-contact {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      .email-template-customer .email-contact div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; }
+      .email-template-customer .email-contact .phone {
+        margin-right: 8px; }
+      .email-template-customer .email-contact .mail {
+        margin-left: 8px; }
+      .email-template-customer .email-contact .phone,
+      .email-template-customer .email-contact .mail {
+        font-size: 16px; }
+        .email-template-customer .email-contact .phone-value,
+        .email-template-customer .email-contact .mail-value {
+          margin-left: 4px;
+          color: #0076DA;
+          font-weight: 700; }
+  .email-template-footer {
+    color: #333333;
+    opacity: 0.5;
+    margin-bottom: 64px; }
+
+/*# sourceMappingURL=email-template.css.map */

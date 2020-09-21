@@ -196,7 +196,7 @@
       .strategies-campaign-details .strategies-statistics .label-chart.upper-limit {
         top: 0; }
       .strategies-campaign-details .strategies-statistics .label-chart.lower-limit {
-        bottom: 38px; }
+        bottom: 41px; }
       .strategies-campaign-details .strategies-statistics .label-chart.base-limit {
         top: calc(50% - 20px);
         transform: translateY(-50%); }

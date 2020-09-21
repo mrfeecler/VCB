@@ -16,6 +16,7 @@ acc = a@a.a
 pass = a
 - open reset >> open file index.html adding ```style="display: none;"``` to lines 79, 144,145 and remove ```style="display: none;"``` line 146
 acc = a@a.a 
+- open email template: open file index.html adding ```style="display: none;"``` to lines 26, 78, 153 and remove ```style="display: none;"``` line 173
 
 ## Some mistake in design
 - My campaigns desktop version does not have 2 steps click button "continue" and "create new campaign" like mobile. so now, I make it sync (My campaigns > desktop không có 2 step click button "continue" và "create new campaigns" như mobile nên hiện tại để đồng bộ.)

@@ -17,6 +17,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: [{
+          "assets/css/email-template.css" : "assets/sass/email-template.scss",
           "assets/css/main.css" : "assets/sass/main.scss",
           "assets/css/account.css" : "assets/sass/account.scss",
           "assets/css/funds-management.css" : "assets/sass/funds-management.scss",

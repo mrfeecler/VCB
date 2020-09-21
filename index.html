@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
   <title>VCB</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/css/intlTelInput.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="assets/css/email-template.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="assets/css/account.css">
   <link rel="stylesheet" type="text/css" href="assets/css/funds-management.css">
@@ -168,13 +171,92 @@
     </div>
   </footer><!-- /footer -->
 
+  <!-- email template -->
+  <div class="email-template" style="display: none;">
+    <div class="email-template-header">
+      <img src="../assets/imgs/logo.png" alt="logo">
+      <div class="email-template-date">
+        August 30, 2020
+      </div>
+    </div>
+    <div class="email-template-body">
+      <h1>Your trading account is ready!</h1>
+      <div class="email-template-content">
+        <p class="dear">Dear Hoang Nguyen,</p>
+        <p class="paragraph">
+          We are pleased to inform you that you have successfully registered for a trading account.<br>
+          You can now start trading the financial markets with VCBFX, taking advantage of our excellent trading conditions, cutting-edge technology and innovative trading tools.        
+        </p>
+      </div>
+      <div class="email-template-info">
+        <h2>Your account details</h2>
+        <div class="email-template-info-content">
+          <img src="../assets/imgs/emailtemplate/login.png" alt="login icon">
+          <div class="infor-area">
+            <div class="infor-area-label">
+              account number
+            </div>
+            <div class="infor-area-value">
+              123456789
+            </div>
+            <div class="infor-area-note">
+              This is your tading terminal login.
+            </div>
+          </div>
+        </div>
+        <div class="email-template-server-content">
+          <img src="../assets/imgs/emailtemplate/server.png" alt="login icon">
+          <div class="server-area">
+            <div class="server-area-label">
+              trading server address
+            </div>
+            <div class="server-area-value">
+              <a href="mt5real1.vcbfx.com:444" title="">mt5real1.vcbfx.com:444</a>
+            </div>
+            <div class="server-area-note">
+              <p>When signing in to your MetaTrader Terminal, enter this server address or just select it from the list.</p>
+              <p>You'll need funds in your account to start trading.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="email-template-deposit">
+        <h2>Start by making deposit!</h2>
+        <button type="button" class="btn btn-primary">Make a deposit</button>
+      </div>
+      <div class="email-template-customer">
+        <img src="../assets/imgs/emailtemplate/customer-care.png" alt="customer icon">
+        <div class="email-template-customer-content">
+          <p>For any questions you may have, feel free to contact the VCBFX support team.</p>
+          <div class="email-contact">
+            <div class="phone">
+              <div class="phone-label">
+                Phone: 
+              </div>
+              <a class="phone-value" href="tel:19001900">
+                19001900
+              </a>
+            </div>
+            -
+            <div class="mail">
+              <div class="mail-label">
+                Email: 
+              </div>
+              <a class="mail-value" href="mailto:support@vcbfx.com">
+                support@vcbfx.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="email-template-footer">
+      General Risk Warning: CFDs are leveraged products. Trading in CFDs carries a high level of risk thus may not be appropriate for all investors. The investment value can both increase and decrease and the investors may lose all their invested capital. Under no circumstances shall the Company have any liability to any person or entity for any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs.
+    </div>
+  </div>
+  <!-- end email template -->
 
-
-
-
-
-
-
+  
   <script>
     function includeHTML() {
       var z, i, elmnt, file, xhttp;

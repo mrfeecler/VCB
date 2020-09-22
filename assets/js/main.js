@@ -1,6 +1,12 @@
 $( document ).ready(function() {
   setTimeout(function(){
-    
+    $(".select .dropdown-menu a").click(function(){
+      var selText = $(this).text();
+      var textdropdown = $(this).parents('.dropdown').find('.dropdown-toggle').text();
+      $(this).text(textdropdown);
+      $(this).parents('.dropdown').find('.dropdown-toggle').text(selText);
+    });
+
     $('.input-daterange .form-control').datepicker({ dateFormat: 'dd/mm/yy' });
     
     initCountryCode();
@@ -219,6 +225,9 @@ $( document ).ready(function() {
         $('.sign-in').hide();
         $('.register').show();
       })
+      .on('click', '.partnership-affiliate-link .btn', function(event) {
+        copyToClipboard('.partnership-affiliate-link input');
+      })
       .on('click', '.signin-link', function(event) {
         $('.sign-in').show();
         $('.register').hide();
@@ -276,6 +285,10 @@ $( document ).ready(function() {
     });
   }, 200);
 });
+function copyToClipboard(element) {
+  $(element).select();
+  document.execCommand("copy");
+}
 function initCountryCode() {
   $(".phone-verify").intlTelInput({
     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js",

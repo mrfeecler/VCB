@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <title>VCB</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/css/intlTelInput.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="assets/css/email-template.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/account.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/funds-management.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/my-campaigns.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/partnership.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/strategies.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/transaction-history.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/settings.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="menu-mobile">
+            <img src="../vcb/assets/imgs/menu-mobile.png" alt="logo">
+          </div>
+          <div class="logo">
+            <a href="#" title="logo">
+              <img src="../vcb/assets/imgs/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="infomations">
+            <div class="money">
+              0.00 USD
+            </div>
+            <div class="account">
+              <div class="dropdown">
+                <a href="#" role="button" id="dropdownMenuAccountLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pham
+                  <img src="../vcb/assets/imgs/account.png" alt="account icon">
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuAccountLink">
+                  <a class="dropdown-item name" href="#">Pham Hong Phuc</a>
+                  <a class="dropdown-item email" href="#">example@gmail.com</a>
+                  <a class="dropdown-item logout" href="#">Log out</a>
+                </div>
+              </div>
+            </div>
+            <div class="language">
+              <div class="dropdown">
+                <a href="#" role="button" id="dropdownMenuLanguageLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ENG
+                  <img src="../vcb/assets/imgs/language.png" alt="language icon">
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLanguageLink">
+                  <a class="dropdown-item" href="#">English</a>
+                  <a class="dropdown-item" href="#">Tiếng Việt</a>
+                  <a class="dropdown-item" href="#">한국어</a>
+                  <a class="dropdown-item" href="#">日本語</a>
+                  <a class="dropdown-item" href="#">বাংলা</a>
+                  <a class="dropdown-item" href="#">اردو</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header><!-- /header -->
+  <section class="main-content">
+    <div class="container">
+      <h1 class="hiden" style="display: none!important;">VCB</h1>
+      <div class="row">
+        <div class="content">
+          <div class="right-side-bar">
+            <div class="account-mobile">
+              <a class="dropdown-item name" href="#">Pham Hong Phuc</a>
+              <a class="dropdown-item email" href="#">example@gmail.com</a>
+            </div>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="label-my-account" href="#my-account" role="tab" aria-controls="my-account" aria-selected="true">
+                  <img src="../vcb/assets/imgs/account-icon.svg" alt="account icon">
+                  My Accounts
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" id="label-funds-management" href="#funds-management" role="tab" aria-controls="funds-management" aria-selected="true">
+                  <img src="../vcb/assets/imgs/fund-icon.svg" alt="fund icon">
+                  Funds Management
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="label-transaction-history" href="#transaction-history" role="tab" aria-controls="transaction-history" aria-selected="true">
+                  <img src="../vcb/assets/imgs/trans-icon.svg" alt="transaction icon">
+                  transaction history
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="label-my-campaigns" href="#my-campaigns" role="tab" aria-controls="my-campaigns" aria-selected="true">
+                  <img src="../vcb/assets/imgs/campaigns-icon.svg" alt="campaigns icon">
+                  My Campaigns
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="label-strategies" href="#strategies" role="tab" aria-controls="strategies" aria-selected="true">
+                  <img src="../vcb/assets/imgs/strategies-icon.svg" alt="strategies icon">
+                  Strategies
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="label-partnership" href="#partnership" role="tab" aria-controls="partnership" aria-selected="true">
+                  <img src="../vcb/assets/imgs/partnership-icon.svg" alt="partnership icon">
+                  partnership
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="label-settings" href="#settings" role="tab" aria-controls="settings" aria-selected="true">
+                  <img src="../vcb/assets/imgs/settings-icon.svg" alt="settings icon">
+                  settings
+                </a>
+              </li>
+            </ul>
+            <div class="logout-mobile">
+              <a class="dropdown-item logout" href="#">Log out</a>
+            </div>
+          </div>  
+          <div class="left-side-bar">
+            <div class="tab-pane fade" role="tabpanel" id="my-account" aria-labelledby="label-my-account" include-html="content/my-account.html"></div>
+            <div class="tab-pane fade show active" role="tabpanel" id="funds-management" aria-labelledby="label-funds-management" include-html="content/funds-management.html">
+              <div class="funds-management">
+                <h2>Funds Mnagements</h2>
+                <div class="funds-tabs">
+                  <ul class="nav nav-tabs" id="funds-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="deposit-tab" data-toggle="tab" href="#deposit" role="tab" aria-controls="deposit" aria-selected="false">Deposit</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="withdrawal-tab" data-toggle="tab" href="#withdrawal" role="tab" aria-controls="withdrawal" aria-selected="true">Withdrawal</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="internal-transfer-tab" data-toggle="tab" href="#internal-transfer" role="tab" aria-controls="internal-transfer" aria-selected="true">Internal Transfer</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="funds-tabs-content">
+                    <div class="tab-pane tab-pane-child fade show active" id="deposit" role="tabpanel" aria-labelledby="deposit-tab">
+                      <div class="deposit-area">
+                        <h3 class="label-payment">payment methods</h3>
+                        <div class="methods">
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/bitcoin.png" alt="Bitcoin icon">
+                            <span>Bitcoin</span>
+                          </div>
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/cashu.png" alt="CashU icon">
+                            <span>CashU</span>
+                          </div>
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/visa.png" alt="Visa / Mastercard icon">
+                            <span>Visa / Mastercard</span>
+                          </div>
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/paypal.png" alt="Paypal icon">
+                            <span>Paypal</span>
+                          </div>
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/skrill.png" alt="Skrill icon">
+                            <span>Skrill</span>
+                          </div>
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/xetra.png" alt="Xetra icon">
+                            <span>Xetra</span>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="payment-detail" style="display: none;">
+                        <h3 class="label-payment">Payment Details</h3>
+                        <div class="payment-set">
+                          <div class="dropdown select">
+                            <h4>Account Number</h4>
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdowndeposit" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              3132095
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdowndeposit">
+                              <a class="dropdown-item" href="#">Oldest</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          <div class="dropdown select">
+                            <h4>Currency</h4>
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdowndepositunitedstates" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              USD - United States Dollar
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdowndepositunitedstates">
+                              <a class="dropdown-item" href="#">Oldest</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          <div class="amount">
+                            <h4>Amount</h4>
+                            <input type="text" name="Amount" placeholder="Amount" value="600.00">
+                          </div>
+                          <button class="btn btn-primary" handle_modal="set-deposit-modal">Continue</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane tab-pane-child fade" id="withdrawal" role="tabpanel" aria-labelledby="withdrawal-tab">
+                      <div class="withdrawal-area">
+                        <h3 class="label-payment">payment methods</h3>
+                        <div class="methods">
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/bitcoin.png" alt="Bitcoin icon">
+                            <span>Bitcoin</span>
+                          </div>
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/cashu.png" alt="CashU icon">
+                            <span>CashU</span>
+                          </div>
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/visa.png" alt="Visa / Mastercard icon">
+                            <span>Visa / Mastercard</span>
+                          </div>
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/paypal.png" alt="Paypal icon">
+                            <span>Paypal</span>
+                          </div>
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/skrill.png" alt="Skrill icon">
+                            <span>Skrill</span>
+                          </div>
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/xetra.png" alt="Xetra icon">
+                            <span>Xetra</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="payment-detail" style="display: none;">
+                        <h3 class="label-payment">Payment Details</h3>
+                        <div class="payment-set">
+                          <div class="dropdown select">
+                            <h4>Account Number</h4>
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdowndeposit" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              3132095
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdowndeposit">
+                              <a class="dropdown-item" href="#">Oldest</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          <div class="dropdown select">
+                            <h4>Currency</h4>
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdowndepositunitedstates" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              USD - United States Dollar
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdowndepositunitedstates">
+                              <a class="dropdown-item" href="#">Oldest</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          <div class="amount">
+                            <h4>Amount</h4>
+                            <input type="text" name="Amount" placeholder="Amount" value="600.00">
+                          </div>
+                          <button class="btn btn-primary" handle_modal="set-withdrawal-modal">Continue</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane tab-pane-child fade" id="internal-transfer" role="tabpanel" aria-labelledby="internal-transfer-tab">
+                      <div class="internal-area">
+                        <h3 class="label-payment">payment methods</h3>
+                        <div class="methods">
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/between.png" alt="Between icon">
+                            <span>Between your accounts</span>
+                          </div>
+                          <div class="method">
+                            <img src="../vcb/assets/imgs/another.png" alt="Another icon">
+                            <span>To another's account</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="payment-detail" style="display: none;">
+                        <h3 class="label-payment">Payment Details</h3>
+                        <div class="payment-set">
+                          <div class="dropdown select">
+                            <h4>From</h4>
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownfilterreal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              3132095
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownfilterreal">
+                              <a class="dropdown-item" href="#">Oldest</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          <div class="dropdown select">
+                            <h4>To</h4>
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownfilterreal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              31567922
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownfilterreal">
+                              <a class="dropdown-item" href="#">Oldest</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          <div class="owner-payment" style="display: none;">
+                            <h4>Owner</h4>
+                            <input type="text" name="Amount" placeholder="Amount" value="Mike Tyson (mike.t.2020@gmail.com)">
+                          </div>
+                          <div class="amount">
+                            <h4>Amount (USD)</h4>
+                            <input type="text" name="Amount" placeholder="Amount" value="600.00">
+                          </div>
+                          <div class="dropdown otpvia" style="display: none;">
+                            <h4>Get OTP via</h4>
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdowngetotptransfer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Email
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdowngetotptransfer">
+                              <a class="dropdown-item" href="#">Oldest</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          
+                          <div class="otpfunds checked" style="display: none;">
+                            <h4>OTP</h4>
+                            <input type="text" name="Amount" placeholder="Amount" value="123456">
+                          </div>
+                          <button class="btn btn-confirm" handle_modal="set-internal-transfer-modal">Confirm</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="set-deposit-modal" tabindex="-1" role="dialog" aria-labelledby="set-deposit" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <img src="../vcb/assets/imgs/markdone.png" alt="mark done icon">
+                  <h4>deposit done</h4>
+                  <button type="button" class="btn btn-secondary">Close</button>
+                </div>
+              </div>
+              <div class="modal fade" id="set-withdrawal-modal" tabindex="-1" role="dialog" aria-labelledby="set-withdrawal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <img src="../vcb/assets/imgs/markdone.png" alt="mark done icon">
+                  <h4>withdrawal done</h4>
+                  <button type="button" class="btn btn-secondary">Close</button>
+                </div>
+              </div>
+              <div class="modal fade" id="set-internal-transfer-modal" tabindex="-1" role="dialog" aria-labelledby="set-transfer" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <img src="../vcb/assets/imgs/markdone.png" alt="mark done icon">
+                  <h4>internal transfer done</h4>
+                  <button type="button" class="btn btn-secondary">Close</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="transaction-history" aria-labelledby="label-transaction-history" include-html="content/transaction-history.html"></div>
+            <div class="tab-pane fade" role="tabpanel" id="my-campaigns" aria-labelledby="label-my-campaigns"  include-html="content/my-campaigns.html"></div>
+            <div class="tab-pane fade" role="tabpanel" id="strategies" aria-labelledby="label-strategies" include-html="content/strategies.html"></div>
+            <div class="tab-pane fade" role="tabpanel" id="partnership" aria-labelledby="label-partnership" include-html="content/partnership.html"></div>
+            <div class="tab-pane fade" role="tabpanel" id="settings" aria-labelledby="label-settings" include-html="content/settings.html"></div>
+            <div class="tab-pane fade" role="tabpanel" id="create-account" aria-labelledby="label-settings" include-html="content/create-account.html"></div>
+          </div>    
+        </div><!-- /content -->
+        <div class="sign-in" include-html="content/sign-in.html" style="display: none;"></div><!-- /sign-in -->
+        <div class="register" include-html="content/register.html" style="display: none;"></div><!-- /register -->
+        <div class="reset" include-html="content/reset.html" style="display: none;"></div><!-- /reset -->
+      </div>
+    </div>
+  </section><!-- /main-content -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-content">
+            <div class="menu-footer">
+              <ul>
+                <li><a href="#">Privacy Agreement</a></li>
+                <li><a href="#">Risk Disclosure</a></li>
+                <li><a href="#">Preventing Money Laundering</a></li>
+                <li><a href="#">Security instructions</a></li>
+                <li><a href="#">Legal documents</a></li>
+              </ul>
+            </div>
+            <div class="copy-right">(c) 2020. VCBFX</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- /footer -->
+
+  <!-- email template -->
+  <div class="email-template" style="display: none;">
+    <div class="email-template-header">
+      <img src="../vcb/assets/imgs/logo.png" alt="logo">
+      <div class="email-template-date">
+        August 30, 2020
+      </div>
+    </div>
+    <div class="email-template-body">
+      <h1>Your trading account is ready!</h1>
+      <div class="email-template-content">
+        <p class="dear">Dear Hoang Nguyen,</p>
+        <p class="paragraph">
+          We are pleased to inform you that you have successfully registered for a trading account.<br>
+          You can now start trading the financial markets with VCBFX, taking advantage of our excellent trading conditions, cutting-edge technology and innovative trading tools.        
+        </p>
+      </div>
+      <div class="email-template-info">
+        <h2>Your account details</h2>
+        <div class="email-template-info-content">
+          <img src="../vcb/assets/imgs/emailtemplate/login.png" alt="login icon">
+          <div class="infor-area">
+            <div class="infor-area-label">
+              account number
+            </div>
+            <div class="infor-area-value">
+              123456789
+            </div>
+            <div class="infor-area-note">
+              This is your tading terminal login.
+            </div>
+          </div>
+        </div>
+        <div class="email-template-server-content">
+          <img src="../vcb/assets/imgs/emailtemplate/server.png" alt="login icon">
+          <div class="server-area">
+            <div class="server-area-label">
+              trading server address
+            </div>
+            <div class="server-area-value">
+              <a href="mt5real1.vcbfx.com:444" title="">mt5real1.vcbfx.com:444</a>
+            </div>
+            <div class="server-area-note">
+              <p>When signing in to your MetaTrader Terminal, enter this server address or just select it from the list.</p>
+              <p>You'll need funds in your account to start trading.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="email-template-deposit">
+        <h2>Start by making deposit!</h2>
+        <button type="button" class="btn btn-primary">Make a deposit</button>
+      </div>
+      <div class="email-template-customer">
+        <img src="../vcb/assets/imgs/emailtemplate/customer-care.png" alt="customer icon">
+        <div class="email-template-customer-content">
+          <p>For any questions you may have, feel free to contact the VCBFX support team.</p>
+          <div class="email-contact">
+            <div class="phone">
+              <div class="phone-label">
+                Phone: 
+              </div>
+              <a class="phone-value" href="tel:19001900">
+                19001900
+              </a>
+            </div>
+            -
+            <div class="mail">
+              <div class="mail-label">
+                Email: 
+              </div>
+              <a class="mail-value" href="mailto:support@vcbfx.com">
+                support@vcbfx.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="email-template-footer">
+      General Risk Warning: CFDs are leveraged products. Trading in CFDs carries a high level of risk thus may not be appropriate for all investors. The investment value can both increase and decrease and the investors may lose all their invested capital. Under no circumstances shall the Company have any liability to any person or entity for any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs.
+    </div>
+  </div>
+  <!-- end email template -->
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.7/js/intlTelInput.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chart.js"></script>
+</body>
+</html>

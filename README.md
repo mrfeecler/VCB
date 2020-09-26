@@ -27,3 +27,7 @@ acc = a@a.a
 - Some text have been cut off in mobile in make to stay intact like desktop (1 vài text về mobile bị cắt (sẽ để nguyên như desktop không cắt text )) Ex: 
 Knowledge Base (Partnership), Document Type (Setting verify ), create new account (My account : description of STANDARD)...
 - missing tab notification of setting mobile. however I have done this based on the site as a whole. (thiếu tab notification ở page settings mobile design) tuy nhiên đã làm xong dựa trên tổng thể cả site 
+
+## note for branch split files not use javascript to make it like single page web app
+- Can not use index. Index and my account is same.
+- Each section is one file html.

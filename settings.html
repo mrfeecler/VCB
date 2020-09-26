@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <title>VCB</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/css/intlTelInput.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="assets/css/email-template.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/account.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/funds-management.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/my-campaigns.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/partnership.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/strategies.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/transaction-history.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/settings.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="menu-mobile">
+            <img src="../vcb/assets/imgs/menu-mobile.png" alt="logo">
+          </div>
+          <div class="logo">
+            <a href="#" title="logo">
+              <img src="../vcb/assets/imgs/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="infomations">
+            <div class="money">
+              0.00 USD
+            </div>
+            <div class="account">
+              <div class="dropdown">
+                <a href="#" role="button" id="dropdownMenuAccountLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pham
+                  <img src="../vcb/assets/imgs/account.png" alt="account icon">
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuAccountLink">
+                  <a class="dropdown-item name" href="#">Pham Hong Phuc</a>
+                  <a class="dropdown-item email" href="#">example@gmail.com</a>
+                  <a class="dropdown-item logout" href="#">Log out</a>
+                </div>
+              </div>
+            </div>
+            <div class="language">
+              <div class="dropdown">
+                <a href="#" role="button" id="dropdownMenuLanguageLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ENG
+                  <img src="../vcb/assets/imgs/language.png" alt="language icon">
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLanguageLink">
+                  <a class="dropdown-item" href="#">English</a>
+                  <a class="dropdown-item" href="#">Tiếng Việt</a>
+                  <a class="dropdown-item" href="#">한국어</a>
+                  <a class="dropdown-item" href="#">日本語</a>
+                  <a class="dropdown-item" href="#">বাংলা</a>
+                  <a class="dropdown-item" href="#">اردو</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header><!-- /header -->
+  <section class="main-content">
+    <div class="container">
+      <h1 class="hiden" style="display: none!important;">VCB</h1>
+      <div class="row">
+        <div class="content">
+          <div class="right-side-bar">
+            <div class="account-mobile">
+              <a class="dropdown-item name" href="#">Pham Hong Phuc</a>
+              <a class="dropdown-item email" href="#">example@gmail.com</a>
+            </div>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link " data-toggle="tab" id="label-my-account" href="#my-account" role="tab" aria-controls="my-account" aria-selected="true">
+                  <img src="../vcb/assets/imgs/account-icon.svg" alt="account icon">
+                  My Accounts
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="label-funds-management" href="#funds-management" role="tab" aria-controls="funds-management" aria-selected="true">
+                  <img src="../vcb/assets/imgs/fund-icon.svg" alt="fund icon">
+                  Funds Management
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="label-transaction-history" href="#transaction-history" role="tab" aria-controls="transaction-history" aria-selected="true">
+                  <img src="../vcb/assets/imgs/trans-icon.svg" alt="transaction icon">
+                  transaction history
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="label-my-campaigns" href="#my-campaigns" role="tab" aria-controls="my-campaigns" aria-selected="true">
+                  <img src="../vcb/assets/imgs/campaigns-icon.svg" alt="campaigns icon">
+                  My Campaigns
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="label-strategies" href="#strategies" role="tab" aria-controls="strategies" aria-selected="true">
+                  <img src="../vcb/assets/imgs/strategies-icon.svg" alt="strategies icon">
+                  Strategies
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="label-partnership" href="#partnership" role="tab" aria-controls="partnership" aria-selected="true">
+                  <img src="../vcb/assets/imgs/partnership-icon.svg" alt="partnership icon">
+                  partnership
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" id="label-settings" href="#settings" role="tab" aria-controls="settings" aria-selected="true">
+                  <img src="../vcb/assets/imgs/settings-icon.svg" alt="settings icon">
+                  settings
+                </a>
+              </li>
+            </ul>
+            <div class="logout-mobile">
+              <a class="dropdown-item logout" href="#">Log out</a>
+            </div>
+          </div>  
+          <div class="left-side-bar">
+            <div class="tab-pane fade" role="tabpanel" id="my-account" aria-labelledby="label-my-account" include-html="content/my-account.html"></div>
+            <div class="tab-pane fade" role="tabpanel" id="funds-management" aria-labelledby="label-funds-management" include-html="content/funds-management.html"></div>
+            <div class="tab-pane fade" role="tabpanel" id="transaction-history" aria-labelledby="label-transaction-history" include-html="content/transaction-history.html"></div>
+            <div class="tab-pane fade" role="tabpanel" id="my-campaigns" aria-labelledby="label-my-campaigns"  include-html="content/my-campaigns.html"></div>
+            <div class="tab-pane fade" role="tabpanel" id="strategies" aria-labelledby="label-strategies" include-html="content/strategies.html"></div>
+            <div class="tab-pane fade" role="tabpanel" id="partnership" aria-labelledby="label-partnership" include-html="content/partnership.html"></div>
+            <div class="tab-pane fade show active" role="tabpanel" id="settings" aria-labelledby="label-settings" include-html="content/settings.html">
+              <div class="settings">
+                <h2 class="settings-title">
+                  Settings
+                </h2>
+                <div class="settings-contents">
+                  <ul class="nav nav-tabs" id="settings-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="settings-profile-tab" data-toggle="tab" href="#settings-profile" role="tab" aria-controls="settings-profile" aria-selected="true">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="settings-password-tab" data-toggle="tab" href="#setting-password" role="tab" aria-controls="setting-password" aria-selected="false">Password</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="settings-verify-tab" data-toggle="tab" href="#setting-verify" role="tab" aria-controls="setting-verify" aria-selected="false">Verify</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="settings-notification-tab" data-toggle="tab" href="#setting-notification" role="tab" aria-controls="setting-notification" aria-selected="false">Notification</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="settings-tabs-content">
+                    <div class="tab-pane fade show active" id="settings-profile" role="tabpanel" aria-labelledby="settings-profile-tab">
+                      <div class="settings-profile">
+                        <div class="settings-profile-info">
+                          <h3>
+                            Personal information
+                          </h3>
+                          <div class="settings-profile-info-contents">
+                            <div class="settings-profile-info-content">
+                              <div class="settings-profile-info-label">
+                                Full name
+                              </div>
+                              <div class="settings-profile-info-value">
+                                <input type="text" name="profile name" value="Pham Hong Phuc">
+                              </div>
+                            </div>
+                            <div class="settings-profile-info-content">
+                              <div class="settings-profile-info-label">
+                                Email
+                              </div>
+                              <div class="settings-profile-info-value">
+                                <input type="email" name="profile name" value="example@gmail.com">
+                              </div>
+                            </div>
+                            <div class="settings-profile-info-content">
+                              <div class="settings-profile-info-label">
+                                Phone Number
+                              </div>
+                              <div class="settings-profile-info-value">
+                                <input type="tel" class="form-control phone-verify" placeholder="1234 567 890" value="1234 567 890">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="settings-address-info">
+                          <h3>
+                            address information
+                          </h3>
+                          <div class="settings-address-info-contents">
+                            <div class="settings-address-info-content setting-country">
+                              <div class="settings-address-info-label">
+                                Country / Religion
+                              </div>
+                              <div class="settings-address-info-value">
+                                <input type="tel" class="form-control phone-verify" placeholder="1234 567 890" value="1234 567 890">
+                              </div>
+                            </div>
+                            <div class="settings-address-info-content it2columns">
+                              <div class="settings-address-info-content">
+                                <div class="settings-address-info-label">
+                                  City
+                                </div>
+                                <div class="settings-address-info-value">
+                                  <input type="text" name="setting-city" value="Hanoi">
+                                </div>
+                              </div>
+                              <div class="settings-address-info-content">
+                                <div class="settings-address-info-label">
+                                  Zip Code
+                                </div>
+                                <div class="settings-address-info-value">
+                                  <input type="text" name="setting-zip" value="100000">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="settings-address-info-content">
+                              <div class="settings-address-info-label">
+                                Address
+                              </div>
+                              <div class="settings-address-info-value">
+                                <input type="text" name="setting-addr" value="G2 Vinhomes Greenbay, Me Tri, Nam Tu Liem">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary" handle_modal="set-profile-modal">Update</button>  
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="setting-password" role="tabpanel" aria-labelledby="settings-password-tab">
+                      <div class="setting-password">
+                        <div class="settings-password-area">
+                          <h4>change password</h4>
+                          <div class="password checked">
+                            <label for="setting-change-password">Current Password</label>
+                            <input type="password" id="setting-change-password" class="form-control" placeholder="Current Password" required autofocus="" value="123456">
+                          </div>
+                          <div class="password">
+                            <label for="setting-change-new-password">New Password</label>
+                            <input type="password" id="setting-change-new-password" class="form-control" placeholder="New Password" required value="123456">
+                            <span class="showpass"></span>
+                          </div>
+                          <div class="err-mess" style="display: none;">
+                            <p>Password required at least 6 characters and one upper case letter. Please try again.</p>
+                          </div>  
+                        </div>
+                        <button class="btn btn-primary" type="submit" handle_modal="set-password-modal">Update</button>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="setting-verify" role="tabpanel" aria-labelledby="settings-verify-tab">
+                      <div class="setting-verify">
+                        <h3>
+                          verify status
+                        </h3>
+                        <div class="verify-status">
+                          <div class="active-line"></div>
+                          <div class="verify-email active">
+                            <p class="verify-label">Email</p>
+                            <p class="verify-icon">
+                              <img src="../vcb/assets/imgs/verify-email.png" alt="verify email icon">
+                            </p>
+                          </div>
+                          <div class="verify-phone">
+                            <p class="verify-label">Phone</p>
+                            <p class="verify-icon">
+                              <img src="../vcb/assets/imgs/verify-phone.png" alt="verify phone icon">
+                            </p>
+                          </div>
+                          <div class="verify-identity">
+                            <p class="verify-label">Identity</p>
+                            <p class="verify-icon">
+                              <img src="../vcb/assets/imgs/verify-indentity.png" alt="verify identity icon">
+                            </p>
+                          </div>
+                          <div class="verify-address">
+                            <p class="verify-label">Address</p>
+                            <p class="verify-icon">
+                              <img src="../vcb/assets/imgs/verify-address.png" alt="verify address icon">
+                            </p>
+                          </div>
+                        </div>
+                        <div class="verify-contents">
+                          <div class="verify-content verify-content-email">
+                            <div class="verify-content-get-otp">
+                              <div class="verify-content-area">
+                                <div class="verify-content-label">
+                                  Email
+                                </div>
+                                <div class="verify-content-value">
+                                  <input type="email" name="verify-content-value" value="example@gmail.com">
+                                </div>
+                              </div>
+                              <div class="verify-content-cta">
+                                <button class="btn btn-primary btn-getotp">Get OTP</button>
+                              </div>  
+                            </div>
+                            <div class="verify-content-otp checked" style="display: none;">
+                              <p>
+                                OTP
+                              </p>
+                              <input type="text" name="verify-content-otp" value="123456">
+                            </div>  
+                            <button class="btn btn-primary" id="btn-verify-email-modal" handle_modal="set-verify-email-modal" style="display: none;">
+                              Verify
+                            </button>
+                          </div>
+                          <div class="verify-content verify-content-phone" style="display: none;">
+                            <div class="verify-content-get-otp">
+                              <div class="verify-content-area">
+                                <div class="verify-content-label">
+                                  Phone Number
+                                </div>
+                                <div class="verify-content-value">
+                                  <input type="phone" name="verify-content-value" value="1234 567 890" class="phone-verify">
+                                </div>
+                              </div>
+                              <div class="verify-content-cta">
+                                <button class="btn btn-secondary btn-getotp">Get OTP</button>
+                              </div>  
+                            </div>
+                            <div class="verify-content-otp checked" style="display: none;">
+                              <p>
+                                OTP
+                              </p>
+                              <input type="text" name="verify-content-otp" value="123456">
+                            </div>  
+                            <button class="btn btn-primary" handle_modal="set-verify-phone-modal" style="display: none;">
+                              Verify
+                            </button>
+                          </div>
+                          <div class="verify-content verify-content-identity" style="display: none;">
+                            <h6>Document Type</h6>
+                            <p>Please take a photo of your Proof of Identity document and ensure it meets the following requirements.</p>
+                            <div class="dropdown select">
+                              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownfilterreal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ID Card
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownfilterreal">
+                                <a class="dropdown-item" href="#">Oldest</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                            <div class="verify-content-boxes">
+                              <div class="verify-content-box">
+                                <p>
+                                  <img src="../vcb/assets/imgs/upload-image-icon.png" alt="upload">
+                                  Upload the frontside. Maximum file size 2MB
+                                </p>
+                              </div>
+                              <div class="verify-content-box">
+                                <p>
+                                  <img src="../vcb/assets/imgs/upload-image-icon.png" alt="upload">
+                                  Upload the frontside. Maximum file size 2MB
+                                </p>
+                              </div>  
+                            </div>  
+                            <button class="btn btn-primary" handle_modal="set-verify-document-modal">
+                              Submit
+                            </button>
+                          </div>
+                          <div class="verify-content verify-content-address" style="display: none;">
+                            <h6>Document Type</h6>
+                              <p>Please take a photo of your Proof of Identity document and ensure it meets the following requirements.</p>
+                              <div class="dropdown select">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownfilterreal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Bank Statement
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownfilterreal">
+                                  <a class="dropdown-item" href="#">Oldest</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                              <div class="verify-content-boxes">
+                                <div class="verify-content-box">
+                                  <p>
+                                    <img src="../vcb/assets/imgs/upload-image-icon.png" alt="upload">
+                                    Upload the frontside. Maximum file size 2MB
+                                  </p>
+                                </div>
+                              </div>  
+                              <button class="btn btn-primary" handle_modal="set-verify-document-submit-modal">
+                                Submit
+                              </button>
+                          </div>
+                        </div>
+                        <div class="verify-done" style="display: none">
+                          <img src="../vcb/assets/imgs/markdone.png" alt="mark done icon">
+                          <p>Your account has been verify. Let's trade today!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="setting-notification" role="tabpanel" aria-labelledby="settings-notification-tab">
+                      <div class="setting-notification">
+                        <div class="setting-notification-area">
+                          <h4>
+                            Notification setting
+                          </h4>
+                          <div class="box check">
+                            <h6>Notify about new clients</h6>
+                            <p>
+                              When clients register using your partner link a notification will be sent to the email address you indicated during registration.
+                            </p>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit" handle_modal="set-notification-modal">Update</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="set-profile-modal" tabindex="-1" role="dialog" aria-labelledby="set-profile" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <img src="../vcb/assets/imgs/markdone.png" alt="mark done icon">
+                  <h4>profile update done</h4>
+                  <button type="button" class="btn btn-secondary close">Close</button>
+                </div>
+              </div>
+              <div class="modal fade" id="set-password-modal" tabindex="-1" role="dialog" aria-labelledby="set-password" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <img src="../vcb/assets/imgs/markdone.png" alt="mark done icon">
+                  <h4>password change done</h4>
+                  <button type="button" class="btn btn-secondary close">Close</button>
+                </div>
+              </div>
+              <div class="modal fade" id="set-notification-modal" tabindex="-1" role="dialog" aria-labelledby="set-notification" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <img src="../vcb/assets/imgs/markdone.png" alt="mark done icon">
+                  <h4>notification update done</h4>
+                  <button type="button" class="btn btn-secondary close">Close</button>
+                </div>
+              </div>
+              <div class="modal fade" id="set-verify-email-modal" tabindex="-1" role="dialog" aria-labelledby="set-notification" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <img src="../vcb/assets/imgs/markdone.png" alt="mark done icon">
+                  <h4>email verify done</h4>
+                  <button type="button" class="btn btn-secondary close" open_next="verify-content-phone" tab_line="verify-phone">Close</button>
+                </div>
+              </div>
+              <div class="modal fade" id="set-verify-phone-modal" tabindex="-1" role="dialog" aria-labelledby="set-notification" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <img src="../vcb/assets/imgs/markdone.png" alt="mark done icon">
+                  <h4>phone number verify done</h4>
+                  <button type="button" class="btn btn-secondary close" open_next="verify-content-identity" tab_line="verify-identity">Close</button>
+                </div>
+              </div>
+              <div class="modal fade" id="set-verify-document-modal" tabindex="-1" role="dialog" aria-labelledby="set-notification" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <img src="../vcb/assets/imgs/markdone.png" alt="mark done icon">
+                  <h4>document submit done</h4>
+                  <button type="button" class="btn btn-secondary close" open_next="verify-content-address" tab_line="verify-address">Close</button>
+                </div>
+              </div>
+              <div class="modal fade" id="set-verify-document-submit-modal" tabindex="-1" role="dialog" aria-labelledby="set-notification" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <img src="../vcb/assets/imgs/markdone.png" alt="mark done icon">
+                  <h4>document submit done</h4>
+                  <button type="button" class="btn btn-secondary close" theend="true">Close</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="create-account" aria-labelledby="label-settings" include-html="content/create-account.html"></div>
+          </div>    
+        </div><!-- /content -->
+        <div class="sign-in" include-html="content/sign-in.html" style="display: none;"></div><!-- /sign-in -->
+        <div class="register" include-html="content/register.html" style="display: none;"></div><!-- /register -->
+        <div class="reset" include-html="content/reset.html" style="display: none;"></div><!-- /reset -->
+      </div>
+    </div>
+  </section><!-- /main-content -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-content">
+            <div class="menu-footer">
+              <ul>
+                <li><a href="#">Privacy Agreement</a></li>
+                <li><a href="#">Risk Disclosure</a></li>
+                <li><a href="#">Preventing Money Laundering</a></li>
+                <li><a href="#">Security instructions</a></li>
+                <li><a href="#">Legal documents</a></li>
+              </ul>
+            </div>
+            <div class="copy-right">(c) 2020. VCBFX</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- /footer -->
+
+  <!-- email template -->
+  <div class="email-template" style="display: none;">
+    <div class="email-template-header">
+      <img src="../vcb/assets/imgs/logo.png" alt="logo">
+      <div class="email-template-date">
+        August 30, 2020
+      </div>
+    </div>
+    <div class="email-template-body">
+      <h1>Your trading account is ready!</h1>
+      <div class="email-template-content">
+        <p class="dear">Dear Hoang Nguyen,</p>
+        <p class="paragraph">
+          We are pleased to inform you that you have successfully registered for a trading account.<br>
+          You can now start trading the financial markets with VCBFX, taking advantage of our excellent trading conditions, cutting-edge technology and innovative trading tools.        
+        </p>
+      </div>
+      <div class="email-template-info">
+        <h2>Your account details</h2>
+        <div class="email-template-info-content">
+          <img src="../vcb/assets/imgs/emailtemplate/login.png" alt="login icon">
+          <div class="infor-area">
+            <div class="infor-area-label">
+              account number
+            </div>
+            <div class="infor-area-value">
+              123456789
+            </div>
+            <div class="infor-area-note">
+              This is your tading terminal login.
+            </div>
+          </div>
+        </div>
+        <div class="email-template-server-content">
+          <img src="../vcb/assets/imgs/emailtemplate/server.png" alt="login icon">
+          <div class="server-area">
+            <div class="server-area-label">
+              trading server address
+            </div>
+            <div class="server-area-value">
+              <a href="mt5real1.vcbfx.com:444" title="">mt5real1.vcbfx.com:444</a>
+            </div>
+            <div class="server-area-note">
+              <p>When signing in to your MetaTrader Terminal, enter this server address or just select it from the list.</p>
+              <p>You'll need funds in your account to start trading.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="email-template-deposit">
+        <h2>Start by making deposit!</h2>
+        <button type="button" class="btn btn-primary">Make a deposit</button>
+      </div>
+      <div class="email-template-customer">
+        <img src="../vcb/assets/imgs/emailtemplate/customer-care.png" alt="customer icon">
+        <div class="email-template-customer-content">
+          <p>For any questions you may have, feel free to contact the VCBFX support team.</p>
+          <div class="email-contact">
+            <div class="phone">
+              <div class="phone-label">
+                Phone: 
+              </div>
+              <a class="phone-value" href="tel:19001900">
+                19001900
+              </a>
+            </div>
+            -
+            <div class="mail">
+              <div class="mail-label">
+                Email: 
+              </div>
+              <a class="mail-value" href="mailto:support@vcbfx.com">
+                support@vcbfx.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="email-template-footer">
+      General Risk Warning: CFDs are leveraged products. Trading in CFDs carries a high level of risk thus may not be appropriate for all investors. The investment value can both increase and decrease and the investors may lose all their invested capital. Under no circumstances shall the Company have any liability to any person or entity for any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs.
+    </div>
+  </div>
+  <!-- end email template -->
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.7/js/intlTelInput.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chart.js"></script>
+</body>
+</html>

@@ -240,8 +240,9 @@ $( document ).ready(function() {
         $(this).addClass('hide_in_mobile');
         parent.addClass('activate');
         // $('.verify-content-otp').show();
-        // $('#btn-verify-email-modal').show();
+        
       })
+
       .on('click', '.forgot', function(event) {
         $('.sign-in').hide();
         $('.reset').show();
